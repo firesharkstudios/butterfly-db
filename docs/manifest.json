@@ -1,0 +1,804 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.BaseDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.BaseDatabase.html",
+          "hash": "IHQGwPUZjRwhX4lWTYD6wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.BaseStatement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.BaseStatement.html",
+          "hash": "vyKg93kTTSOa9Nt621HJng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.BaseTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.BaseTransaction.html",
+          "hash": "bxV2aVwEV+IwSBXve/bipg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.CreateStatement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.CreateStatement.html",
+          "hash": "x2aJfPLdUsz7L2aQtJF0FA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.DataEventTransactionListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.DataEventTransactionListener.html",
+          "hash": "VqgXRikPGsavfZhHGymiNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.DatabaseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.DatabaseException.html",
+          "hash": "OyxId7Ib7yet13QN1VyBnw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.DeleteStatement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.DeleteStatement.html",
+          "hash": "8y0/Kia8Ms1sQsTHcANOUA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.DuplicateKeyDatabaseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.DuplicateKeyDatabaseException.html",
+          "hash": "56fIkjci0ZnTZXDwLfLV7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Dynamic.BaseDynamicParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Dynamic.BaseDynamicParam.html",
+          "hash": "/WHjaBfXukS7HWv6xJ0oOA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Dynamic.ChildDynamicParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Dynamic.ChildDynamicParam.html",
+          "hash": "8ISECX+s8pMTJLG+3REbuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Dynamic.DynamicView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Dynamic.DynamicView.html",
+          "hash": "+e/MF3QKsTmoBUKTVS8T6w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Dynamic.DynamicViewSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Dynamic.DynamicViewSet.html",
+          "hash": "N8LdvAARdmyeJ9iCupbsaA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Dynamic.MultiValueDynamicParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Dynamic.MultiValueDynamicParam.html",
+          "hash": "PiEfGw3fgkT8uFmjXT8gtw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Dynamic.SingleValueDynamicParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Dynamic.SingleValueDynamicParam.html",
+          "hash": "BJ7F6JdeTgDEoSvM1Amteg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Dynamic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Dynamic.html",
+          "hash": "GAeUQz/XFcYNSBFMBk2HQA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Event.DataEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Event.DataEvent.html",
+          "hash": "rR5vE4/nbNTpf3KEm0bDyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Event.DataEventTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Event.DataEventTransaction.html",
+          "hash": "hUdrjQjkTLOQ1QhO26Pc5g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Event.DataEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Event.DataEventType.html",
+          "hash": "lttFlH6eadizuGsUNchjdQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Event.InitialBeginDataEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Event.InitialBeginDataEvent.html",
+          "hash": "dux4TonTXsl/UkBGTsjwqw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Event.InitialEndDataEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Event.InitialEndDataEvent.html",
+          "hash": "IK4s3V17I93tB3c8XtruVw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Event.KeyValueDataEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Event.KeyValueDataEvent.html",
+          "hash": "rAxNR0yyf+RGom0lPLoi2g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Event.RecordDataEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Event.RecordDataEvent.html",
+          "hash": "eOVkGvUjk6Ufdv09R6e5Pg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Event.TransactionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Event.TransactionState.html",
+          "hash": "zH0z2H75NIqlML0KUUGQQw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Event.html",
+          "hash": "an8txW5c2ZES8bJs/TqF5A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.IDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.IDatabase.html",
+          "hash": "nyte09J7MZOIQ1hISvR+wQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.IDynamicParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.IDynamicParam.html",
+          "hash": "5/fCTY5Nnuf8ipBdYgnCIw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.ITransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.ITransaction.html",
+          "hash": "fw/1aVpD2t0z11JutY0Q6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.InsertStatement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.InsertStatement.html",
+          "hash": "ULuoCoagpnd0lF2hef40zA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.JoinType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.JoinType.html",
+          "hash": "L5uXX7Ic8Wz7bPzAiOBz1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Memory.MemoryDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Memory.MemoryDatabase.html",
+          "hash": "Rn+/IuSebc39yG00yLH1kQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Memory.MemoryTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Memory.MemoryTable.html",
+          "hash": "zCsSUP1AWkP/y2NWuOXgDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Memory.MemoryTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Memory.MemoryTransaction.html",
+          "hash": "DoG3SSFMgmc1fVRy85M6Tg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Memory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Memory.html",
+          "hash": "rHgCeEZftRzUNtlj8Ys1Yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.MySql.MySqlDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.MySql.MySqlDatabase.html",
+          "hash": "SFu5f8xOrTFhye1nDSL3kQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.MySql.MySqlTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.MySql.MySqlTransaction.html",
+          "hash": "jM1/O5IFJa6C+9qNUJYhGw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.MySql.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.MySql.html",
+          "hash": "0BI2Xh3VD1npkQ4EiUwOaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.OnCommitRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.OnCommitRef.html",
+          "hash": "4QtZADqHNxmEeNkQ5q7OSA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Postgres.PostgresDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Postgres.PostgresDatabase.html",
+          "hash": "Q9KQ+bcJe58PZqHyFU+OrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Postgres.PostgresTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Postgres.PostgresTransaction.html",
+          "hash": "HTlujamkQuzAz5GABnbGfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Postgres.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Postgres.html",
+          "hash": "sj560cI0KFVc2G5LdJ+Xlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.SQLite.SQLiteDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.SQLite.SQLiteDatabase.html",
+          "hash": "5BTwMiJ1ysuJSIySW+tjVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.SQLite.SQLiteTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.SQLite.SQLiteTransaction.html",
+          "hash": "iB3hpiSWLHIHyDvMi0J53Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.SQLite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.SQLite.html",
+          "hash": "NT0zSPZHUAwpkT54EXEwUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.SelectStatement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.SelectStatement.html",
+          "hash": "3OIeYo4GN3zEVFxPbDECzQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.SqlServer.SqlServerDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.SqlServer.SqlServerDatabase.html",
+          "hash": "KEC59UxhnsPX0lrqew75rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.SqlServer.SqlServerTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.SqlServer.SqlServerTransaction.html",
+          "hash": "HBH3bnEgaOIlcPU6P6BFAA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.SqlServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.SqlServer.html",
+          "hash": "WORzzXpOj0d0LZrZjHfHJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.StatementEqualsRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.StatementEqualsRef.html",
+          "hash": "kZMTGYPbPQSOJwVR+7rvrg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.StatementFieldRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.StatementFieldRef.html",
+          "hash": "relmTZWMzpYrAZ87Ops+bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.StatementFromRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.StatementFromRef.html",
+          "hash": "LNDCPrm/tHMExQhKZT3QOw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.Table.html",
+          "hash": "ES3zuqOwxDTnaVX0qj1jWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.TableFieldDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.TableFieldDef.html",
+          "hash": "lCYKOAIjQB/MwNRIiEHnDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.TableIndex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.TableIndex.html",
+          "hash": "WkEZo1El5Qn42DQY2bto3w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.TableIndexType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.TableIndexType.html",
+          "hash": "IfO04glFn1klD2k/mEXBvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.UnableToConnectDatabaseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.UnableToConnectDatabaseException.html",
+          "hash": "KWkBZ2NDjvofHixAo8C/MQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.UpdateStatement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.UpdateStatement.html",
+          "hash": "l5fKUWgvC3AoIuVVmBdAXA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.html",
+          "hash": "7H424oSl2gJgg6kbWQ66vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "LO3XnDWiEpYKNfOjJrosmA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "bXcCrIJQfM3u2wo39r9McQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo-48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo-48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "VMsjYFKFzK65cPeOh9XIJQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "J6i4D7C3ocprKq0ee27m9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 57,
+          "skipped_file_count": 56
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

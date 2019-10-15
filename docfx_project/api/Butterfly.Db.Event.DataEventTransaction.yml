@@ -1,0 +1,625 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Event.DataEventTransaction
+  commentId: T:Butterfly.Db.Event.DataEventTransaction
+  id: DataEventTransaction
+  parent: Butterfly.Db.Event
+  children:
+  - Butterfly.Db.Event.DataEventTransaction.#ctor(DateTime,Butterfly.Db.Event.DataEvent[])
+  - Butterfly.Db.Event.DataEventTransaction.dataEvents
+  - Butterfly.Db.Event.DataEventTransaction.dateTime
+  - Butterfly.Db.Event.DataEventTransaction.Fetch(System.String)
+  - Butterfly.Db.Event.DataEventTransaction.FilterDataEvents(Butterfly.Db.Event.DataEventTransaction,Func{Butterfly.Db.Event.DataEvent,System.Boolean})
+  - Butterfly.Db.Event.DataEventTransaction.storage
+  - Butterfly.Db.Event.DataEventTransaction.Store(System.String,System.Object)
+  - Butterfly.Db.Event.DataEventTransaction.ToString
+  langs:
+  - csharp
+  - vb
+  name: DataEventTransaction
+  nameWithType: DataEventTransaction
+  fullName: Butterfly.Db.Event.DataEventTransaction
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+    id: DataEventTransaction
+    path: ../Butterfly.Db/Event/DataEventTransaction.cs
+    startLine: 18
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  summary: "\nRepresents a series of <xref href=\"Butterfly.Db.Event.DataEvent\" data-throw-if-not-resolved=\"false\"></xref> instances resulting either\nfrom an initial query or from committing an <xref href=\"Butterfly.Db.IDatabase\" data-throw-if-not-resolved=\"false\"></xref> transaction\n"
+  example: []
+  syntax:
+    content: 'public class DataEventTransaction : object'
+    content.vb: >-
+      Public Class DataEventTransaction
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.Event.DataEventTransaction.dateTime
+  commentId: F:Butterfly.Db.Event.DataEventTransaction.dateTime
+  id: dateTime
+  parent: Butterfly.Db.Event.DataEventTransaction
+  langs:
+  - csharp
+  - vb
+  name: dateTime
+  nameWithType: DataEventTransaction.dateTime
+  fullName: Butterfly.Db.Event.DataEventTransaction.dateTime
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+    id: dateTime
+    path: ../Butterfly.Db/Event/DataEventTransaction.cs
+    startLine: 19
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public readonly DateTime dateTime
+    return:
+      type: DateTime
+    content.vb: Public ReadOnly dateTime As DateTime
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.Event.DataEventTransaction.dataEvents
+  commentId: F:Butterfly.Db.Event.DataEventTransaction.dataEvents
+  id: dataEvents
+  parent: Butterfly.Db.Event.DataEventTransaction
+  langs:
+  - csharp
+  - vb
+  name: dataEvents
+  nameWithType: DataEventTransaction.dataEvents
+  fullName: Butterfly.Db.Event.DataEventTransaction.dataEvents
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+    id: dataEvents
+    path: ../Butterfly.Db/Event/DataEventTransaction.cs
+    startLine: 20
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public readonly DataEvent[] dataEvents
+    return:
+      type: Butterfly.Db.Event.DataEvent[]
+    content.vb: Public ReadOnly dataEvents As DataEvent()
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.Event.DataEventTransaction.storage
+  commentId: F:Butterfly.Db.Event.DataEventTransaction.storage
+  id: storage
+  parent: Butterfly.Db.Event.DataEventTransaction
+  langs:
+  - csharp
+  - vb
+  name: storage
+  nameWithType: DataEventTransaction.storage
+  fullName: Butterfly.Db.Event.DataEventTransaction.storage
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+    id: storage
+    path: ../Butterfly.Db/Event/DataEventTransaction.cs
+    startLine: 22
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: protected readonly ConcurrentDictionary<string, object> storage
+    return:
+      type: ConcurrentDictionary{System.String,System.Object}
+    content.vb: Protected ReadOnly storage As ConcurrentDictionary(Of String, Object)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Event.DataEventTransaction.#ctor(DateTime,Butterfly.Db.Event.DataEvent[])
+  commentId: M:Butterfly.Db.Event.DataEventTransaction.#ctor(DateTime,Butterfly.Db.Event.DataEvent[])
+  id: '#ctor(DateTime,Butterfly.Db.Event.DataEvent[])'
+  parent: Butterfly.Db.Event.DataEventTransaction
+  langs:
+  - csharp
+  - vb
+  name: DataEventTransaction(DateTime, DataEvent[])
+  nameWithType: DataEventTransaction.DataEventTransaction(DateTime, DataEvent[])
+  fullName: Butterfly.Db.Event.DataEventTransaction.DataEventTransaction(DateTime, Butterfly.Db.Event.DataEvent[])
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+    id: .ctor
+    path: ../Butterfly.Db/Event/DataEventTransaction.cs
+    startLine: 24
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public DataEventTransaction(DateTime dateTime, DataEvent[] dataEvents)
+    parameters:
+    - id: dateTime
+      type: DateTime
+    - id: dataEvents
+      type: Butterfly.Db.Event.DataEvent[]
+    content.vb: Public Sub New(dateTime As DateTime, dataEvents As DataEvent())
+  overload: Butterfly.Db.Event.DataEventTransaction.#ctor*
+  nameWithType.vb: DataEventTransaction.DataEventTransaction(DateTime, DataEvent())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Db.Event.DataEventTransaction.DataEventTransaction(DateTime, Butterfly.Db.Event.DataEvent())
+  name.vb: DataEventTransaction(DateTime, DataEvent())
+- uid: Butterfly.Db.Event.DataEventTransaction.Store(System.String,System.Object)
+  commentId: M:Butterfly.Db.Event.DataEventTransaction.Store(System.String,System.Object)
+  id: Store(System.String,System.Object)
+  parent: Butterfly.Db.Event.DataEventTransaction
+  langs:
+  - csharp
+  - vb
+  name: Store(String, Object)
+  nameWithType: DataEventTransaction.Store(String, Object)
+  fullName: Butterfly.Db.Event.DataEventTransaction.Store(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+    id: Store
+    path: ../Butterfly.Db/Event/DataEventTransaction.cs
+    startLine: 29
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public void Store(string key, object obj)
+    parameters:
+    - id: key
+      type: System.String
+    - id: obj
+      type: System.Object
+    content.vb: Public Sub Store(key As String, obj As Object)
+  overload: Butterfly.Db.Event.DataEventTransaction.Store*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.Event.DataEventTransaction.Fetch(System.String)
+  commentId: M:Butterfly.Db.Event.DataEventTransaction.Fetch(System.String)
+  id: Fetch(System.String)
+  parent: Butterfly.Db.Event.DataEventTransaction
+  langs:
+  - csharp
+  - vb
+  name: Fetch(String)
+  nameWithType: DataEventTransaction.Fetch(String)
+  fullName: Butterfly.Db.Event.DataEventTransaction.Fetch(System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+    id: Fetch
+    path: ../Butterfly.Db/Event/DataEventTransaction.cs
+    startLine: 31
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public object Fetch(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Function Fetch(key As String) As Object
+  overload: Butterfly.Db.Event.DataEventTransaction.Fetch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.Event.DataEventTransaction.ToString
+  commentId: M:Butterfly.Db.Event.DataEventTransaction.ToString
+  id: ToString
+  parent: Butterfly.Db.Event.DataEventTransaction
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: DataEventTransaction.ToString()
+  fullName: Butterfly.Db.Event.DataEventTransaction.ToString()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+    id: ToString
+    path: ../Butterfly.Db/Event/DataEventTransaction.cs
+    startLine: 36
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Butterfly.Db.Event.DataEventTransaction.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Butterfly.Db.Event.DataEventTransaction.FilterDataEvents(Butterfly.Db.Event.DataEventTransaction,Func{Butterfly.Db.Event.DataEvent,System.Boolean})
+  commentId: M:Butterfly.Db.Event.DataEventTransaction.FilterDataEvents(Butterfly.Db.Event.DataEventTransaction,Func{Butterfly.Db.Event.DataEvent,System.Boolean})
+  id: FilterDataEvents(Butterfly.Db.Event.DataEventTransaction,Func{Butterfly.Db.Event.DataEvent,System.Boolean})
+  parent: Butterfly.Db.Event.DataEventTransaction
+  langs:
+  - csharp
+  - vb
+  name: FilterDataEvents(DataEventTransaction, Func<DataEvent, Boolean>)
+  nameWithType: DataEventTransaction.FilterDataEvents(DataEventTransaction, Func<DataEvent, Boolean>)
+  fullName: Butterfly.Db.Event.DataEventTransaction.FilterDataEvents(Butterfly.Db.Event.DataEventTransaction, Func<Butterfly.Db.Event.DataEvent, System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+    id: FilterDataEvents
+    path: ../Butterfly.Db/Event/DataEventTransaction.cs
+    startLine: 40
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public static DataEventTransaction FilterDataEvents(DataEventTransaction dataEventTransaction, Func<DataEvent, bool> dataEventFilter)
+    parameters:
+    - id: dataEventTransaction
+      type: Butterfly.Db.Event.DataEventTransaction
+    - id: dataEventFilter
+      type: Func{Butterfly.Db.Event.DataEvent,System.Boolean}
+    return:
+      type: Butterfly.Db.Event.DataEventTransaction
+    content.vb: Public Shared Function FilterDataEvents(dataEventTransaction As DataEventTransaction, dataEventFilter As Func(Of DataEvent, Boolean)) As DataEventTransaction
+  overload: Butterfly.Db.Event.DataEventTransaction.FilterDataEvents*
+  nameWithType.vb: DataEventTransaction.FilterDataEvents(DataEventTransaction, Func(Of DataEvent, Boolean))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Butterfly.Db.Event.DataEventTransaction.FilterDataEvents(Butterfly.Db.Event.DataEventTransaction, Func(Of Butterfly.Db.Event.DataEvent, System.Boolean))
+  name.vb: FilterDataEvents(DataEventTransaction, Func(Of DataEvent, Boolean))
+references:
+- uid: Butterfly.Db.Event.DataEvent
+  commentId: T:Butterfly.Db.Event.DataEvent
+  parent: Butterfly.Db.Event
+  name: DataEvent
+  nameWithType: DataEvent
+  fullName: Butterfly.Db.Event.DataEvent
+- uid: Butterfly.Db.IDatabase
+  commentId: T:Butterfly.Db.IDatabase
+  parent: Butterfly.Db
+  name: IDatabase
+  nameWithType: IDatabase
+  fullName: Butterfly.Db.IDatabase
+- uid: Butterfly.Db.Event
+  commentId: N:Butterfly.Db.Event
+  name: Butterfly.Db.Event
+  nameWithType: Butterfly.Db.Event
+  fullName: Butterfly.Db.Event
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: Butterfly.Db.Event.DataEvent[]
+  isExternal: true
+  name: DataEvent[]
+  nameWithType: DataEvent[]
+  fullName: Butterfly.Db.Event.DataEvent[]
+  nameWithType.vb: DataEvent()
+  fullName.vb: Butterfly.Db.Event.DataEvent()
+  name.vb: DataEvent()
+  spec.csharp:
+  - uid: Butterfly.Db.Event.DataEvent
+    name: DataEvent
+    nameWithType: DataEvent
+    fullName: Butterfly.Db.Event.DataEvent
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Butterfly.Db.Event.DataEvent
+    name: DataEvent
+    nameWithType: DataEvent
+    fullName: Butterfly.Db.Event.DataEvent
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: ConcurrentDictionary{System.String,System.Object}
+  commentId: '!:ConcurrentDictionary{System.String,System.Object}'
+  definition: ConcurrentDictionary`2
+  name: ConcurrentDictionary<String, Object>
+  nameWithType: ConcurrentDictionary<String, Object>
+  fullName: ConcurrentDictionary<System.String, System.Object>
+  nameWithType.vb: ConcurrentDictionary(Of String, Object)
+  fullName.vb: ConcurrentDictionary(Of System.String, System.Object)
+  name.vb: ConcurrentDictionary(Of String, Object)
+  spec.csharp:
+  - uid: ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    nameWithType: ConcurrentDictionary
+    fullName: ConcurrentDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    nameWithType: ConcurrentDictionary
+    fullName: ConcurrentDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ConcurrentDictionary`2
+  commentId: '!:ConcurrentDictionary`2'
+  isExternal: true
+  name: ConcurrentDictionary<, >
+  nameWithType: ConcurrentDictionary<, >
+  fullName: ConcurrentDictionary<, >
+  nameWithType.vb: ConcurrentDictionary(Of , )
+  fullName.vb: ConcurrentDictionary(Of , )
+  name.vb: ConcurrentDictionary(Of , )
+  spec.csharp:
+  - uid: ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    nameWithType: ConcurrentDictionary
+    fullName: ConcurrentDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    nameWithType: ConcurrentDictionary
+    fullName: ConcurrentDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.Event.DataEventTransaction.#ctor*
+  commentId: Overload:Butterfly.Db.Event.DataEventTransaction.#ctor
+  name: DataEventTransaction
+  nameWithType: DataEventTransaction.DataEventTransaction
+  fullName: Butterfly.Db.Event.DataEventTransaction.DataEventTransaction
+- uid: Butterfly.Db.Event.DataEventTransaction.Store*
+  commentId: Overload:Butterfly.Db.Event.DataEventTransaction.Store
+  name: Store
+  nameWithType: DataEventTransaction.Store
+  fullName: Butterfly.Db.Event.DataEventTransaction.Store
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Butterfly.Db.Event.DataEventTransaction.Fetch*
+  commentId: Overload:Butterfly.Db.Event.DataEventTransaction.Fetch
+  name: Fetch
+  nameWithType: DataEventTransaction.Fetch
+  fullName: Butterfly.Db.Event.DataEventTransaction.Fetch
+- uid: Butterfly.Db.Event.DataEventTransaction.ToString*
+  commentId: Overload:Butterfly.Db.Event.DataEventTransaction.ToString
+  name: ToString
+  nameWithType: DataEventTransaction.ToString
+  fullName: Butterfly.Db.Event.DataEventTransaction.ToString
+- uid: Butterfly.Db.Event.DataEventTransaction.FilterDataEvents*
+  commentId: Overload:Butterfly.Db.Event.DataEventTransaction.FilterDataEvents
+  name: FilterDataEvents
+  nameWithType: DataEventTransaction.FilterDataEvents
+  fullName: Butterfly.Db.Event.DataEventTransaction.FilterDataEvents
+- uid: Butterfly.Db.Event.DataEventTransaction
+  commentId: T:Butterfly.Db.Event.DataEventTransaction
+  parent: Butterfly.Db.Event
+  name: DataEventTransaction
+  nameWithType: DataEventTransaction
+  fullName: Butterfly.Db.Event.DataEventTransaction
+- uid: Func{Butterfly.Db.Event.DataEvent,System.Boolean}
+  commentId: '!:Func{Butterfly.Db.Event.DataEvent,System.Boolean}'
+  definition: Func`2
+  name: Func<DataEvent, Boolean>
+  nameWithType: Func<DataEvent, Boolean>
+  fullName: Func<Butterfly.Db.Event.DataEvent, System.Boolean>
+  nameWithType.vb: Func(Of DataEvent, Boolean)
+  fullName.vb: Func(Of Butterfly.Db.Event.DataEvent, System.Boolean)
+  name.vb: Func(Of DataEvent, Boolean)
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Butterfly.Db.Event.DataEvent
+    name: DataEvent
+    nameWithType: DataEvent
+    fullName: Butterfly.Db.Event.DataEvent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Butterfly.Db.Event.DataEvent
+    name: DataEvent
+    nameWithType: DataEvent
+    fullName: Butterfly.Db.Event.DataEvent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+shouldSkipMarkup: true

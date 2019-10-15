@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Memory
+  commentId: N:Butterfly.Db.Memory
+  id: Butterfly.Db.Memory
+  children:
+  - Butterfly.Db.Memory.MemoryDatabase
+  - Butterfly.Db.Memory.MemoryTable
+  - Butterfly.Db.Memory.MemoryTransaction
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Db.Memory
+  nameWithType: Butterfly.Db.Memory
+  fullName: Butterfly.Db.Memory
+  type: Namespace
+  assemblies:
+  - Butterfly.Db
+references:
+- uid: Butterfly.Db.Memory.MemoryDatabase
+  commentId: T:Butterfly.Db.Memory.MemoryDatabase
+  parent: Butterfly.Db.Memory
+  name: MemoryDatabase
+  nameWithType: MemoryDatabase
+  fullName: Butterfly.Db.Memory.MemoryDatabase
+- uid: Butterfly.Db.Memory.MemoryTable
+  commentId: T:Butterfly.Db.Memory.MemoryTable
+  name: MemoryTable
+  nameWithType: MemoryTable
+  fullName: Butterfly.Db.Memory.MemoryTable
+- uid: Butterfly.Db.Memory.MemoryTransaction
+  commentId: T:Butterfly.Db.Memory.MemoryTransaction
+  name: MemoryTransaction
+  nameWithType: MemoryTransaction
+  fullName: Butterfly.Db.Memory.MemoryTransaction
+- uid: Butterfly.Db.Memory
+  commentId: N:Butterfly.Db.Memory
+  name: Butterfly.Db.Memory
+  nameWithType: Butterfly.Db.Memory
+  fullName: Butterfly.Db.Memory
+shouldSkipMarkup: true

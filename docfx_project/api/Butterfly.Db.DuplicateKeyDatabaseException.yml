@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.DuplicateKeyDatabaseException
+  commentId: T:Butterfly.Db.DuplicateKeyDatabaseException
+  id: DuplicateKeyDatabaseException
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.DuplicateKeyDatabaseException.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DuplicateKeyDatabaseException
+  nameWithType: DuplicateKeyDatabaseException
+  fullName: Butterfly.Db.DuplicateKeyDatabaseException
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseDatabase.cs
+    id: DuplicateKeyDatabaseException
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 357
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: 'public class DuplicateKeyDatabaseException : DatabaseException'
+    content.vb: >-
+      Public Class DuplicateKeyDatabaseException
+          Inherits DatabaseException
+  inheritance:
+  - System.Object
+  - Butterfly.Db.DatabaseException
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.DuplicateKeyDatabaseException.#ctor(System.String)
+  commentId: M:Butterfly.Db.DuplicateKeyDatabaseException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Butterfly.Db.DuplicateKeyDatabaseException
+  langs:
+  - csharp
+  - vb
+  name: DuplicateKeyDatabaseException(String)
+  nameWithType: DuplicateKeyDatabaseException.DuplicateKeyDatabaseException(String)
+  fullName: Butterfly.Db.DuplicateKeyDatabaseException.DuplicateKeyDatabaseException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseDatabase.cs
+    id: .ctor
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 358
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public DuplicateKeyDatabaseException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: Butterfly.Db.DuplicateKeyDatabaseException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db.DatabaseException
+  commentId: T:Butterfly.Db.DatabaseException
+  parent: Butterfly.Db
+  name: DatabaseException
+  nameWithType: DatabaseException
+  fullName: Butterfly.Db.DatabaseException
+- uid: Butterfly.Db.DuplicateKeyDatabaseException.#ctor*
+  commentId: Overload:Butterfly.Db.DuplicateKeyDatabaseException.#ctor
+  name: DuplicateKeyDatabaseException
+  nameWithType: DuplicateKeyDatabaseException.DuplicateKeyDatabaseException
+  fullName: Butterfly.Db.DuplicateKeyDatabaseException.DuplicateKeyDatabaseException
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+shouldSkipMarkup: true

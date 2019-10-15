@@ -1,0 +1,169 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.JoinType
+  commentId: T:Butterfly.Db.JoinType
+  id: JoinType
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.JoinType.Inner
+  - Butterfly.Db.JoinType.Left
+  - Butterfly.Db.JoinType.None
+  - Butterfly.Db.JoinType.Right
+  langs:
+  - csharp
+  - vb
+  name: JoinType
+  nameWithType: JoinType
+  fullName: Butterfly.Db.JoinType
+  type: Enum
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: JoinType
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 105
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: 'public enum JoinType : int'
+    content.vb: Public Enum JoinType As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Butterfly.Db.JoinType.None
+  commentId: F:Butterfly.Db.JoinType.None
+  id: None
+  parent: Butterfly.Db.JoinType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: JoinType.None
+  fullName: Butterfly.Db.JoinType.None
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: None
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 106
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: None = 0
+    return:
+      type: Butterfly.Db.JoinType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Butterfly.Db.JoinType.Inner
+  commentId: F:Butterfly.Db.JoinType.Inner
+  id: Inner
+  parent: Butterfly.Db.JoinType
+  langs:
+  - csharp
+  - vb
+  name: Inner
+  nameWithType: JoinType.Inner
+  fullName: Butterfly.Db.JoinType.Inner
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: Inner
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 107
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: Inner = 1
+    return:
+      type: Butterfly.Db.JoinType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Butterfly.Db.JoinType.Left
+  commentId: F:Butterfly.Db.JoinType.Left
+  id: Left
+  parent: Butterfly.Db.JoinType
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: JoinType.Left
+  fullName: Butterfly.Db.JoinType.Left
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: Left
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 108
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: Left = 2
+    return:
+      type: Butterfly.Db.JoinType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Butterfly.Db.JoinType.Right
+  commentId: F:Butterfly.Db.JoinType.Right
+  id: Right
+  parent: Butterfly.Db.JoinType
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: JoinType.Right
+  fullName: Butterfly.Db.JoinType.Right
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: Right
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 109
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: Right = 3
+    return:
+      type: Butterfly.Db.JoinType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: Butterfly.Db.JoinType
+  commentId: T:Butterfly.Db.JoinType
+  parent: Butterfly.Db
+  name: JoinType
+  nameWithType: JoinType
+  fullName: Butterfly.Db.JoinType
+shouldSkipMarkup: true

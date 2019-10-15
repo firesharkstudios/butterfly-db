@@ -1,0 +1,423 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.StatementFromRef
+  commentId: T:Butterfly.Db.StatementFromRef
+  id: StatementFromRef
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.StatementFromRef.#ctor(Butterfly.Db.JoinType,Butterfly.Db.Table,System.String,System.String)
+  - Butterfly.Db.StatementFromRef.FIRST_TABLE_REGEX
+  - Butterfly.Db.StatementFromRef.JOIN_REGEX
+  - Butterfly.Db.StatementFromRef.joinCondition
+  - Butterfly.Db.StatementFromRef.joinType
+  - Butterfly.Db.StatementFromRef.ParseFromRefs(Butterfly.Db.IDatabase,System.String)
+  - Butterfly.Db.StatementFromRef.table
+  - Butterfly.Db.StatementFromRef.tableAlias
+  - Butterfly.Db.StatementFromRef.ToString
+  langs:
+  - csharp
+  - vb
+  name: StatementFromRef
+  nameWithType: StatementFromRef
+  fullName: Butterfly.Db.StatementFromRef
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: StatementFromRef
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 115
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nInternal class representing a SQL table reference like &quot;table_name table_alias&quot;\n"
+  example: []
+  syntax:
+    content: 'public class StatementFromRef : object'
+    content.vb: >-
+      Public Class StatementFromRef
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.StatementFromRef.joinType
+  commentId: F:Butterfly.Db.StatementFromRef.joinType
+  id: joinType
+  parent: Butterfly.Db.StatementFromRef
+  langs:
+  - csharp
+  - vb
+  name: joinType
+  nameWithType: StatementFromRef.joinType
+  fullName: Butterfly.Db.StatementFromRef.joinType
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: joinType
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 116
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly JoinType joinType
+    return:
+      type: Butterfly.Db.JoinType
+    content.vb: Public ReadOnly joinType As JoinType
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.StatementFromRef.table
+  commentId: F:Butterfly.Db.StatementFromRef.table
+  id: table
+  parent: Butterfly.Db.StatementFromRef
+  langs:
+  - csharp
+  - vb
+  name: table
+  nameWithType: StatementFromRef.table
+  fullName: Butterfly.Db.StatementFromRef.table
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: table
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 117
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly Table table
+    return:
+      type: Butterfly.Db.Table
+    content.vb: Public ReadOnly table As Table
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.StatementFromRef.tableAlias
+  commentId: F:Butterfly.Db.StatementFromRef.tableAlias
+  id: tableAlias
+  parent: Butterfly.Db.StatementFromRef
+  langs:
+  - csharp
+  - vb
+  name: tableAlias
+  nameWithType: StatementFromRef.tableAlias
+  fullName: Butterfly.Db.StatementFromRef.tableAlias
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: tableAlias
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 118
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string tableAlias
+    return:
+      type: System.String
+    content.vb: Public ReadOnly tableAlias As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.StatementFromRef.joinCondition
+  commentId: F:Butterfly.Db.StatementFromRef.joinCondition
+  id: joinCondition
+  parent: Butterfly.Db.StatementFromRef
+  langs:
+  - csharp
+  - vb
+  name: joinCondition
+  nameWithType: StatementFromRef.joinCondition
+  fullName: Butterfly.Db.StatementFromRef.joinCondition
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: joinCondition
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 119
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string joinCondition
+    return:
+      type: System.String
+    content.vb: Public ReadOnly joinCondition As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.StatementFromRef.#ctor(Butterfly.Db.JoinType,Butterfly.Db.Table,System.String,System.String)
+  commentId: M:Butterfly.Db.StatementFromRef.#ctor(Butterfly.Db.JoinType,Butterfly.Db.Table,System.String,System.String)
+  id: '#ctor(Butterfly.Db.JoinType,Butterfly.Db.Table,System.String,System.String)'
+  parent: Butterfly.Db.StatementFromRef
+  langs:
+  - csharp
+  - vb
+  name: StatementFromRef(JoinType, Table, String, String)
+  nameWithType: StatementFromRef.StatementFromRef(JoinType, Table, String, String)
+  fullName: Butterfly.Db.StatementFromRef.StatementFromRef(Butterfly.Db.JoinType, Butterfly.Db.Table, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: .ctor
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 126
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public StatementFromRef(JoinType joinType, Table table, string tableAlias, string joinCondition)
+    parameters:
+    - id: joinType
+      type: Butterfly.Db.JoinType
+    - id: table
+      type: Butterfly.Db.Table
+    - id: tableAlias
+      type: System.String
+    - id: joinCondition
+      type: System.String
+    content.vb: Public Sub New(joinType As JoinType, table As Table, tableAlias As String, joinCondition As String)
+  overload: Butterfly.Db.StatementFromRef.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.StatementFromRef.FIRST_TABLE_REGEX
+  commentId: F:Butterfly.Db.StatementFromRef.FIRST_TABLE_REGEX
+  id: FIRST_TABLE_REGEX
+  parent: Butterfly.Db.StatementFromRef
+  langs:
+  - csharp
+  - vb
+  name: FIRST_TABLE_REGEX
+  nameWithType: StatementFromRef.FIRST_TABLE_REGEX
+  fullName: Butterfly.Db.StatementFromRef.FIRST_TABLE_REGEX
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: FIRST_TABLE_REGEX
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 134
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected static readonly Regex FIRST_TABLE_REGEX
+    return:
+      type: Regex
+    content.vb: Protected Shared ReadOnly FIRST_TABLE_REGEX As Regex
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Butterfly.Db.StatementFromRef.JOIN_REGEX
+  commentId: F:Butterfly.Db.StatementFromRef.JOIN_REGEX
+  id: JOIN_REGEX
+  parent: Butterfly.Db.StatementFromRef
+  langs:
+  - csharp
+  - vb
+  name: JOIN_REGEX
+  nameWithType: StatementFromRef.JOIN_REGEX
+  fullName: Butterfly.Db.StatementFromRef.JOIN_REGEX
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: JOIN_REGEX
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 137
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected static readonly Regex JOIN_REGEX
+    return:
+      type: Regex
+    content.vb: Protected Shared ReadOnly JOIN_REGEX As Regex
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Butterfly.Db.StatementFromRef.ParseFromRefs(Butterfly.Db.IDatabase,System.String)
+  commentId: M:Butterfly.Db.StatementFromRef.ParseFromRefs(Butterfly.Db.IDatabase,System.String)
+  id: ParseFromRefs(Butterfly.Db.IDatabase,System.String)
+  parent: Butterfly.Db.StatementFromRef
+  langs:
+  - csharp
+  - vb
+  name: ParseFromRefs(IDatabase, String)
+  nameWithType: StatementFromRef.ParseFromRefs(IDatabase, String)
+  fullName: Butterfly.Db.StatementFromRef.ParseFromRefs(Butterfly.Db.IDatabase, System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: ParseFromRefs
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 139
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public static StatementFromRef[] ParseFromRefs(IDatabase database, string fromClause)
+    parameters:
+    - id: database
+      type: Butterfly.Db.IDatabase
+    - id: fromClause
+      type: System.String
+    return:
+      type: Butterfly.Db.StatementFromRef[]
+    content.vb: Public Shared Function ParseFromRefs(database As IDatabase, fromClause As String) As StatementFromRef()
+  overload: Butterfly.Db.StatementFromRef.ParseFromRefs*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Butterfly.Db.StatementFromRef.ToString
+  commentId: M:Butterfly.Db.StatementFromRef.ToString
+  id: ToString
+  parent: Butterfly.Db.StatementFromRef
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: StatementFromRef.ToString()
+  fullName: Butterfly.Db.StatementFromRef.ToString()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+    id: ToString
+    path: ../Butterfly.Db/Statements/BaseStatement.cs
+    startLine: 169
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Butterfly.Db.StatementFromRef.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db.JoinType
+  commentId: T:Butterfly.Db.JoinType
+  parent: Butterfly.Db
+  name: JoinType
+  nameWithType: JoinType
+  fullName: Butterfly.Db.JoinType
+- uid: Butterfly.Db.Table
+  commentId: T:Butterfly.Db.Table
+  parent: Butterfly.Db
+  name: Table
+  nameWithType: Table
+  fullName: Butterfly.Db.Table
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Butterfly.Db.StatementFromRef.#ctor*
+  commentId: Overload:Butterfly.Db.StatementFromRef.#ctor
+  name: StatementFromRef
+  nameWithType: StatementFromRef.StatementFromRef
+  fullName: Butterfly.Db.StatementFromRef.StatementFromRef
+- uid: Regex
+  isExternal: true
+  name: Regex
+  nameWithType: Regex
+  fullName: Regex
+- uid: Butterfly.Db.StatementFromRef.ParseFromRefs*
+  commentId: Overload:Butterfly.Db.StatementFromRef.ParseFromRefs
+  name: ParseFromRefs
+  nameWithType: StatementFromRef.ParseFromRefs
+  fullName: Butterfly.Db.StatementFromRef.ParseFromRefs
+- uid: Butterfly.Db.IDatabase
+  commentId: T:Butterfly.Db.IDatabase
+  parent: Butterfly.Db
+  name: IDatabase
+  nameWithType: IDatabase
+  fullName: Butterfly.Db.IDatabase
+- uid: Butterfly.Db.StatementFromRef[]
+  isExternal: true
+  name: StatementFromRef[]
+  nameWithType: StatementFromRef[]
+  fullName: Butterfly.Db.StatementFromRef[]
+  nameWithType.vb: StatementFromRef()
+  fullName.vb: Butterfly.Db.StatementFromRef()
+  name.vb: StatementFromRef()
+  spec.csharp:
+  - uid: Butterfly.Db.StatementFromRef
+    name: StatementFromRef
+    nameWithType: StatementFromRef
+    fullName: Butterfly.Db.StatementFromRef
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Butterfly.Db.StatementFromRef
+    name: StatementFromRef
+    nameWithType: StatementFromRef
+    fullName: Butterfly.Db.StatementFromRef
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Butterfly.Db.StatementFromRef.ToString*
+  commentId: Overload:Butterfly.Db.StatementFromRef.ToString
+  name: ToString
+  nameWithType: StatementFromRef.ToString
+  fullName: Butterfly.Db.StatementFromRef.ToString
+shouldSkipMarkup: true

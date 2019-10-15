@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Memory.MemoryTable
+  commentId: T:Butterfly.Db.Memory.MemoryTable
+  id: MemoryTable
+  parent: Butterfly.Db.Memory
+  children:
+  - Butterfly.Db.Memory.MemoryTable.#ctor(DataTable,Butterfly.Db.TableFieldDef[],Butterfly.Db.TableIndex[])
+  - Butterfly.Db.Memory.MemoryTable.DataTable
+  langs:
+  - csharp
+  - vb
+  name: MemoryTable
+  nameWithType: MemoryTable
+  fullName: Butterfly.Db.Memory.MemoryTable
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTable.cs
+    id: MemoryTable
+    path: ../Butterfly.Db/Memory/MemoryTable.cs
+    startLine: 8
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Memory
+  syntax:
+    content: 'public class MemoryTable : Table'
+    content.vb: >-
+      Public Class MemoryTable
+          Inherits Table
+  inheritance:
+  - System.Object
+  - Butterfly.Db.Table
+  inheritedMembers:
+  - Butterfly.Db.Table.Name
+  - Butterfly.Db.Table.FieldDefs
+  - Butterfly.Db.Table.FindFieldDef(System.String)
+  - Butterfly.Db.Table.Indexes
+  - Butterfly.Db.Table.AutoIncrementFieldName
+  - Butterfly.Db.Table.getDefaultValueByFieldName
+  - Butterfly.Db.Table.GetDefaultValueByFieldName
+  - Butterfly.Db.Table.getOverrideValueByFieldName
+  - Butterfly.Db.Table.GetOverrideValueByFieldName
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.Memory.MemoryTable.#ctor(DataTable,Butterfly.Db.TableFieldDef[],Butterfly.Db.TableIndex[])
+  commentId: M:Butterfly.Db.Memory.MemoryTable.#ctor(DataTable,Butterfly.Db.TableFieldDef[],Butterfly.Db.TableIndex[])
+  id: '#ctor(DataTable,Butterfly.Db.TableFieldDef[],Butterfly.Db.TableIndex[])'
+  parent: Butterfly.Db.Memory.MemoryTable
+  langs:
+  - csharp
+  - vb
+  name: MemoryTable(DataTable, TableFieldDef[], TableIndex[])
+  nameWithType: MemoryTable.MemoryTable(DataTable, TableFieldDef[], TableIndex[])
+  fullName: Butterfly.Db.Memory.MemoryTable.MemoryTable(DataTable, Butterfly.Db.TableFieldDef[], Butterfly.Db.TableIndex[])
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTable.cs
+    id: .ctor
+    path: ../Butterfly.Db/Memory/MemoryTable.cs
+    startLine: 9
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Memory
+  syntax:
+    content: public MemoryTable(DataTable dataTable, TableFieldDef[] fieldDefs, TableIndex[] indexes)
+    parameters:
+    - id: dataTable
+      type: DataTable
+    - id: fieldDefs
+      type: Butterfly.Db.TableFieldDef[]
+    - id: indexes
+      type: Butterfly.Db.TableIndex[]
+    content.vb: Public Sub New(dataTable As DataTable, fieldDefs As TableFieldDef(), indexes As TableIndex())
+  overload: Butterfly.Db.Memory.MemoryTable.#ctor*
+  nameWithType.vb: MemoryTable.MemoryTable(DataTable, TableFieldDef(), TableIndex())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Db.Memory.MemoryTable.MemoryTable(DataTable, Butterfly.Db.TableFieldDef(), Butterfly.Db.TableIndex())
+  name.vb: MemoryTable(DataTable, TableFieldDef(), TableIndex())
+- uid: Butterfly.Db.Memory.MemoryTable.DataTable
+  commentId: P:Butterfly.Db.Memory.MemoryTable.DataTable
+  id: DataTable
+  parent: Butterfly.Db.Memory.MemoryTable
+  langs:
+  - csharp
+  - vb
+  name: DataTable
+  nameWithType: MemoryTable.DataTable
+  fullName: Butterfly.Db.Memory.MemoryTable.DataTable
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTable.cs
+    id: DataTable
+    path: ../Butterfly.Db/Memory/MemoryTable.cs
+    startLine: 13
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Memory
+  syntax:
+    content: public DataTable DataTable { get; protected set; }
+    parameters: []
+    return:
+      type: DataTable
+    content.vb: Public Property DataTable As DataTable
+  overload: Butterfly.Db.Memory.MemoryTable.DataTable*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+references:
+- uid: Butterfly.Db.Memory
+  commentId: N:Butterfly.Db.Memory
+  name: Butterfly.Db.Memory
+  nameWithType: Butterfly.Db.Memory
+  fullName: Butterfly.Db.Memory
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db.Table
+  commentId: T:Butterfly.Db.Table
+  parent: Butterfly.Db
+  name: Table
+  nameWithType: Table
+  fullName: Butterfly.Db.Table
+- uid: Butterfly.Db.Table.Name
+  commentId: P:Butterfly.Db.Table.Name
+  parent: Butterfly.Db.Table
+  name: Name
+  nameWithType: Table.Name
+  fullName: Butterfly.Db.Table.Name
+- uid: Butterfly.Db.Table.FieldDefs
+  commentId: P:Butterfly.Db.Table.FieldDefs
+  parent: Butterfly.Db.Table
+  name: FieldDefs
+  nameWithType: Table.FieldDefs
+  fullName: Butterfly.Db.Table.FieldDefs
+- uid: Butterfly.Db.Table.FindFieldDef(System.String)
+  commentId: M:Butterfly.Db.Table.FindFieldDef(System.String)
+  parent: Butterfly.Db.Table
+  isExternal: true
+  name: FindFieldDef(String)
+  nameWithType: Table.FindFieldDef(String)
+  fullName: Butterfly.Db.Table.FindFieldDef(System.String)
+  spec.csharp:
+  - uid: Butterfly.Db.Table.FindFieldDef(System.String)
+    name: FindFieldDef
+    nameWithType: Table.FindFieldDef
+    fullName: Butterfly.Db.Table.FindFieldDef
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.Table.FindFieldDef(System.String)
+    name: FindFieldDef
+    nameWithType: Table.FindFieldDef
+    fullName: Butterfly.Db.Table.FindFieldDef
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.Table.Indexes
+  commentId: P:Butterfly.Db.Table.Indexes
+  parent: Butterfly.Db.Table
+  name: Indexes
+  nameWithType: Table.Indexes
+  fullName: Butterfly.Db.Table.Indexes
+- uid: Butterfly.Db.Table.AutoIncrementFieldName
+  commentId: P:Butterfly.Db.Table.AutoIncrementFieldName
+  parent: Butterfly.Db.Table
+  name: AutoIncrementFieldName
+  nameWithType: Table.AutoIncrementFieldName
+  fullName: Butterfly.Db.Table.AutoIncrementFieldName
+- uid: Butterfly.Db.Table.getDefaultValueByFieldName
+  commentId: F:Butterfly.Db.Table.getDefaultValueByFieldName
+  parent: Butterfly.Db.Table
+  name: getDefaultValueByFieldName
+  nameWithType: Table.getDefaultValueByFieldName
+  fullName: Butterfly.Db.Table.getDefaultValueByFieldName
+- uid: Butterfly.Db.Table.GetDefaultValueByFieldName
+  commentId: P:Butterfly.Db.Table.GetDefaultValueByFieldName
+  parent: Butterfly.Db.Table
+  name: GetDefaultValueByFieldName
+  nameWithType: Table.GetDefaultValueByFieldName
+  fullName: Butterfly.Db.Table.GetDefaultValueByFieldName
+- uid: Butterfly.Db.Table.getOverrideValueByFieldName
+  commentId: F:Butterfly.Db.Table.getOverrideValueByFieldName
+  parent: Butterfly.Db.Table
+  name: getOverrideValueByFieldName
+  nameWithType: Table.getOverrideValueByFieldName
+  fullName: Butterfly.Db.Table.getOverrideValueByFieldName
+- uid: Butterfly.Db.Table.GetOverrideValueByFieldName
+  commentId: P:Butterfly.Db.Table.GetOverrideValueByFieldName
+  parent: Butterfly.Db.Table
+  name: GetOverrideValueByFieldName
+  nameWithType: Table.GetOverrideValueByFieldName
+  fullName: Butterfly.Db.Table.GetOverrideValueByFieldName
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: Butterfly.Db.Memory.MemoryTable.#ctor*
+  commentId: Overload:Butterfly.Db.Memory.MemoryTable.#ctor
+  name: MemoryTable
+  nameWithType: MemoryTable.MemoryTable
+  fullName: Butterfly.Db.Memory.MemoryTable.MemoryTable
+- uid: DataTable
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: DataTable
+- uid: Butterfly.Db.TableFieldDef[]
+  isExternal: true
+  name: TableFieldDef[]
+  nameWithType: TableFieldDef[]
+  fullName: Butterfly.Db.TableFieldDef[]
+  nameWithType.vb: TableFieldDef()
+  fullName.vb: Butterfly.Db.TableFieldDef()
+  name.vb: TableFieldDef()
+  spec.csharp:
+  - uid: Butterfly.Db.TableFieldDef
+    name: TableFieldDef
+    nameWithType: TableFieldDef
+    fullName: Butterfly.Db.TableFieldDef
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Butterfly.Db.TableFieldDef
+    name: TableFieldDef
+    nameWithType: TableFieldDef
+    fullName: Butterfly.Db.TableFieldDef
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Butterfly.Db.TableIndex[]
+  isExternal: true
+  name: TableIndex[]
+  nameWithType: TableIndex[]
+  fullName: Butterfly.Db.TableIndex[]
+  nameWithType.vb: TableIndex()
+  fullName.vb: Butterfly.Db.TableIndex()
+  name.vb: TableIndex()
+  spec.csharp:
+  - uid: Butterfly.Db.TableIndex
+    name: TableIndex
+    nameWithType: TableIndex
+    fullName: Butterfly.Db.TableIndex
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Butterfly.Db.TableIndex
+    name: TableIndex
+    nameWithType: TableIndex
+    fullName: Butterfly.Db.TableIndex
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Butterfly.Db.Memory.MemoryTable.DataTable*
+  commentId: Overload:Butterfly.Db.Memory.MemoryTable.DataTable
+  name: DataTable
+  nameWithType: MemoryTable.DataTable
+  fullName: Butterfly.Db.Memory.MemoryTable.DataTable
+shouldSkipMarkup: true

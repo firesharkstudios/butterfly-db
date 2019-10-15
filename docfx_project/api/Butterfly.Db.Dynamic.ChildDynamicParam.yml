@@ -1,0 +1,383 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Dynamic.ChildDynamicParam
+  commentId: T:Butterfly.Db.Dynamic.ChildDynamicParam
+  id: ChildDynamicParam
+  parent: Butterfly.Db.Dynamic
+  children:
+  - Butterfly.Db.Dynamic.ChildDynamicParam.#ctor(Butterfly.Db.Dynamic.BaseDynamicParam,System.String)
+  - Butterfly.Db.Dynamic.ChildDynamicParam.dynamicParam
+  - Butterfly.Db.Dynamic.ChildDynamicParam.fieldName
+  - Butterfly.Db.Dynamic.ChildDynamicParam.UpdateFrom(System.String[],Butterfly.Db.Event.DataEvent)
+  - Butterfly.Db.Dynamic.ChildDynamicParam.valueByKeyValue
+  langs:
+  - csharp
+  - vb
+  name: ChildDynamicParam
+  nameWithType: ChildDynamicParam
+  fullName: Butterfly.Db.Dynamic.ChildDynamicParam
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: ChildDynamicParam
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 263
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: 'public class ChildDynamicParam : object'
+    content.vb: >-
+      Public Class ChildDynamicParam
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.Dynamic.ChildDynamicParam.dynamicParam
+  commentId: F:Butterfly.Db.Dynamic.ChildDynamicParam.dynamicParam
+  id: dynamicParam
+  parent: Butterfly.Db.Dynamic.ChildDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: dynamicParam
+  nameWithType: ChildDynamicParam.dynamicParam
+  fullName: Butterfly.Db.Dynamic.ChildDynamicParam.dynamicParam
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: dynamicParam
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 266
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public readonly BaseDynamicParam dynamicParam
+    return:
+      type: Butterfly.Db.Dynamic.BaseDynamicParam
+    content.vb: Public ReadOnly dynamicParam As BaseDynamicParam
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.ChildDynamicParam.fieldName
+  commentId: F:Butterfly.Db.Dynamic.ChildDynamicParam.fieldName
+  id: fieldName
+  parent: Butterfly.Db.Dynamic.ChildDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: fieldName
+  nameWithType: ChildDynamicParam.fieldName
+  fullName: Butterfly.Db.Dynamic.ChildDynamicParam.fieldName
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: fieldName
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 267
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public readonly string fieldName
+    return:
+      type: System.String
+    content.vb: Public ReadOnly fieldName As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.ChildDynamicParam.valueByKeyValue
+  commentId: F:Butterfly.Db.Dynamic.ChildDynamicParam.valueByKeyValue
+  id: valueByKeyValue
+  parent: Butterfly.Db.Dynamic.ChildDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: valueByKeyValue
+  nameWithType: ChildDynamicParam.valueByKeyValue
+  fullName: Butterfly.Db.Dynamic.ChildDynamicParam.valueByKeyValue
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: valueByKeyValue
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 269
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly Dictionary<object, object> valueByKeyValue
+    return:
+      type: Dictionary{System.Object,System.Object}
+    content.vb: Protected ReadOnly valueByKeyValue As Dictionary(Of Object, Object)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.ChildDynamicParam.#ctor(Butterfly.Db.Dynamic.BaseDynamicParam,System.String)
+  commentId: M:Butterfly.Db.Dynamic.ChildDynamicParam.#ctor(Butterfly.Db.Dynamic.BaseDynamicParam,System.String)
+  id: '#ctor(Butterfly.Db.Dynamic.BaseDynamicParam,System.String)'
+  parent: Butterfly.Db.Dynamic.ChildDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: ChildDynamicParam(BaseDynamicParam, String)
+  nameWithType: ChildDynamicParam.ChildDynamicParam(BaseDynamicParam, String)
+  fullName: Butterfly.Db.Dynamic.ChildDynamicParam.ChildDynamicParam(Butterfly.Db.Dynamic.BaseDynamicParam, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: .ctor
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 271
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public ChildDynamicParam(BaseDynamicParam dynamicParam, string fieldName)
+    parameters:
+    - id: dynamicParam
+      type: Butterfly.Db.Dynamic.BaseDynamicParam
+    - id: fieldName
+      type: System.String
+    content.vb: Public Sub New(dynamicParam As BaseDynamicParam, fieldName As String)
+  overload: Butterfly.Db.Dynamic.ChildDynamicParam.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.Dynamic.ChildDynamicParam.UpdateFrom(System.String[],Butterfly.Db.Event.DataEvent)
+  commentId: M:Butterfly.Db.Dynamic.ChildDynamicParam.UpdateFrom(System.String[],Butterfly.Db.Event.DataEvent)
+  id: UpdateFrom(System.String[],Butterfly.Db.Event.DataEvent)
+  parent: Butterfly.Db.Dynamic.ChildDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: UpdateFrom(String[], DataEvent)
+  nameWithType: ChildDynamicParam.UpdateFrom(String[], DataEvent)
+  fullName: Butterfly.Db.Dynamic.ChildDynamicParam.UpdateFrom(System.String[], Butterfly.Db.Event.DataEvent)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: UpdateFrom
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 276
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public void UpdateFrom(string[] keyFieldNames, DataEvent dataEvent)
+    parameters:
+    - id: keyFieldNames
+      type: System.String[]
+    - id: dataEvent
+      type: Butterfly.Db.Event.DataEvent
+    content.vb: Public Sub UpdateFrom(keyFieldNames As String(), dataEvent As DataEvent)
+  overload: Butterfly.Db.Dynamic.ChildDynamicParam.UpdateFrom*
+  nameWithType.vb: ChildDynamicParam.UpdateFrom(String(), DataEvent)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Db.Dynamic.ChildDynamicParam.UpdateFrom(System.String(), Butterfly.Db.Event.DataEvent)
+  name.vb: UpdateFrom(String(), DataEvent)
+references:
+- uid: Butterfly.Db.Dynamic
+  commentId: N:Butterfly.Db.Dynamic
+  name: Butterfly.Db.Dynamic
+  nameWithType: Butterfly.Db.Dynamic
+  fullName: Butterfly.Db.Dynamic
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam
+  commentId: T:Butterfly.Db.Dynamic.BaseDynamicParam
+  parent: Butterfly.Db.Dynamic
+  name: BaseDynamicParam
+  nameWithType: BaseDynamicParam
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Dictionary{System.Object,System.Object}
+  commentId: '!:Dictionary{System.Object,System.Object}'
+  definition: Dictionary`2
+  name: Dictionary<Object, Object>
+  nameWithType: Dictionary<Object, Object>
+  fullName: Dictionary<System.Object, System.Object>
+  nameWithType.vb: Dictionary(Of Object, Object)
+  fullName.vb: Dictionary(Of System.Object, System.Object)
+  name.vb: Dictionary(Of Object, Object)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.Dynamic.ChildDynamicParam.#ctor*
+  commentId: Overload:Butterfly.Db.Dynamic.ChildDynamicParam.#ctor
+  name: ChildDynamicParam
+  nameWithType: ChildDynamicParam.ChildDynamicParam
+  fullName: Butterfly.Db.Dynamic.ChildDynamicParam.ChildDynamicParam
+- uid: Butterfly.Db.Dynamic.ChildDynamicParam.UpdateFrom*
+  commentId: Overload:Butterfly.Db.Dynamic.ChildDynamicParam.UpdateFrom
+  name: UpdateFrom
+  nameWithType: ChildDynamicParam.UpdateFrom
+  fullName: Butterfly.Db.Dynamic.ChildDynamicParam.UpdateFrom
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Butterfly.Db.Event.DataEvent
+  commentId: T:Butterfly.Db.Event.DataEvent
+  parent: Butterfly.Db.Event
+  name: DataEvent
+  nameWithType: DataEvent
+  fullName: Butterfly.Db.Event.DataEvent
+- uid: Butterfly.Db.Event
+  commentId: N:Butterfly.Db.Event
+  name: Butterfly.Db.Event
+  nameWithType: Butterfly.Db.Event
+  fullName: Butterfly.Db.Event
+shouldSkipMarkup: true

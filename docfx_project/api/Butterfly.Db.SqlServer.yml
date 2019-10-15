@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.SqlServer
+  commentId: N:Butterfly.Db.SqlServer
+  id: Butterfly.Db.SqlServer
+  children:
+  - Butterfly.Db.SqlServer.SqlServerDatabase
+  - Butterfly.Db.SqlServer.SqlServerTransaction
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Db.SqlServer
+  nameWithType: Butterfly.Db.SqlServer
+  fullName: Butterfly.Db.SqlServer
+  type: Namespace
+  assemblies:
+  - Butterfly.Db.SqlServer
+references:
+- uid: Butterfly.Db.SqlServer.SqlServerDatabase
+  commentId: T:Butterfly.Db.SqlServer.SqlServerDatabase
+  parent: Butterfly.Db.SqlServer
+  name: SqlServerDatabase
+  nameWithType: SqlServerDatabase
+  fullName: Butterfly.Db.SqlServer.SqlServerDatabase
+- uid: Butterfly.Db.SqlServer.SqlServerTransaction
+  commentId: T:Butterfly.Db.SqlServer.SqlServerTransaction
+  name: SqlServerTransaction
+  nameWithType: SqlServerTransaction
+  fullName: Butterfly.Db.SqlServer.SqlServerTransaction
+- uid: Butterfly.Db.SqlServer
+  commentId: N:Butterfly.Db.SqlServer
+  name: Butterfly.Db.SqlServer
+  nameWithType: Butterfly.Db.SqlServer
+  fullName: Butterfly.Db.SqlServer
+shouldSkipMarkup: true

@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Dynamic
+  commentId: N:Butterfly.Db.Dynamic
+  id: Butterfly.Db.Dynamic
+  children:
+  - Butterfly.Db.Dynamic.BaseDynamicParam
+  - Butterfly.Db.Dynamic.ChildDynamicParam
+  - Butterfly.Db.Dynamic.DynamicView
+  - Butterfly.Db.Dynamic.DynamicViewSet
+  - Butterfly.Db.Dynamic.MultiValueDynamicParam
+  - Butterfly.Db.Dynamic.SingleValueDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Db.Dynamic
+  nameWithType: Butterfly.Db.Dynamic
+  fullName: Butterfly.Db.Dynamic
+  type: Namespace
+  assemblies:
+  - Butterfly.Db
+references:
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam
+  commentId: T:Butterfly.Db.Dynamic.BaseDynamicParam
+  parent: Butterfly.Db.Dynamic
+  name: BaseDynamicParam
+  nameWithType: BaseDynamicParam
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam
+- uid: Butterfly.Db.Dynamic.DynamicView
+  commentId: T:Butterfly.Db.Dynamic.DynamicView
+  parent: Butterfly.Db.Dynamic
+  name: DynamicView
+  nameWithType: DynamicView
+  fullName: Butterfly.Db.Dynamic.DynamicView
+- uid: Butterfly.Db.Dynamic.ChildDynamicParam
+  commentId: T:Butterfly.Db.Dynamic.ChildDynamicParam
+  name: ChildDynamicParam
+  nameWithType: ChildDynamicParam
+  fullName: Butterfly.Db.Dynamic.ChildDynamicParam
+- uid: Butterfly.Db.Dynamic.DynamicViewSet
+  commentId: T:Butterfly.Db.Dynamic.DynamicViewSet
+  parent: Butterfly.Db.Dynamic
+  name: DynamicViewSet
+  nameWithType: DynamicViewSet
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet
+- uid: Butterfly.Db.Dynamic.MultiValueDynamicParam
+  commentId: T:Butterfly.Db.Dynamic.MultiValueDynamicParam
+  name: MultiValueDynamicParam
+  nameWithType: MultiValueDynamicParam
+  fullName: Butterfly.Db.Dynamic.MultiValueDynamicParam
+- uid: Butterfly.Db.Dynamic.SingleValueDynamicParam
+  commentId: T:Butterfly.Db.Dynamic.SingleValueDynamicParam
+  name: SingleValueDynamicParam
+  nameWithType: SingleValueDynamicParam
+  fullName: Butterfly.Db.Dynamic.SingleValueDynamicParam
+- uid: Butterfly.Db.Dynamic
+  commentId: N:Butterfly.Db.Dynamic
+  name: Butterfly.Db.Dynamic
+  nameWithType: Butterfly.Db.Dynamic
+  fullName: Butterfly.Db.Dynamic
+shouldSkipMarkup: true

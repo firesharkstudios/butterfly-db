@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.UnableToConnectDatabaseException
+  commentId: T:Butterfly.Db.UnableToConnectDatabaseException
+  id: UnableToConnectDatabaseException
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.UnableToConnectDatabaseException.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: UnableToConnectDatabaseException
+  nameWithType: UnableToConnectDatabaseException
+  fullName: Butterfly.Db.UnableToConnectDatabaseException
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseDatabase.cs
+    id: UnableToConnectDatabaseException
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 362
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: 'public class UnableToConnectDatabaseException : DatabaseException'
+    content.vb: >-
+      Public Class UnableToConnectDatabaseException
+          Inherits DatabaseException
+  inheritance:
+  - System.Object
+  - Butterfly.Db.DatabaseException
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.UnableToConnectDatabaseException.#ctor(System.String)
+  commentId: M:Butterfly.Db.UnableToConnectDatabaseException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Butterfly.Db.UnableToConnectDatabaseException
+  langs:
+  - csharp
+  - vb
+  name: UnableToConnectDatabaseException(String)
+  nameWithType: UnableToConnectDatabaseException.UnableToConnectDatabaseException(String)
+  fullName: Butterfly.Db.UnableToConnectDatabaseException.UnableToConnectDatabaseException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseDatabase.cs
+    id: .ctor
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 363
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public UnableToConnectDatabaseException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: Butterfly.Db.UnableToConnectDatabaseException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db.DatabaseException
+  commentId: T:Butterfly.Db.DatabaseException
+  parent: Butterfly.Db
+  name: DatabaseException
+  nameWithType: DatabaseException
+  fullName: Butterfly.Db.DatabaseException
+- uid: Butterfly.Db.UnableToConnectDatabaseException.#ctor*
+  commentId: Overload:Butterfly.Db.UnableToConnectDatabaseException.#ctor
+  name: UnableToConnectDatabaseException
+  nameWithType: UnableToConnectDatabaseException.UnableToConnectDatabaseException
+  fullName: Butterfly.Db.UnableToConnectDatabaseException.UnableToConnectDatabaseException
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+shouldSkipMarkup: true

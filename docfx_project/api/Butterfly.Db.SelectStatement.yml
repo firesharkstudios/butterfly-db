@@ -1,0 +1,1230 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.SelectStatement
+  commentId: T:Butterfly.Db.SelectStatement
+  id: SelectStatement
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.IDatabase,System.String,System.Int32)
+  - Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.IDatabase,System.String,System.String,System.String,System.String,System.Int32)
+  - Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.SelectStatement,System.String,System.Boolean)
+  - Butterfly.Db.SelectStatement.Compile(Butterfly.Db.IDatabase)
+  - Butterfly.Db.SelectStatement.fromClause
+  - Butterfly.Db.SelectStatement.GetExecutableSqlAndParams(System.Collections.Generic.Dictionary{System.String,System.Object})
+  - Butterfly.Db.SelectStatement.limit
+  - Butterfly.Db.SelectStatement.orderByClause
+  - Butterfly.Db.SelectStatement.ReplaceAll(System.String,Regex,Func{Match,System.String})
+  - Butterfly.Db.SelectStatement.selectClause
+  - Butterfly.Db.SelectStatement.STRUCTURED_PARSER
+  - Butterfly.Db.SelectStatement.whereClause
+  langs:
+  - csharp
+  - vb
+  name: SelectStatement
+  nameWithType: SelectStatement
+  fullName: Butterfly.Db.SelectStatement
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: SelectStatement
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 18
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nInternal class used to parse SELECT statements\n"
+  example: []
+  syntax:
+    content: 'public class SelectStatement : BaseStatement'
+    content.vb: >-
+      Public Class SelectStatement
+          Inherits BaseStatement
+  inheritance:
+  - System.Object
+  - Butterfly.Db.BaseStatement
+  inheritedMembers:
+  - Butterfly.Db.BaseStatement.IsSqlTableName
+  - Butterfly.Db.BaseStatement.Sql
+  - Butterfly.Db.BaseStatement.StatementFromRefs
+  - Butterfly.Db.BaseStatement.FindStatementFromRefByTableAlias(System.String)
+  - Butterfly.Db.BaseStatement.fromTableNames
+  - Butterfly.Db.BaseStatement.HasTableInFrom(System.String)
+  - Butterfly.Db.BaseStatement.ConfirmAllParamsUsed(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  - Butterfly.Db.BaseStatement.ConvertParamsToDict(System.Object,System.Boolean)
+  - Butterfly.Db.BaseStatement.EQUALS_REF_REGEX
+  - Butterfly.Db.BaseStatement.RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary{System.String,System.Object},Butterfly.Db.StatementEqualsRef[])
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.SelectStatement.STRUCTURED_PARSER
+  commentId: F:Butterfly.Db.SelectStatement.STRUCTURED_PARSER
+  id: STRUCTURED_PARSER
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: STRUCTURED_PARSER
+  nameWithType: SelectStatement.STRUCTURED_PARSER
+  fullName: Butterfly.Db.SelectStatement.STRUCTURED_PARSER
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: STRUCTURED_PARSER
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 21
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected static readonly StructuredParser STRUCTURED_PARSER
+    return:
+      type: Butterfly.Util.StructuredParser
+    content.vb: Protected Shared ReadOnly STRUCTURED_PARSER As StructuredParser
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Butterfly.Db.SelectStatement.selectClause
+  commentId: F:Butterfly.Db.SelectStatement.selectClause
+  id: selectClause
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: selectClause
+  nameWithType: SelectStatement.selectClause
+  fullName: Butterfly.Db.SelectStatement.selectClause
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: selectClause
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 23
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string selectClause
+    return:
+      type: System.String
+    content.vb: Public ReadOnly selectClause As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.SelectStatement.fromClause
+  commentId: F:Butterfly.Db.SelectStatement.fromClause
+  id: fromClause
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: fromClause
+  nameWithType: SelectStatement.fromClause
+  fullName: Butterfly.Db.SelectStatement.fromClause
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: fromClause
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 24
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string fromClause
+    return:
+      type: System.String
+    content.vb: Public ReadOnly fromClause As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.SelectStatement.whereClause
+  commentId: F:Butterfly.Db.SelectStatement.whereClause
+  id: whereClause
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: whereClause
+  nameWithType: SelectStatement.whereClause
+  fullName: Butterfly.Db.SelectStatement.whereClause
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: whereClause
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 25
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string whereClause
+    return:
+      type: System.String
+    content.vb: Public ReadOnly whereClause As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.SelectStatement.orderByClause
+  commentId: F:Butterfly.Db.SelectStatement.orderByClause
+  id: orderByClause
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: orderByClause
+  nameWithType: SelectStatement.orderByClause
+  fullName: Butterfly.Db.SelectStatement.orderByClause
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: orderByClause
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 26
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string orderByClause
+    return:
+      type: System.String
+    content.vb: Public ReadOnly orderByClause As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.SelectStatement.limit
+  commentId: F:Butterfly.Db.SelectStatement.limit
+  id: limit
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: limit
+  nameWithType: SelectStatement.limit
+  fullName: Butterfly.Db.SelectStatement.limit
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: limit
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 27
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly int limit
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly limit As Integer
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.IDatabase,System.String,System.Int32)
+  commentId: M:Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.IDatabase,System.String,System.Int32)
+  id: '#ctor(Butterfly.Db.IDatabase,System.String,System.Int32)'
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: SelectStatement(IDatabase, String, Int32)
+  nameWithType: SelectStatement.SelectStatement(IDatabase, String, Int32)
+  fullName: Butterfly.Db.SelectStatement.SelectStatement(Butterfly.Db.IDatabase, System.String, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: .ctor
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 29
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public SelectStatement(IDatabase database, string sql, int limit = null)
+    parameters:
+    - id: database
+      type: Butterfly.Db.IDatabase
+    - id: sql
+      type: System.String
+    - id: limit
+      type: System.Int32
+    content.vb: Public Sub New(database As IDatabase, sql As String, limit As Integer = Nothing)
+  overload: Butterfly.Db.SelectStatement.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.IDatabase,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.IDatabase,System.String,System.String,System.String,System.String,System.Int32)
+  id: '#ctor(Butterfly.Db.IDatabase,System.String,System.String,System.String,System.String,System.Int32)'
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: SelectStatement(IDatabase, String, String, String, String, Int32)
+  nameWithType: SelectStatement.SelectStatement(IDatabase, String, String, String, String, Int32)
+  fullName: Butterfly.Db.SelectStatement.SelectStatement(Butterfly.Db.IDatabase, System.String, System.String, System.String, System.String, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: .ctor
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 53
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public SelectStatement(IDatabase database, string selectClause, string fromClause, string whereClause, string orderByClause, int limit = null)
+    parameters:
+    - id: database
+      type: Butterfly.Db.IDatabase
+    - id: selectClause
+      type: System.String
+    - id: fromClause
+      type: System.String
+    - id: whereClause
+      type: System.String
+    - id: orderByClause
+      type: System.String
+    - id: limit
+      type: System.Int32
+    content.vb: Public Sub New(database As IDatabase, selectClause As String, fromClause As String, whereClause As String, orderByClause As String, limit As Integer = Nothing)
+  overload: Butterfly.Db.SelectStatement.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.SelectStatement.Compile(Butterfly.Db.IDatabase)
+  commentId: M:Butterfly.Db.SelectStatement.Compile(Butterfly.Db.IDatabase)
+  id: Compile(Butterfly.Db.IDatabase)
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: Compile(IDatabase)
+  nameWithType: SelectStatement.Compile(IDatabase)
+  fullName: Butterfly.Db.SelectStatement.Compile(Butterfly.Db.IDatabase)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: Compile
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 63
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected void Compile(IDatabase database)
+    parameters:
+    - id: database
+      type: Butterfly.Db.IDatabase
+    content.vb: Protected Sub Compile(database As IDatabase)
+  overload: Butterfly.Db.SelectStatement.Compile*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.SelectStatement,System.String,System.Boolean)
+  commentId: M:Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.SelectStatement,System.String,System.Boolean)
+  id: '#ctor(Butterfly.Db.SelectStatement,System.String,System.Boolean)'
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: SelectStatement(SelectStatement, String, Boolean)
+  nameWithType: SelectStatement.SelectStatement(SelectStatement, String, Boolean)
+  fullName: Butterfly.Db.SelectStatement.SelectStatement(Butterfly.Db.SelectStatement, System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: .ctor
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 67
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public SelectStatement(SelectStatement sourceSelectStatement, string overrideWhereClause, bool ignoreOrderBy)
+    parameters:
+    - id: sourceSelectStatement
+      type: Butterfly.Db.SelectStatement
+    - id: overrideWhereClause
+      type: System.String
+    - id: ignoreOrderBy
+      type: System.Boolean
+    content.vb: Public Sub New(sourceSelectStatement As SelectStatement, overrideWhereClause As String, ignoreOrderBy As Boolean)
+  overload: Butterfly.Db.SelectStatement.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.SelectStatement.GetExecutableSqlAndParams(System.Collections.Generic.Dictionary{System.String,System.Object})
+  commentId: M:Butterfly.Db.SelectStatement.GetExecutableSqlAndParams(System.Collections.Generic.Dictionary{System.String,System.Object})
+  id: GetExecutableSqlAndParams(System.Collections.Generic.Dictionary{System.String,System.Object})
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: GetExecutableSqlAndParams(System.Collections.Generic.Dictionary<String, Object>)
+  nameWithType: SelectStatement.GetExecutableSqlAndParams(System.Collections.Generic.Dictionary<String, Object>)
+  fullName: Butterfly.Db.SelectStatement.GetExecutableSqlAndParams(System.Collections.Generic.Dictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: GetExecutableSqlAndParams
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 83
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public (string, System.Collections.Generic.Dictionary<string, object>) GetExecutableSqlAndParams(System.Collections.Generic.Dictionary<string, object> sourceParams)
+    parameters:
+    - id: sourceParams
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    return:
+      type: System.ValueTuple{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}}
+    content.vb: Public Function GetExecutableSqlAndParams(sourceParams As System.Collections.Generic.Dictionary(Of String, Object)) As(String, System.Collections.Generic.Dictionary(Of String, Object))
+  overload: Butterfly.Db.SelectStatement.GetExecutableSqlAndParams*
+  nameWithType.vb: SelectStatement.GetExecutableSqlAndParams(System.Collections.Generic.Dictionary(Of String, Object))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Db.SelectStatement.GetExecutableSqlAndParams(System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  name.vb: GetExecutableSqlAndParams(System.Collections.Generic.Dictionary(Of String, Object))
+- uid: Butterfly.Db.SelectStatement.ReplaceAll(System.String,Regex,Func{Match,System.String})
+  commentId: M:Butterfly.Db.SelectStatement.ReplaceAll(System.String,Regex,Func{Match,System.String})
+  id: ReplaceAll(System.String,Regex,Func{Match,System.String})
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceAll(String, Regex, Func<Match, String>)
+  nameWithType: SelectStatement.ReplaceAll(String, Regex, Func<Match, String>)
+  fullName: Butterfly.Db.SelectStatement.ReplaceAll(System.String, Regex, Func<Match, System.String>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: ReplaceAll
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 160
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected static string ReplaceAll(string sql, Regex regex, Func<Match, string> getReplacement)
+    parameters:
+    - id: sql
+      type: System.String
+    - id: regex
+      type: Regex
+    - id: getReplacement
+      type: Func{Match,System.String}
+    return:
+      type: System.String
+    content.vb: Protected Shared Function ReplaceAll(sql As String, regex As Regex, getReplacement As Func(Of Match, String)) As String
+  overload: Butterfly.Db.SelectStatement.ReplaceAll*
+  nameWithType.vb: SelectStatement.ReplaceAll(String, Regex, Func(Of Match, String))
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+  fullName.vb: Butterfly.Db.SelectStatement.ReplaceAll(System.String, Regex, Func(Of Match, System.String))
+  name.vb: ReplaceAll(String, Regex, Func(Of Match, String))
+references:
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db.BaseStatement
+  commentId: T:Butterfly.Db.BaseStatement
+  parent: Butterfly.Db
+  name: BaseStatement
+  nameWithType: BaseStatement
+  fullName: Butterfly.Db.BaseStatement
+- uid: Butterfly.Db.BaseStatement.IsSqlTableName
+  commentId: P:Butterfly.Db.BaseStatement.IsSqlTableName
+  parent: Butterfly.Db.BaseStatement
+  name: IsSqlTableName
+  nameWithType: BaseStatement.IsSqlTableName
+  fullName: Butterfly.Db.BaseStatement.IsSqlTableName
+- uid: Butterfly.Db.BaseStatement.Sql
+  commentId: P:Butterfly.Db.BaseStatement.Sql
+  parent: Butterfly.Db.BaseStatement
+  name: Sql
+  nameWithType: BaseStatement.Sql
+  fullName: Butterfly.Db.BaseStatement.Sql
+- uid: Butterfly.Db.BaseStatement.StatementFromRefs
+  commentId: P:Butterfly.Db.BaseStatement.StatementFromRefs
+  parent: Butterfly.Db.BaseStatement
+  name: StatementFromRefs
+  nameWithType: BaseStatement.StatementFromRefs
+  fullName: Butterfly.Db.BaseStatement.StatementFromRefs
+- uid: Butterfly.Db.BaseStatement.FindStatementFromRefByTableAlias(System.String)
+  commentId: M:Butterfly.Db.BaseStatement.FindStatementFromRefByTableAlias(System.String)
+  parent: Butterfly.Db.BaseStatement
+  isExternal: true
+  name: FindStatementFromRefByTableAlias(String)
+  nameWithType: BaseStatement.FindStatementFromRefByTableAlias(String)
+  fullName: Butterfly.Db.BaseStatement.FindStatementFromRefByTableAlias(System.String)
+  spec.csharp:
+  - uid: Butterfly.Db.BaseStatement.FindStatementFromRefByTableAlias(System.String)
+    name: FindStatementFromRefByTableAlias
+    nameWithType: BaseStatement.FindStatementFromRefByTableAlias
+    fullName: Butterfly.Db.BaseStatement.FindStatementFromRefByTableAlias
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.BaseStatement.FindStatementFromRefByTableAlias(System.String)
+    name: FindStatementFromRefByTableAlias
+    nameWithType: BaseStatement.FindStatementFromRefByTableAlias
+    fullName: Butterfly.Db.BaseStatement.FindStatementFromRefByTableAlias
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.BaseStatement.fromTableNames
+  commentId: F:Butterfly.Db.BaseStatement.fromTableNames
+  parent: Butterfly.Db.BaseStatement
+  name: fromTableNames
+  nameWithType: BaseStatement.fromTableNames
+  fullName: Butterfly.Db.BaseStatement.fromTableNames
+- uid: Butterfly.Db.BaseStatement.HasTableInFrom(System.String)
+  commentId: M:Butterfly.Db.BaseStatement.HasTableInFrom(System.String)
+  parent: Butterfly.Db.BaseStatement
+  isExternal: true
+  name: HasTableInFrom(String)
+  nameWithType: BaseStatement.HasTableInFrom(String)
+  fullName: Butterfly.Db.BaseStatement.HasTableInFrom(System.String)
+  spec.csharp:
+  - uid: Butterfly.Db.BaseStatement.HasTableInFrom(System.String)
+    name: HasTableInFrom
+    nameWithType: BaseStatement.HasTableInFrom
+    fullName: Butterfly.Db.BaseStatement.HasTableInFrom
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.BaseStatement.HasTableInFrom(System.String)
+    name: HasTableInFrom
+    nameWithType: BaseStatement.HasTableInFrom
+    fullName: Butterfly.Db.BaseStatement.HasTableInFrom
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.BaseStatement.ConfirmAllParamsUsed(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  commentId: M:Butterfly.Db.BaseStatement.ConfirmAllParamsUsed(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  parent: Butterfly.Db.BaseStatement
+  isExternal: true
+  name: ConfirmAllParamsUsed(String, System.Collections.Generic.Dictionary<String, Object>)
+  nameWithType: BaseStatement.ConfirmAllParamsUsed(String, System.Collections.Generic.Dictionary<String, Object>)
+  fullName: Butterfly.Db.BaseStatement.ConfirmAllParamsUsed(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>)
+  nameWithType.vb: BaseStatement.ConfirmAllParamsUsed(String, System.Collections.Generic.Dictionary(Of String, Object))
+  fullName.vb: Butterfly.Db.BaseStatement.ConfirmAllParamsUsed(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  name.vb: ConfirmAllParamsUsed(String, System.Collections.Generic.Dictionary(Of String, Object))
+  spec.csharp:
+  - uid: Butterfly.Db.BaseStatement.ConfirmAllParamsUsed(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+    name: ConfirmAllParamsUsed
+    nameWithType: BaseStatement.ConfirmAllParamsUsed
+    fullName: Butterfly.Db.BaseStatement.ConfirmAllParamsUsed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.BaseStatement.ConfirmAllParamsUsed(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+    name: ConfirmAllParamsUsed
+    nameWithType: BaseStatement.ConfirmAllParamsUsed
+    fullName: Butterfly.Db.BaseStatement.ConfirmAllParamsUsed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.BaseStatement.ConvertParamsToDict(System.Object,System.Boolean)
+  commentId: M:Butterfly.Db.BaseStatement.ConvertParamsToDict(System.Object,System.Boolean)
+  parent: Butterfly.Db.BaseStatement
+  isExternal: true
+  name: ConvertParamsToDict(Object, Boolean)
+  nameWithType: BaseStatement.ConvertParamsToDict(Object, Boolean)
+  fullName: Butterfly.Db.BaseStatement.ConvertParamsToDict(System.Object, System.Boolean)
+  nameWithType.vb: BaseStatement.ConvertParamsToDict(, Boolean)
+  fullName.vb: Butterfly.Db.BaseStatement.ConvertParamsToDict(, System.Boolean)
+  name.vb: ConvertParamsToDict(, Boolean)
+  spec.csharp:
+  - uid: Butterfly.Db.BaseStatement.ConvertParamsToDict(System.Object,System.Boolean)
+    name: ConvertParamsToDict
+    nameWithType: BaseStatement.ConvertParamsToDict
+    fullName: Butterfly.Db.BaseStatement.ConvertParamsToDict
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.BaseStatement.ConvertParamsToDict(System.Object,System.Boolean)
+    name: ConvertParamsToDict
+    nameWithType: BaseStatement.ConvertParamsToDict
+    fullName: Butterfly.Db.BaseStatement.ConvertParamsToDict
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.BaseStatement.EQUALS_REF_REGEX
+  commentId: F:Butterfly.Db.BaseStatement.EQUALS_REF_REGEX
+  parent: Butterfly.Db.BaseStatement
+  name: EQUALS_REF_REGEX
+  nameWithType: BaseStatement.EQUALS_REF_REGEX
+  fullName: Butterfly.Db.BaseStatement.EQUALS_REF_REGEX
+- uid: Butterfly.Db.BaseStatement.RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary{System.String,System.Object},Butterfly.Db.StatementEqualsRef[])
+  commentId: M:Butterfly.Db.BaseStatement.RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary{System.String,System.Object},Butterfly.Db.StatementEqualsRef[])
+  parent: Butterfly.Db.BaseStatement
+  isExternal: true
+  name: RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary<String, Object>, StatementEqualsRef[])
+  nameWithType: BaseStatement.RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary<String, Object>, StatementEqualsRef[])
+  fullName: Butterfly.Db.BaseStatement.RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary<System.String, System.Object>, Butterfly.Db.StatementEqualsRef[])
+  nameWithType.vb: BaseStatement.RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary(Of String, Object), StatementEqualsRef())
+  fullName.vb: Butterfly.Db.BaseStatement.RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary(Of System.String, System.Object), Butterfly.Db.StatementEqualsRef())
+  name.vb: RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary(Of String, Object), StatementEqualsRef())
+  spec.csharp:
+  - uid: Butterfly.Db.BaseStatement.RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary{System.String,System.Object},Butterfly.Db.StatementEqualsRef[])
+    name: RemapStatementParamsToFieldValues
+    nameWithType: BaseStatement.RemapStatementParamsToFieldValues
+    fullName: Butterfly.Db.BaseStatement.RemapStatementParamsToFieldValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Butterfly.Db.StatementEqualsRef
+    name: StatementEqualsRef
+    nameWithType: StatementEqualsRef
+    fullName: Butterfly.Db.StatementEqualsRef
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.BaseStatement.RemapStatementParamsToFieldValues(System.Collections.Generic.Dictionary{System.String,System.Object},Butterfly.Db.StatementEqualsRef[])
+    name: RemapStatementParamsToFieldValues
+    nameWithType: BaseStatement.RemapStatementParamsToFieldValues
+    fullName: Butterfly.Db.BaseStatement.RemapStatementParamsToFieldValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Butterfly.Db.StatementEqualsRef
+    name: StatementEqualsRef
+    nameWithType: StatementEqualsRef
+    fullName: Butterfly.Db.StatementEqualsRef
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Util.StructuredParser
+  commentId: T:Butterfly.Util.StructuredParser
+  parent: Butterfly.Util
+  name: StructuredParser
+  nameWithType: StructuredParser
+  fullName: Butterfly.Util.StructuredParser
+- uid: Butterfly.Util
+  commentId: N:Butterfly.Util
+  name: Butterfly.Util
+  nameWithType: Butterfly.Util
+  fullName: Butterfly.Util
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Butterfly.Db.SelectStatement.#ctor*
+  commentId: Overload:Butterfly.Db.SelectStatement.#ctor
+  name: SelectStatement
+  nameWithType: SelectStatement.SelectStatement
+  fullName: Butterfly.Db.SelectStatement.SelectStatement
+- uid: Butterfly.Db.IDatabase
+  commentId: T:Butterfly.Db.IDatabase
+  parent: Butterfly.Db
+  name: IDatabase
+  nameWithType: IDatabase
+  fullName: Butterfly.Db.IDatabase
+- uid: Butterfly.Db.SelectStatement.Compile*
+  commentId: Overload:Butterfly.Db.SelectStatement.Compile
+  name: Compile
+  nameWithType: SelectStatement.Compile
+  fullName: Butterfly.Db.SelectStatement.Compile
+- uid: Butterfly.Db.SelectStatement
+  commentId: T:Butterfly.Db.SelectStatement
+  parent: Butterfly.Db
+  name: SelectStatement
+  nameWithType: SelectStatement
+  fullName: Butterfly.Db.SelectStatement
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Butterfly.Db.SelectStatement.GetExecutableSqlAndParams*
+  commentId: Overload:Butterfly.Db.SelectStatement.GetExecutableSqlAndParams
+  name: GetExecutableSqlAndParams
+  nameWithType: SelectStatement.GetExecutableSqlAndParams
+  fullName: Butterfly.Db.SelectStatement.GetExecutableSqlAndParams
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: '!:System.Collections.Generic.Dictionary{System.String,System.Object}'
+  definition: System.Collections.Generic.Dictionary`2
+  name: System.Collections.Generic.Dictionary<String, Object>
+  nameWithType: System.Collections.Generic.Dictionary<String, Object>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>
+  nameWithType.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)
+  name.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueTuple{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}}
+  commentId: T:System.ValueTuple{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}}
+  parent: System
+  isExternal: true
+  name: ValueTuple<String, System.Collections.Generic.Dictionary<String, Object>>
+  nameWithType: ValueTuple<String, System.Collections.Generic.Dictionary<String, Object>>
+  fullName: System.ValueTuple<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>>
+  nameWithType.vb: ValueTuple(Of String, System.Collections.Generic.Dictionary(Of String, Object))
+  fullName.vb: System.ValueTuple(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  name.vb: ValueTuple(Of String, System.Collections.Generic.Dictionary(Of String, Object))
+  spec.csharp:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: System.Collections.Generic.Dictionary<, >
+  nameWithType: System.Collections.Generic.Dictionary<, >
+  fullName: System.Collections.Generic.Dictionary<, >
+  nameWithType.vb: System.Collections.Generic.Dictionary(Of , )
+  fullName.vb: System.Collections.Generic.Dictionary(Of , )
+  name.vb: System.Collections.Generic.Dictionary(Of , )
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Butterfly.Db.SelectStatement.ReplaceAll*
+  commentId: Overload:Butterfly.Db.SelectStatement.ReplaceAll
+  name: ReplaceAll
+  nameWithType: SelectStatement.ReplaceAll
+  fullName: Butterfly.Db.SelectStatement.ReplaceAll
+- uid: Regex
+  isExternal: true
+  name: Regex
+  nameWithType: Regex
+  fullName: Regex
+- uid: Func{Match,System.String}
+  commentId: '!:Func{Match,System.String}'
+  definition: Func`2
+  name: Func<Match, String>
+  nameWithType: Func<Match, String>
+  fullName: Func<Match, System.String>
+  nameWithType.vb: Func(Of Match, String)
+  fullName.vb: Func(Of Match, System.String)
+  name.vb: Func(Of Match, String)
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Match
+    name: Match
+    nameWithType: Match
+    fullName: Match
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Match
+    name: Match
+    nameWithType: Match
+    fullName: Match
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+shouldSkipMarkup: true

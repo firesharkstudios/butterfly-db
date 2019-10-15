@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.SQLite
+  commentId: N:Butterfly.Db.SQLite
+  id: Butterfly.Db.SQLite
+  children:
+  - Butterfly.Db.SQLite.SQLiteDatabase
+  - Butterfly.Db.SQLite.SQLiteTransaction
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Db.SQLite
+  nameWithType: Butterfly.Db.SQLite
+  fullName: Butterfly.Db.SQLite
+  type: Namespace
+  assemblies:
+  - Butterfly.Db.SQLite
+references:
+- uid: Butterfly.Db.SQLite.SQLiteDatabase
+  commentId: T:Butterfly.Db.SQLite.SQLiteDatabase
+  parent: Butterfly.Db.SQLite
+  name: SQLiteDatabase
+  nameWithType: SQLiteDatabase
+  fullName: Butterfly.Db.SQLite.SQLiteDatabase
+- uid: Butterfly.Db.SQLite.SQLiteTransaction
+  commentId: T:Butterfly.Db.SQLite.SQLiteTransaction
+  name: SQLiteTransaction
+  nameWithType: SQLiteTransaction
+  fullName: Butterfly.Db.SQLite.SQLiteTransaction
+- uid: Butterfly.Db.SQLite
+  commentId: N:Butterfly.Db.SQLite
+  name: Butterfly.Db.SQLite
+  nameWithType: Butterfly.Db.SQLite
+  fullName: Butterfly.Db.SQLite
+shouldSkipMarkup: true

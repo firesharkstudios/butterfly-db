@@ -1,0 +1,123 @@
+### YamlMime:TableOfContent
+- uid: Butterfly.Db
+  name: Butterfly.Db
+  items:
+  - uid: Butterfly.Db.BaseDatabase
+    name: BaseDatabase
+  - uid: Butterfly.Db.BaseStatement
+    name: BaseStatement
+  - uid: Butterfly.Db.BaseTransaction
+    name: BaseTransaction
+  - uid: Butterfly.Db.CreateStatement
+    name: CreateStatement
+  - uid: Butterfly.Db.DatabaseException
+    name: DatabaseException
+  - uid: Butterfly.Db.DataEventTransactionListener
+    name: DataEventTransactionListener
+  - uid: Butterfly.Db.DeleteStatement
+    name: DeleteStatement
+  - uid: Butterfly.Db.DuplicateKeyDatabaseException
+    name: DuplicateKeyDatabaseException
+  - uid: Butterfly.Db.IDatabase
+    name: IDatabase
+  - uid: Butterfly.Db.IDynamicParam
+    name: IDynamicParam
+  - uid: Butterfly.Db.InsertStatement
+    name: InsertStatement
+  - uid: Butterfly.Db.ITransaction
+    name: ITransaction
+  - uid: Butterfly.Db.JoinType
+    name: JoinType
+  - uid: Butterfly.Db.OnCommitRef
+    name: OnCommitRef
+  - uid: Butterfly.Db.SelectStatement
+    name: SelectStatement
+  - uid: Butterfly.Db.StatementEqualsRef
+    name: StatementEqualsRef
+  - uid: Butterfly.Db.StatementFieldRef
+    name: StatementFieldRef
+  - uid: Butterfly.Db.StatementFromRef
+    name: StatementFromRef
+  - uid: Butterfly.Db.Table
+    name: Table
+  - uid: Butterfly.Db.TableFieldDef
+    name: TableFieldDef
+  - uid: Butterfly.Db.TableIndex
+    name: TableIndex
+  - uid: Butterfly.Db.TableIndexType
+    name: TableIndexType
+  - uid: Butterfly.Db.UnableToConnectDatabaseException
+    name: UnableToConnectDatabaseException
+  - uid: Butterfly.Db.UpdateStatement
+    name: UpdateStatement
+- uid: Butterfly.Db.Dynamic
+  name: Butterfly.Db.Dynamic
+  items:
+  - uid: Butterfly.Db.Dynamic.BaseDynamicParam
+    name: BaseDynamicParam
+  - uid: Butterfly.Db.Dynamic.ChildDynamicParam
+    name: ChildDynamicParam
+  - uid: Butterfly.Db.Dynamic.DynamicView
+    name: DynamicView
+  - uid: Butterfly.Db.Dynamic.DynamicViewSet
+    name: DynamicViewSet
+  - uid: Butterfly.Db.Dynamic.MultiValueDynamicParam
+    name: MultiValueDynamicParam
+  - uid: Butterfly.Db.Dynamic.SingleValueDynamicParam
+    name: SingleValueDynamicParam
+- uid: Butterfly.Db.Event
+  name: Butterfly.Db.Event
+  items:
+  - uid: Butterfly.Db.Event.DataEvent
+    name: DataEvent
+  - uid: Butterfly.Db.Event.DataEventTransaction
+    name: DataEventTransaction
+  - uid: Butterfly.Db.Event.DataEventType
+    name: DataEventType
+  - uid: Butterfly.Db.Event.InitialBeginDataEvent
+    name: InitialBeginDataEvent
+  - uid: Butterfly.Db.Event.InitialEndDataEvent
+    name: InitialEndDataEvent
+  - uid: Butterfly.Db.Event.KeyValueDataEvent
+    name: KeyValueDataEvent
+  - uid: Butterfly.Db.Event.RecordDataEvent
+    name: RecordDataEvent
+  - uid: Butterfly.Db.Event.TransactionState
+    name: TransactionState
+- uid: Butterfly.Db.Memory
+  name: Butterfly.Db.Memory
+  items:
+  - uid: Butterfly.Db.Memory.MemoryDatabase
+    name: MemoryDatabase
+  - uid: Butterfly.Db.Memory.MemoryTable
+    name: MemoryTable
+  - uid: Butterfly.Db.Memory.MemoryTransaction
+    name: MemoryTransaction
+- uid: Butterfly.Db.MySql
+  name: Butterfly.Db.MySql
+  items:
+  - uid: Butterfly.Db.MySql.MySqlDatabase
+    name: MySqlDatabase
+  - uid: Butterfly.Db.MySql.MySqlTransaction
+    name: MySqlTransaction
+- uid: Butterfly.Db.Postgres
+  name: Butterfly.Db.Postgres
+  items:
+  - uid: Butterfly.Db.Postgres.PostgresDatabase
+    name: PostgresDatabase
+  - uid: Butterfly.Db.Postgres.PostgresTransaction
+    name: PostgresTransaction
+- uid: Butterfly.Db.SQLite
+  name: Butterfly.Db.SQLite
+  items:
+  - uid: Butterfly.Db.SQLite.SQLiteDatabase
+    name: SQLiteDatabase
+  - uid: Butterfly.Db.SQLite.SQLiteTransaction
+    name: SQLiteTransaction
+- uid: Butterfly.Db.SqlServer
+  name: Butterfly.Db.SqlServer
+  items:
+  - uid: Butterfly.Db.SqlServer.SqlServerDatabase
+    name: SqlServerDatabase
+  - uid: Butterfly.Db.SqlServer.SqlServerTransaction
+    name: SqlServerTransaction

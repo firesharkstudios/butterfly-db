@@ -1,0 +1,2370 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.IDatabase
+  commentId: T:Butterfly.Db.IDatabase
+  id: IDatabase
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.IDatabase.AddInputPreprocessor(Action{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}})
+  - Butterfly.Db.IDatabase.BeginTransaction
+  - Butterfly.Db.IDatabase.BeginTransactionAsync
+  - Butterfly.Db.IDatabase.CanFieldAlias
+  - Butterfly.Db.IDatabase.CanJoin
+  - Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync(System.String,Action{Butterfly.Db.Event.DataEventTransaction},System.Object,System.String,System.String[])
+  - Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync(System.String,Func{Butterfly.Db.Event.DataEventTransaction,Task},System.Object,System.String,System.String[])
+  - Butterfly.Db.IDatabase.CreateDynamicViewSet(Action{Butterfly.Db.Event.DataEventTransaction})
+  - Butterfly.Db.IDatabase.CreateDynamicViewSet(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  - Butterfly.Db.IDatabase.DeleteAndCommitAsync(System.String,System.Object)
+  - Butterfly.Db.IDatabase.GetInitialDataEventsAsync(System.String,System.String[],Butterfly.Db.SelectStatement,System.Object)
+  - Butterfly.Db.IDatabase.InsertAndCommitAsync``1(System.String,System.Object,System.Boolean)
+  - Butterfly.Db.IDatabase.OnNewCommittedTransaction(Action{Butterfly.Db.Event.DataEventTransaction})
+  - Butterfly.Db.IDatabase.OnNewCommittedTransaction(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  - Butterfly.Db.IDatabase.OnNewUncommittedTransaction(Action{Butterfly.Db.Event.DataEventTransaction})
+  - Butterfly.Db.IDatabase.OnNewUncommittedTransaction(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  - Butterfly.Db.IDatabase.QueryRowAsync(System.String,System.Object)
+  - Butterfly.Db.IDatabase.QueryRowsAsync(System.String,System.Object)
+  - Butterfly.Db.IDatabase.QueryValueAsync``1(System.String,System.Object,``0)
+  - Butterfly.Db.IDatabase.SelectCount
+  - Butterfly.Db.IDatabase.SelectRowAsync(System.String,System.Object)
+  - Butterfly.Db.IDatabase.SelectRowsAsync(Butterfly.Db.SelectStatement,System.Object)
+  - Butterfly.Db.IDatabase.SelectRowsAsync(System.String,System.Object)
+  - Butterfly.Db.IDatabase.SelectValueAsync``1(System.String,System.Object,``0)
+  - Butterfly.Db.IDatabase.SelectValuesAsync``1(System.String,System.Object)
+  - Butterfly.Db.IDatabase.SetDefaultValue(System.String,Func{System.String,System.Object},System.String)
+  - Butterfly.Db.IDatabase.SetOverrideValue(System.String,Func{System.String,System.Object},System.String)
+  - Butterfly.Db.IDatabase.TableByName
+  - Butterfly.Db.IDatabase.UpdateAndCommitAsync(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IDatabase
+  nameWithType: IDatabase
+  fullName: Butterfly.Db.IDatabase
+  type: Interface
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: IDatabase
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 75
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nAllows executing SELECT statements, creating transactions to execute INSERT, UPDATE, and DELETE statements; \ncreating dynamic views; and receiving data change events both on tables and dynamic views.\n"
+  example:
+  - "\nAdding records and echoing all data change events to the console...<p></p>\n<pre><code>// Create database instance (will also read the schema from the database)\nvar database = new SomeDatabase();\n\n// Listen for all database data events\nvar databaseListener = database.OnNewCommittedTransaction(dataEventTransaction => {\n    console.WriteLine($&quot;Low Level DataEventTransaction={dataEventTransaction}&quot;);\n});\n\n// INSERT a couple of records (this will cause a single data even transaction with\n// two INSERT data events to be written to the console above)\nusing (var transaction = database.BeginTransaction()) {\n    await database.InsertAndCommitAsync(&quot;employee&quot;, values: new {\n        department_id: 1,\n        name: &quot;SpongeBob&quot;\n    });\n    await database.InsertAndCommitAsync(&quot;employee&quot;, values: new {\n        department_id: 1,\n        name: &quot;Squidward&quot;\n    });\n    await database.CommitAsync();\n);</code></pre>\n\nCreating a DynamicView and echoing data change events on the DynamicView to the console...<p></p>\n<pre><code>// Create database instance (will also read the schema from the database)\nvar database = new SomeDatabase();\n\n// Create a DynamicViewSet that print any data events to the console\n// (this will immediately echo an INITIAL data event for each existing matching record)\nvar dynamicViewSet = database.CreateAndStartDynamicViewSet(\n    &quot;SELECT * FROM employee WHERE department_id=@departmentId&quot;, \n    new {\n        departmentId = 1\n    },\n    dataEventTransaction => {\n        Console.WriteLine(dataEventTransaction);\n    }\n);\n\n// This will cause the above DynamicViewSet to echo an INSERT data event\nawait database.InsertAndCommitAsync(&quot;employee&quot;, values: new {\n    department_id: 1\n    name: &quot;Mr Crabs&quot;\n});\n\n// This will NOT cause the above DynamicViewSet to echo an INSERT data event\n// (because the department_id doesn&apos;t match)\nawait database.InsertAndCommitAsync(&quot;employee&quot;, values: new {\n    department_id: 2\n    name: &quot;Patrick Star&quot;\n});</code></pre>\n"
+  syntax:
+    content: public interface IDatabase
+    content.vb: Public Interface IDatabase
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Butterfly.Db.IDatabase.CanJoin
+  commentId: P:Butterfly.Db.IDatabase.CanJoin
+  id: CanJoin
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: CanJoin
+  nameWithType: IDatabase.CanJoin
+  fullName: Butterfly.Db.IDatabase.CanJoin
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: CanJoin
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 80
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nCan this database perform JOINs\n"
+  example: []
+  syntax:
+    content: bool CanJoin { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanJoin As Boolean
+  overload: Butterfly.Db.IDatabase.CanJoin*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Butterfly.Db.IDatabase.CanFieldAlias
+  commentId: P:Butterfly.Db.IDatabase.CanFieldAlias
+  id: CanFieldAlias
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: CanFieldAlias
+  nameWithType: IDatabase.CanFieldAlias
+  fullName: Butterfly.Db.IDatabase.CanFieldAlias
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: CanFieldAlias
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 85
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nCan this database allow field aliases in SELECT statements\n"
+  example: []
+  syntax:
+    content: bool CanFieldAlias { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanFieldAlias As Boolean
+  overload: Butterfly.Db.IDatabase.CanFieldAlias*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Butterfly.Db.IDatabase.SelectCount
+  commentId: P:Butterfly.Db.IDatabase.SelectCount
+  id: SelectCount
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: SelectCount
+  nameWithType: IDatabase.SelectCount
+  fullName: Butterfly.Db.IDatabase.SelectCount
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: SelectCount
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 90
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nCount of the number of SELECT statements executed\n"
+  example: []
+  syntax:
+    content: int SelectCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property SelectCount As Integer
+  overload: Butterfly.Db.IDatabase.SelectCount*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Butterfly.Db.IDatabase.TableByName
+  commentId: P:Butterfly.Db.IDatabase.TableByName
+  id: TableByName
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: TableByName
+  nameWithType: IDatabase.TableByName
+  fullName: Butterfly.Db.IDatabase.TableByName
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: TableByName
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 95
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nDictionary of <xref href=\"Butterfly.Db.Table\" data-throw-if-not-resolved=\"false\"></xref> instances keyed by name\n"
+  example: []
+  syntax:
+    content: Dictionary<string, Table> TableByName { get; }
+    parameters: []
+    return:
+      type: Dictionary{System.String,Butterfly.Db.Table}
+    content.vb: ReadOnly Property TableByName As Dictionary(Of String, Table)
+  overload: Butterfly.Db.IDatabase.TableByName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Butterfly.Db.IDatabase.OnNewUncommittedTransaction(Action{Butterfly.Db.Event.DataEventTransaction})
+  commentId: M:Butterfly.Db.IDatabase.OnNewUncommittedTransaction(Action{Butterfly.Db.Event.DataEventTransaction})
+  id: OnNewUncommittedTransaction(Action{Butterfly.Db.Event.DataEventTransaction})
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: OnNewUncommittedTransaction(Action<DataEventTransaction>)
+  nameWithType: IDatabase.OnNewUncommittedTransaction(Action<DataEventTransaction>)
+  fullName: Butterfly.Db.IDatabase.OnNewUncommittedTransaction(Action<Butterfly.Db.Event.DataEventTransaction>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: OnNewUncommittedTransaction
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 102
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nAdds a listener that is invoked when there is a new uncommitted transaction\n"
+  example: []
+  syntax:
+    content: IDisposable OnNewUncommittedTransaction(Action<DataEventTransaction> listener)
+    parameters:
+    - id: listener
+      type: Action{Butterfly.Db.Event.DataEventTransaction}
+      description: The lambda to call when there is a new uncommitted <xref href="Butterfly.Db.Event.DataEventTransaction" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: IDisposable
+      description: An <see cref="!:IDisposable"></see> that allows removing the listener by calling Dispose()
+    content.vb: Function OnNewUncommittedTransaction(listener As Action(Of DataEventTransaction)) As IDisposable
+  overload: Butterfly.Db.IDatabase.OnNewUncommittedTransaction*
+  nameWithType.vb: IDatabase.OnNewUncommittedTransaction(Action(Of DataEventTransaction))
+  fullName.vb: Butterfly.Db.IDatabase.OnNewUncommittedTransaction(Action(Of Butterfly.Db.Event.DataEventTransaction))
+  name.vb: OnNewUncommittedTransaction(Action(Of DataEventTransaction))
+- uid: Butterfly.Db.IDatabase.OnNewUncommittedTransaction(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  commentId: M:Butterfly.Db.IDatabase.OnNewUncommittedTransaction(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  id: OnNewUncommittedTransaction(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: OnNewUncommittedTransaction(Func<DataEventTransaction, Task>)
+  nameWithType: IDatabase.OnNewUncommittedTransaction(Func<DataEventTransaction, Task>)
+  fullName: Butterfly.Db.IDatabase.OnNewUncommittedTransaction(Func<Butterfly.Db.Event.DataEventTransaction, Task>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: OnNewUncommittedTransaction
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 105
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  example: []
+  syntax:
+    content: IDisposable OnNewUncommittedTransaction(Func<DataEventTransaction, Task> listener)
+    parameters:
+    - id: listener
+      type: Func{Butterfly.Db.Event.DataEventTransaction,Task}
+    return:
+      type: IDisposable
+    content.vb: Function OnNewUncommittedTransaction(listener As Func(Of DataEventTransaction, Task)) As IDisposable
+  overload: Butterfly.Db.IDatabase.OnNewUncommittedTransaction*
+  nameWithType.vb: IDatabase.OnNewUncommittedTransaction(Func(Of DataEventTransaction, Task))
+  fullName.vb: Butterfly.Db.IDatabase.OnNewUncommittedTransaction(Func(Of Butterfly.Db.Event.DataEventTransaction, Task))
+  name.vb: OnNewUncommittedTransaction(Func(Of DataEventTransaction, Task))
+- uid: Butterfly.Db.IDatabase.OnNewCommittedTransaction(Action{Butterfly.Db.Event.DataEventTransaction})
+  commentId: M:Butterfly.Db.IDatabase.OnNewCommittedTransaction(Action{Butterfly.Db.Event.DataEventTransaction})
+  id: OnNewCommittedTransaction(Action{Butterfly.Db.Event.DataEventTransaction})
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: OnNewCommittedTransaction(Action<DataEventTransaction>)
+  nameWithType: IDatabase.OnNewCommittedTransaction(Action<DataEventTransaction>)
+  fullName: Butterfly.Db.IDatabase.OnNewCommittedTransaction(Action<Butterfly.Db.Event.DataEventTransaction>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: OnNewCommittedTransaction
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 112
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nAdds a listener that is invoked when there is a new committed transaction\n"
+  example: []
+  syntax:
+    content: IDisposable OnNewCommittedTransaction(Action<DataEventTransaction> listener)
+    parameters:
+    - id: listener
+      type: Action{Butterfly.Db.Event.DataEventTransaction}
+      description: The lambda to call when there is a new committed <xref href="Butterfly.Db.Event.DataEventTransaction" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: IDisposable
+      description: An <see cref="!:IDisposable"></see> that allows removing the listener by calling Dispose()
+    content.vb: Function OnNewCommittedTransaction(listener As Action(Of DataEventTransaction)) As IDisposable
+  overload: Butterfly.Db.IDatabase.OnNewCommittedTransaction*
+  nameWithType.vb: IDatabase.OnNewCommittedTransaction(Action(Of DataEventTransaction))
+  fullName.vb: Butterfly.Db.IDatabase.OnNewCommittedTransaction(Action(Of Butterfly.Db.Event.DataEventTransaction))
+  name.vb: OnNewCommittedTransaction(Action(Of DataEventTransaction))
+- uid: Butterfly.Db.IDatabase.OnNewCommittedTransaction(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  commentId: M:Butterfly.Db.IDatabase.OnNewCommittedTransaction(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  id: OnNewCommittedTransaction(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: OnNewCommittedTransaction(Func<DataEventTransaction, Task>)
+  nameWithType: IDatabase.OnNewCommittedTransaction(Func<DataEventTransaction, Task>)
+  fullName: Butterfly.Db.IDatabase.OnNewCommittedTransaction(Func<Butterfly.Db.Event.DataEventTransaction, Task>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: OnNewCommittedTransaction
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 115
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  example: []
+  syntax:
+    content: IDisposable OnNewCommittedTransaction(Func<DataEventTransaction, Task> listener)
+    parameters:
+    - id: listener
+      type: Func{Butterfly.Db.Event.DataEventTransaction,Task}
+    return:
+      type: IDisposable
+    content.vb: Function OnNewCommittedTransaction(listener As Func(Of DataEventTransaction, Task)) As IDisposable
+  overload: Butterfly.Db.IDatabase.OnNewCommittedTransaction*
+  nameWithType.vb: IDatabase.OnNewCommittedTransaction(Func(Of DataEventTransaction, Task))
+  fullName.vb: Butterfly.Db.IDatabase.OnNewCommittedTransaction(Func(Of Butterfly.Db.Event.DataEventTransaction, Task))
+  name.vb: OnNewCommittedTransaction(Func(Of DataEventTransaction, Task))
+- uid: Butterfly.Db.IDatabase.SelectValueAsync``1(System.String,System.Object,``0)
+  commentId: M:Butterfly.Db.IDatabase.SelectValueAsync``1(System.String,System.Object,``0)
+  id: SelectValueAsync``1(System.String,System.Object,``0)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: SelectValueAsync<T>(String, Object, T)
+  nameWithType: IDatabase.SelectValueAsync<T>(String, Object, T)
+  fullName: Butterfly.Db.IDatabase.SelectValueAsync<T>(System.String, System.Object, T)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: SelectValueAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 129
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes the SELECT statement and return the value of the first column of the first row (the SELECT statement may contain vars like @name specified in <code data-dev-comment-type=\"paramref\" class=\"paramref\">vars</code>).<p></p>\n<p></p>\nIf a var is null then references in the WHERE clause like <pre><code>name=@name</code></pre> will be rewritten as <pre><code>name IS NULL</code></pre> and references in the WHERE clause like <pre><code>name!=@name</code></pre> will be rewritten as <pre><code>name IS NOT NULL</code></pre>.<p></p>\n<p></p>\nIf a var is an array then references in the WHERE clause like <pre><code>name=@name</code></pre> will be rewritten as <pre><code>1=2</code></pre> when the array is empty, rewritten as <pre><code>name=&apos;Bob&apos;</code></pre> when the array contains a single element &apos;Bob&apos;, and rewritten as <pre><code>name IN (&apos;Bob&apos;, &apos;Jim&apos;)</code></pre> when the array contains elements &apos;Bob&apos; and &apos;Jim&apos;.<p></p>\n"
+  example: []
+  syntax:
+    content: Task<T> SelectValueAsync<T>(string sql, dynamic vars = null, T defaultValue = null)
+    parameters:
+    - id: sql
+      type: System.String
+      description: The SELECT statement to execute (may contain vars like @name specified in <code data-dev-comment-type="paramref" class="paramref">vars</code>)
+    - id: vars
+      type: System.Object
+      description: Either an anonymous type or Dictionary with the vars used in the SELECT statement
+    - id: defaultValue
+      type: '{T}'
+      description: The value to return if no rows were returned or the value of the first column of the first row is null
+    typeParameters:
+    - id: T
+      description: The return type of the single value returned
+    return:
+      type: Task{{T}}
+      description: The value of the first column of the first row
+    content.vb: Function SelectValueAsync(Of T)(sql As String, vars As Object = Nothing, defaultValue As T = Nothing) As Task(Of T)
+  overload: Butterfly.Db.IDatabase.SelectValueAsync*
+  nameWithType.vb: IDatabase.SelectValueAsync(Of T)(String, Object, T)
+  fullName.vb: Butterfly.Db.IDatabase.SelectValueAsync(Of T)(System.String, System.Object, T)
+  name.vb: SelectValueAsync(Of T)(String, Object, T)
+- uid: Butterfly.Db.IDatabase.SelectValuesAsync``1(System.String,System.Object)
+  commentId: M:Butterfly.Db.IDatabase.SelectValuesAsync``1(System.String,System.Object)
+  id: SelectValuesAsync``1(System.String,System.Object)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: SelectValuesAsync<T>(String, Object)
+  nameWithType: IDatabase.SelectValuesAsync<T>(String, Object)
+  fullName: Butterfly.Db.IDatabase.SelectValuesAsync<T>(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: SelectValuesAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 142
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes the SELECT statement and return the value of the first column of the first row (the SELECT statement may contain vars like @name specified in <code data-dev-comment-type=\"paramref\" class=\"paramref\">vars</code>).<p></p>\n<p></p>\nIf a var is null then references in the WHERE clause like <pre><code>name=@name</code></pre> will be rewritten as <pre><code>name IS NULL</code></pre> and references in the WHERE clause like <pre><code>name!=@name</code></pre> will be rewritten as <pre><code>name IS NOT NULL</code></pre>.<p></p>\n<p></p>\nIf a var is an array then references in the WHERE clause like <pre><code>name=@name</code></pre> will be rewritten as <pre><code>1=2</code></pre> when the array is empty, rewritten as <pre><code>name=&apos;Bob&apos;</code></pre> when the array contains a single element &apos;Bob&apos;, and rewritten as <pre><code>name IN (&apos;Bob&apos;, &apos;Jim&apos;)</code></pre> when the array contains elements &apos;Bob&apos; and &apos;Jim&apos;.<p></p>\n"
+  example: []
+  syntax:
+    content: Task<T[]> SelectValuesAsync<T>(string sql, dynamic vars = null)
+    parameters:
+    - id: sql
+      type: System.String
+      description: The SELECT statement to execute (may contain vars like @name specified in <code data-dev-comment-type="paramref" class="paramref">vars</code>)
+    - id: vars
+      type: System.Object
+      description: Either an anonymous type or Dictionary with the vars used in the SELECT statement
+    typeParameters:
+    - id: T
+      description: The return type of the single value returned
+    return:
+      type: Task{{T}[]}
+      description: The value of the first column of the first row
+    content.vb: Function SelectValuesAsync(Of T)(sql As String, vars As Object = Nothing) As Task(Of T())
+  overload: Butterfly.Db.IDatabase.SelectValuesAsync*
+  nameWithType.vb: IDatabase.SelectValuesAsync(Of T)(String, Object)
+  fullName.vb: Butterfly.Db.IDatabase.SelectValuesAsync(Of T)(System.String, System.Object)
+  name.vb: SelectValuesAsync(Of T)(String, Object)
+- uid: Butterfly.Db.IDatabase.SelectRowAsync(System.String,System.Object)
+  commentId: M:Butterfly.Db.IDatabase.SelectRowAsync(System.String,System.Object)
+  id: SelectRowAsync(System.String,System.Object)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: SelectRowAsync(String, Object)
+  nameWithType: IDatabase.SelectRowAsync(String, Object)
+  fullName: Butterfly.Db.IDatabase.SelectRowAsync(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: SelectRowAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 150
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes the SELECT statement and return the first row (the SELECT statement may contain vars like @name specified in <code data-dev-comment-type=\"paramref\" class=\"paramref\">vars</code>)\n"
+  example: []
+  syntax:
+    content: Task<System.Collections.Generic.Dictionary<string, object>> SelectRowAsync(string sql, dynamic vars = null)
+    parameters:
+    - id: sql
+      type: System.String
+      description: The SELECT statement to execute (may contain vars like @name specified in <code data-dev-comment-type="paramref" class="paramref">vars</code>)
+    - id: vars
+      type: System.Object
+      description: ''
+    return:
+      type: Task{System.Collections.Generic.Dictionary{System.String,System.Object}}
+      description: ''
+    content.vb: Function SelectRowAsync(sql As String, vars As Object = Nothing) As Task(Of System.Collections.Generic.Dictionary(Of String, Object))
+  overload: Butterfly.Db.IDatabase.SelectRowAsync*
+- uid: Butterfly.Db.IDatabase.SelectRowsAsync(System.String,System.Object)
+  commentId: M:Butterfly.Db.IDatabase.SelectRowsAsync(System.String,System.Object)
+  id: SelectRowsAsync(System.String,System.Object)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: SelectRowsAsync(String, Object)
+  nameWithType: IDatabase.SelectRowsAsync(String, Object)
+  fullName: Butterfly.Db.IDatabase.SelectRowsAsync(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: SelectRowsAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 158
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes the SELECT statement and return the rows (the SELECT statement may contain vars like @name specified in <code data-dev-comment-type=\"paramref\" class=\"paramref\">vars</code>)\n"
+  example: []
+  syntax:
+    content: Task<System.Collections.Generic.Dictionary<string, object>[]> SelectRowsAsync(string sql, dynamic vars = null)
+    parameters:
+    - id: sql
+      type: System.String
+      description: ''
+    - id: vars
+      type: System.Object
+      description: ''
+    return:
+      type: Task{System.Collections.Generic.Dictionary{System.String,System.Object}[]}
+      description: ''
+    content.vb: Function SelectRowsAsync(sql As String, vars As Object = Nothing) As Task(Of System.Collections.Generic.Dictionary(Of String, Object)())
+  overload: Butterfly.Db.IDatabase.SelectRowsAsync*
+- uid: Butterfly.Db.IDatabase.SelectRowsAsync(Butterfly.Db.SelectStatement,System.Object)
+  commentId: M:Butterfly.Db.IDatabase.SelectRowsAsync(Butterfly.Db.SelectStatement,System.Object)
+  id: SelectRowsAsync(Butterfly.Db.SelectStatement,System.Object)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: SelectRowsAsync(SelectStatement, Object)
+  nameWithType: IDatabase.SelectRowsAsync(SelectStatement, Object)
+  fullName: Butterfly.Db.IDatabase.SelectRowsAsync(Butterfly.Db.SelectStatement, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: SelectRowsAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 166
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes the SELECT statement and returns the rows\n"
+  example: []
+  syntax:
+    content: Task<System.Collections.Generic.Dictionary<string, object>[]> SelectRowsAsync(SelectStatement statement, dynamic vars)
+    parameters:
+    - id: statement
+      type: Butterfly.Db.SelectStatement
+      description: ''
+    - id: vars
+      type: System.Object
+      description: ''
+    return:
+      type: Task{System.Collections.Generic.Dictionary{System.String,System.Object}[]}
+      description: ''
+    content.vb: Function SelectRowsAsync(statement As SelectStatement, vars As Object) As Task(Of System.Collections.Generic.Dictionary(Of String, Object)())
+  overload: Butterfly.Db.IDatabase.SelectRowsAsync*
+- uid: Butterfly.Db.IDatabase.QueryValueAsync``1(System.String,System.Object,``0)
+  commentId: M:Butterfly.Db.IDatabase.QueryValueAsync``1(System.String,System.Object,``0)
+  id: QueryValueAsync``1(System.String,System.Object,``0)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: QueryValueAsync<T>(String, Object, T)
+  nameWithType: IDatabase.QueryValueAsync<T>(String, Object, T)
+  fullName: Butterfly.Db.IDatabase.QueryValueAsync<T>(System.String, System.Object, T)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: QueryValueAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 176
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes the stored procedure and return a single value\n"
+  example: []
+  syntax:
+    content: Task<T> QueryValueAsync<T>(string storedProcedureName, dynamic vars = null, T defaultValue = null)
+    parameters:
+    - id: storedProcedureName
+      type: System.String
+      description: ''
+    - id: vars
+      type: System.Object
+      description: ''
+    - id: defaultValue
+      type: '{T}'
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: Task{{T}}
+      description: ''
+    content.vb: Function QueryValueAsync(Of T)(storedProcedureName As String, vars As Object = Nothing, defaultValue As T = Nothing) As Task(Of T)
+  overload: Butterfly.Db.IDatabase.QueryValueAsync*
+  nameWithType.vb: IDatabase.QueryValueAsync(Of T)(String, Object, T)
+  fullName.vb: Butterfly.Db.IDatabase.QueryValueAsync(Of T)(System.String, System.Object, T)
+  name.vb: QueryValueAsync(Of T)(String, Object, T)
+- uid: Butterfly.Db.IDatabase.QueryRowAsync(System.String,System.Object)
+  commentId: M:Butterfly.Db.IDatabase.QueryRowAsync(System.String,System.Object)
+  id: QueryRowAsync(System.String,System.Object)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: QueryRowAsync(String, Object)
+  nameWithType: IDatabase.QueryRowAsync(String, Object)
+  fullName: Butterfly.Db.IDatabase.QueryRowAsync(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: QueryRowAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 184
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes the stored procedure and returns a single row\n"
+  example: []
+  syntax:
+    content: Task<System.Collections.Generic.Dictionary<string, object>> QueryRowAsync(string storedProcedureName, dynamic vars = null)
+    parameters:
+    - id: storedProcedureName
+      type: System.String
+      description: ''
+    - id: vars
+      type: System.Object
+      description: ''
+    return:
+      type: Task{System.Collections.Generic.Dictionary{System.String,System.Object}}
+      description: ''
+    content.vb: Function QueryRowAsync(storedProcedureName As String, vars As Object = Nothing) As Task(Of System.Collections.Generic.Dictionary(Of String, Object))
+  overload: Butterfly.Db.IDatabase.QueryRowAsync*
+- uid: Butterfly.Db.IDatabase.QueryRowsAsync(System.String,System.Object)
+  commentId: M:Butterfly.Db.IDatabase.QueryRowsAsync(System.String,System.Object)
+  id: QueryRowsAsync(System.String,System.Object)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: QueryRowsAsync(String, Object)
+  nameWithType: IDatabase.QueryRowsAsync(String, Object)
+  fullName: Butterfly.Db.IDatabase.QueryRowsAsync(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: QueryRowsAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 192
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes the stored procedure and returns the rows\n"
+  example: []
+  syntax:
+    content: Task<System.Collections.Generic.Dictionary<string, object>[]> QueryRowsAsync(string storedProcedureName, dynamic vars = null)
+    parameters:
+    - id: storedProcedureName
+      type: System.String
+      description: ''
+    - id: vars
+      type: System.Object
+      description: ''
+    return:
+      type: Task{System.Collections.Generic.Dictionary{System.String,System.Object}[]}
+      description: ''
+    content.vb: Function QueryRowsAsync(storedProcedureName As String, vars As Object = Nothing) As Task(Of System.Collections.Generic.Dictionary(Of String, Object)())
+  overload: Butterfly.Db.IDatabase.QueryRowsAsync*
+- uid: Butterfly.Db.IDatabase.InsertAndCommitAsync``1(System.String,System.Object,System.Boolean)
+  commentId: M:Butterfly.Db.IDatabase.InsertAndCommitAsync``1(System.String,System.Object,System.Boolean)
+  id: InsertAndCommitAsync``1(System.String,System.Object,System.Boolean)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: InsertAndCommitAsync<T>(String, Object, Boolean)
+  nameWithType: IDatabase.InsertAndCommitAsync<T>(String, Object, Boolean)
+  fullName: Butterfly.Db.IDatabase.InsertAndCommitAsync<T>(System.String, System.Object, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: InsertAndCommitAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 227
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes an INSERT statement as a single transaction\n"
+  remarks: "\nDo an INSERT using the table name and an anonymous type...\n<pre><code>await database.InsertAndCommitAsync(&quot;message&quot;, new {\n    text = &quot;Hello&quot;,\n    owner_id = &quot;123&quot;,\n});</code></pre>\nDo an INSERT using a full statement and a Dictionary...\n<pre><code>await database.InsertAndCommitAsync(&quot;INSERT INTO message (text, owner_id) VALUES (@t, @oid)&quot;, new Dictionary&lt;string, object> {\n    [&quot;t&quot;] = &quot;Hello&quot;,\n    [&quot;oid&quot;] = &quot;123&quot;,\n});</code></pre>\n"
+  example: []
+  syntax:
+    content: Task<T> InsertAndCommitAsync<T>(string insertStatement, dynamic vars = null, bool ignoreIfDuplicate = false)
+    parameters:
+    - id: insertStatement
+      type: System.String
+      description: "\nEither a table name or a full INSERT statement with vars prefixed by @ (like <pre><code>@name</code></pre>)\n"
+    - id: vars
+      type: System.Object
+      description: "\nEither an anonymous type or a Dictionary. \nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">insertStatement</code> is a table name, the <code data-dev-comment-type=\"paramref\" class=\"paramref\">vars</code> values will be used to build the UPDATE statement.\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">insertStatement</code> is a full INSERT statement, there must be one entry for each var referenced in <code data-dev-comment-type=\"paramref\" class=\"paramref\">insertStatement</code>.\n"
+    - id: ignoreIfDuplicate
+      type: System.Boolean
+      description: "\nIf the INSERT attempts to duplicate the primary key then either \nthrow an <xref href=\"Butterfly.Db.DuplicateKeyDatabaseException\" data-throw-if-not-resolved=\"false\"></xref> error if <code data-dev-comment-type=\"paramref\" class=\"paramref\">ignoreIfDuplicate</code> is true\nor just ignore if <code data-dev-comment-type=\"paramref\" class=\"paramref\">ignoreIfDuplicate</code> is false\n"
+    typeParameters:
+    - id: T
+    return:
+      type: Task{{T}}
+      description: Primary key value (semi-colon delimited string if multi-field primary key)
+    content.vb: Function InsertAndCommitAsync(Of T)(insertStatement As String, vars As Object = Nothing, ignoreIfDuplicate As Boolean = False) As Task(Of T)
+  overload: Butterfly.Db.IDatabase.InsertAndCommitAsync*
+  nameWithType.vb: IDatabase.InsertAndCommitAsync(Of T)(String, Object, Boolean)
+  fullName.vb: Butterfly.Db.IDatabase.InsertAndCommitAsync(Of T)(System.String, System.Object, System.Boolean)
+  name.vb: InsertAndCommitAsync(Of T)(String, Object, Boolean)
+- uid: Butterfly.Db.IDatabase.UpdateAndCommitAsync(System.String,System.Object)
+  commentId: M:Butterfly.Db.IDatabase.UpdateAndCommitAsync(System.String,System.Object)
+  id: UpdateAndCommitAsync(System.String,System.Object)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: UpdateAndCommitAsync(String, Object)
+  nameWithType: IDatabase.UpdateAndCommitAsync(String, Object)
+  fullName: Butterfly.Db.IDatabase.UpdateAndCommitAsync(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: UpdateAndCommitAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 257
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes an UPDATE statement as a single transaction\n"
+  remarks: "\nDo an UPDATE using the table name and an anonymous type...\n<pre><code>await database.UpdateAndCommitAsync(&quot;message&quot;, new {\n    id = 123,\n    text = &quot;Hello&quot;,\n});</code></pre>\nDo an UPDATE using a full statement and a Dictionary...\n<pre><code>await database.UpdateAndCommitAsync(&quot;UPDATE message SET text=@t WHERE id=@id&quot;, new Dictionary&lt;string, object> {\n    [&quot;id&quot;] = 123,\n    [&quot;t&quot;] = &quot;Hello&quot;,\n});</code></pre>\n"
+  example: []
+  syntax:
+    content: Task<int> UpdateAndCommitAsync(string updateStatement, dynamic vars)
+    parameters:
+    - id: updateStatement
+      type: System.String
+      description: "\nEither a table name or a full UPDATE statement with vars prefixed by @ (like <pre><code>@name</code></pre>)\n"
+    - id: vars
+      type: System.Object
+      description: "\nEither an anonymous type or a Dictionary. \nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">updateStatement</code> is a table name, the <code data-dev-comment-type=\"paramref\" class=\"paramref\">vars</code> values will be used to build the SET clause and WHERE clause of the UPDATE statement.\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">updateStatement</code> is a full UPDATE statement, there must be one entry for each var referenced in <code data-dev-comment-type=\"paramref\" class=\"paramref\">updateStatement</code>.\n"
+    return:
+      type: Task{System.Int32}
+      description: Number of records updated
+    content.vb: Function UpdateAndCommitAsync(updateStatement As String, vars As Object) As Task(Of Integer)
+  overload: Butterfly.Db.IDatabase.UpdateAndCommitAsync*
+- uid: Butterfly.Db.IDatabase.DeleteAndCommitAsync(System.String,System.Object)
+  commentId: M:Butterfly.Db.IDatabase.DeleteAndCommitAsync(System.String,System.Object)
+  id: DeleteAndCommitAsync(System.String,System.Object)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: DeleteAndCommitAsync(String, Object)
+  nameWithType: IDatabase.DeleteAndCommitAsync(String, Object)
+  fullName: Butterfly.Db.IDatabase.DeleteAndCommitAsync(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: DeleteAndCommitAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 285
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes a DELETE statement as a single transaction\n"
+  remarks: "\nDo a DELETE using the table name and an anonymous type...\n<pre><code>await database.DeleteAndCommitAsync(&quot;message&quot;, new {\n    id = 123\n});</code></pre>\nDo a DELETE using a full statement and a Dictionary...\n<pre><code>await database.DeleteAndCommitAsync(&quot;DELETE FROM message WHERE id=@id&quot;, new Dictionary&lt;string, object> {\n    [&quot;id&quot;] = 123\n});</code></pre>\n"
+  example: []
+  syntax:
+    content: Task<int> DeleteAndCommitAsync(string deleteStatement, dynamic vars)
+    parameters:
+    - id: deleteStatement
+      type: System.String
+      description: "\nEither a table name or a full DELETE statement with vars prefixed by @ (like <pre><code>@name</code></pre>)\n"
+    - id: vars
+      type: System.Object
+      description: "\nEither an anonymous type or a Dictionary. \nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">deleteStatement</code> is a table name, the <code data-dev-comment-type=\"paramref\" class=\"paramref\">vars</code> values will be used to build the WHERE clause of the DELETE statement.\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">deleteStatement</code> is a full DELETE statement, there must be one entry for each var referenced in <code data-dev-comment-type=\"paramref\" class=\"paramref\">deleteStatement</code>.\n"
+    return:
+      type: Task{System.Int32}
+      description: Number of records deleted
+    content.vb: Function DeleteAndCommitAsync(deleteStatement As String, vars As Object) As Task(Of Integer)
+  overload: Butterfly.Db.IDatabase.DeleteAndCommitAsync*
+- uid: Butterfly.Db.IDatabase.BeginTransaction
+  commentId: M:Butterfly.Db.IDatabase.BeginTransaction
+  id: BeginTransaction
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: BeginTransaction()
+  nameWithType: IDatabase.BeginTransaction()
+  fullName: Butterfly.Db.IDatabase.BeginTransaction()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: BeginTransaction
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 291
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nCreates a new <xref href=\"Butterfly.Db.ITransaction\" data-throw-if-not-resolved=\"false\"></xref> instance.  An <xref href=\"Butterfly.Db.ITransaction\" data-throw-if-not-resolved=\"false\"></xref> instance allows performing an atomic set of modifications to the database.  Must execute <xref href=\"Butterfly.Db.ITransaction.CommitAsync\" data-throw-if-not-resolved=\"false\"></xref> to save the transaction changes.  Disposing the transaction without committing rolls back the changes.\n"
+  example: []
+  syntax:
+    content: ITransaction BeginTransaction()
+    return:
+      type: Butterfly.Db.ITransaction
+      description: An <xref href="Butterfly.Db.ITransaction" data-throw-if-not-resolved="false"></xref> instance (can then call InsertAsync(), UpdateAsync(), or DeleteAsync() on the ITransaction instance to make changes on the transaction)/>
+    content.vb: Function BeginTransaction As ITransaction
+  overload: Butterfly.Db.IDatabase.BeginTransaction*
+- uid: Butterfly.Db.IDatabase.BeginTransactionAsync
+  commentId: M:Butterfly.Db.IDatabase.BeginTransactionAsync
+  id: BeginTransactionAsync
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: BeginTransactionAsync()
+  nameWithType: IDatabase.BeginTransactionAsync()
+  fullName: Butterfly.Db.IDatabase.BeginTransactionAsync()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: BeginTransactionAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 294
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  example: []
+  syntax:
+    content: Task<ITransaction> BeginTransactionAsync()
+    return:
+      type: Task{Butterfly.Db.ITransaction}
+    content.vb: Function BeginTransactionAsync As Task(Of ITransaction)
+  overload: Butterfly.Db.IDatabase.BeginTransactionAsync*
+- uid: Butterfly.Db.IDatabase.SetDefaultValue(System.String,Func{System.String,System.Object},System.String)
+  commentId: M:Butterfly.Db.IDatabase.SetDefaultValue(System.String,Func{System.String,System.Object},System.String)
+  id: SetDefaultValue(System.String,Func{System.String,System.Object},System.String)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultValue(String, Func<String, Object>, String)
+  nameWithType: IDatabase.SetDefaultValue(String, Func<String, Object>, String)
+  fullName: Butterfly.Db.IDatabase.SetDefaultValue(System.String, Func<System.String, System.Object>, System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: SetDefaultValue
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 302
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nAllows specifying a lambda that creates a default value for a field when executing an INSERT.  If <code data-dev-comment-type=\"paramref\" class=\"paramref\">tableName</code> is null, the <code data-dev-comment-type=\"paramref\" class=\"paramref\">getValue</code> lambda will be applied to all tables.\n"
+  example: []
+  syntax:
+    content: void SetDefaultValue(string fieldName, Func<string, object> getValue, string tableName = null)
+    parameters:
+    - id: fieldName
+      type: System.String
+      description: Name of the field
+    - id: getValue
+      type: Func{System.String,System.Object}
+      description: The lambda that returns the default value
+    - id: tableName
+      type: System.String
+      description: An optional table name.  If not null, the getValue lambda is only applied to the specified table. If null, the getValue lambda is applied to all tables.
+    content.vb: Sub SetDefaultValue(fieldName As String, getValue As Func(Of String, Object), tableName As String = Nothing)
+  overload: Butterfly.Db.IDatabase.SetDefaultValue*
+  nameWithType.vb: IDatabase.SetDefaultValue(String, Func(Of String, Object), String)
+  fullName.vb: Butterfly.Db.IDatabase.SetDefaultValue(System.String, Func(Of System.String, System.Object), System.String)
+  name.vb: SetDefaultValue(String, Func(Of String, Object), String)
+- uid: Butterfly.Db.IDatabase.SetOverrideValue(System.String,Func{System.String,System.Object},System.String)
+  commentId: M:Butterfly.Db.IDatabase.SetOverrideValue(System.String,Func{System.String,System.Object},System.String)
+  id: SetOverrideValue(System.String,Func{System.String,System.Object},System.String)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: SetOverrideValue(String, Func<String, Object>, String)
+  nameWithType: IDatabase.SetOverrideValue(String, Func<String, Object>, String)
+  fullName: Butterfly.Db.IDatabase.SetOverrideValue(System.String, Func<System.String, System.Object>, System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: SetOverrideValue
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 310
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nAllows specifying a lambda that creates an override value for a field when executing both an INSERT and UPDATE.  If <code data-dev-comment-type=\"paramref\" class=\"paramref\">tableName</code> is null, the <code data-dev-comment-type=\"paramref\" class=\"paramref\">getValue</code> lambda will be applied to all tables.\n"
+  example: []
+  syntax:
+    content: void SetOverrideValue(string fieldName, Func<string, object> getValue, string tableName = null)
+    parameters:
+    - id: fieldName
+      type: System.String
+      description: Name of the field
+    - id: getValue
+      type: Func{System.String,System.Object}
+      description: The lambda that returns the default value
+    - id: tableName
+      type: System.String
+      description: An optional table name.  If not null, the getValue lambda is only applied to the specified table. If null, the getValue lambda is applied to all tables.
+    content.vb: Sub SetOverrideValue(fieldName As String, getValue As Func(Of String, Object), tableName As String = Nothing)
+  overload: Butterfly.Db.IDatabase.SetOverrideValue*
+  nameWithType.vb: IDatabase.SetOverrideValue(String, Func(Of String, Object), String)
+  fullName.vb: Butterfly.Db.IDatabase.SetOverrideValue(System.String, Func(Of System.String, System.Object), System.String)
+  name.vb: SetOverrideValue(String, Func(Of String, Object), String)
+- uid: Butterfly.Db.IDatabase.AddInputPreprocessor(Action{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}})
+  commentId: M:Butterfly.Db.IDatabase.AddInputPreprocessor(Action{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}})
+  id: AddInputPreprocessor(Action{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}})
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: AddInputPreprocessor(Action<String, System.Collections.Generic.Dictionary<String, Object>>)
+  nameWithType: IDatabase.AddInputPreprocessor(Action<String, System.Collections.Generic.Dictionary<String, Object>>)
+  fullName: Butterfly.Db.IDatabase.AddInputPreprocessor(Action<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: AddInputPreprocessor
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 316
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nAdds an input preprocessor that converts the values in the Dictionary as needed\n"
+  example: []
+  syntax:
+    content: void AddInputPreprocessor(Action<string, System.Collections.Generic.Dictionary<string, object>> inputPreprocessor)
+    parameters:
+    - id: inputPreprocessor
+      type: Action{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}}
+      description: ''
+    content.vb: Sub AddInputPreprocessor(inputPreprocessor As Action(Of String, System.Collections.Generic.Dictionary(Of String, Object)))
+  overload: Butterfly.Db.IDatabase.AddInputPreprocessor*
+  nameWithType.vb: IDatabase.AddInputPreprocessor(Action(Of String, System.Collections.Generic.Dictionary(Of String, Object)))
+  fullName.vb: Butterfly.Db.IDatabase.AddInputPreprocessor(Action(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object)))
+  name.vb: AddInputPreprocessor(Action(Of String, System.Collections.Generic.Dictionary(Of String, Object)))
+- uid: Butterfly.Db.IDatabase.CreateDynamicViewSet(Action{Butterfly.Db.Event.DataEventTransaction})
+  commentId: M:Butterfly.Db.IDatabase.CreateDynamicViewSet(Action{Butterfly.Db.Event.DataEventTransaction})
+  id: CreateDynamicViewSet(Action{Butterfly.Db.Event.DataEventTransaction})
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: CreateDynamicViewSet(Action<DataEventTransaction>)
+  nameWithType: IDatabase.CreateDynamicViewSet(Action<DataEventTransaction>)
+  fullName: Butterfly.Db.IDatabase.CreateDynamicViewSet(Action<Butterfly.Db.Event.DataEventTransaction>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: CreateDynamicViewSet
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 323
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nAllows creating a set of <xref href=\"Butterfly.Db.Dynamic.DynamicView\" data-throw-if-not-resolved=\"false\"></xref> instances that publish a single <xref href=\"Butterfly.Db.Event.DataEventTransaction\" data-throw-if-not-resolved=\"false\"></xref> instance with initial data and new <xref href=\"Butterfly.Db.Event.DataEventTransaction\" data-throw-if-not-resolved=\"false\"></xref> instances when data changes.  The <xref href=\"Butterfly.Db.Event.DataEventTransaction\" data-throw-if-not-resolved=\"false\"></xref> instances are published to the lambda passed as the <code data-dev-comment-type=\"paramref\" class=\"paramref\">listener</code>.\n"
+  example: []
+  syntax:
+    content: DynamicViewSet CreateDynamicViewSet(Action<DataEventTransaction> listener)
+    parameters:
+    - id: listener
+      type: Action{Butterfly.Db.Event.DataEventTransaction}
+      description: The lambda that should receive the <xref href="Butterfly.Db.Event.DataEventTransaction" data-throw-if-not-resolved="false"></xref> instances
+    return:
+      type: Butterfly.Db.Dynamic.DynamicViewSet
+      description: A <xref href="Butterfly.Db.Dynamic.DynamicViewSet" data-throw-if-not-resolved="false"></xref> that can be disposed to remove all database listners
+    content.vb: Function CreateDynamicViewSet(listener As Action(Of DataEventTransaction)) As DynamicViewSet
+  overload: Butterfly.Db.IDatabase.CreateDynamicViewSet*
+  nameWithType.vb: IDatabase.CreateDynamicViewSet(Action(Of DataEventTransaction))
+  fullName.vb: Butterfly.Db.IDatabase.CreateDynamicViewSet(Action(Of Butterfly.Db.Event.DataEventTransaction))
+  name.vb: CreateDynamicViewSet(Action(Of DataEventTransaction))
+- uid: Butterfly.Db.IDatabase.CreateDynamicViewSet(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  commentId: M:Butterfly.Db.IDatabase.CreateDynamicViewSet(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  id: CreateDynamicViewSet(Func{Butterfly.Db.Event.DataEventTransaction,Task})
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: CreateDynamicViewSet(Func<DataEventTransaction, Task>)
+  nameWithType: IDatabase.CreateDynamicViewSet(Func<DataEventTransaction, Task>)
+  fullName: Butterfly.Db.IDatabase.CreateDynamicViewSet(Func<Butterfly.Db.Event.DataEventTransaction, Task>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: CreateDynamicViewSet
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 326
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  example: []
+  syntax:
+    content: DynamicViewSet CreateDynamicViewSet(Func<DataEventTransaction, Task> listener)
+    parameters:
+    - id: listener
+      type: Func{Butterfly.Db.Event.DataEventTransaction,Task}
+    return:
+      type: Butterfly.Db.Dynamic.DynamicViewSet
+    content.vb: Function CreateDynamicViewSet(listener As Func(Of DataEventTransaction, Task)) As DynamicViewSet
+  overload: Butterfly.Db.IDatabase.CreateDynamicViewSet*
+  nameWithType.vb: IDatabase.CreateDynamicViewSet(Func(Of DataEventTransaction, Task))
+  fullName.vb: Butterfly.Db.IDatabase.CreateDynamicViewSet(Func(Of Butterfly.Db.Event.DataEventTransaction, Task))
+  name.vb: CreateDynamicViewSet(Func(Of DataEventTransaction, Task))
+- uid: Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync(System.String,Action{Butterfly.Db.Event.DataEventTransaction},System.Object,System.String,System.String[])
+  commentId: M:Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync(System.String,Action{Butterfly.Db.Event.DataEventTransaction},System.Object,System.String,System.String[])
+  id: CreateAndStartDynamicViewAsync(System.String,Action{Butterfly.Db.Event.DataEventTransaction},System.Object,System.String,System.String[])
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: CreateAndStartDynamicViewAsync(String, Action<DataEventTransaction>, Object, String, String[])
+  nameWithType: IDatabase.CreateAndStartDynamicViewAsync(String, Action<DataEventTransaction>, Object, String, String[])
+  fullName: Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync(System.String, Action<Butterfly.Db.Event.DataEventTransaction>, System.Object, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: CreateAndStartDynamicViewAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 337
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nConvenience method which creates a <xref href=\"Butterfly.Db.Dynamic.DynamicViewSet\" data-throw-if-not-resolved=\"false\"></xref>, adds a single <xref href=\"Butterfly.Db.Dynamic.DynamicView\" data-throw-if-not-resolved=\"false\"></xref> to the <xref href=\"Butterfly.Db.Dynamic.DynamicViewSet\" data-throw-if-not-resolved=\"false\"></xref>, and starts the <xref href=\"Butterfly.Db.Dynamic.DynamicViewSet\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: Task<DynamicViewSet> CreateAndStartDynamicViewAsync(string sql, Action<DataEventTransaction> listener, dynamic values = null, string name = null, string[] keyFieldNames = null)
+    parameters:
+    - id: sql
+      type: System.String
+      description: ''
+    - id: listener
+      type: Action{Butterfly.Db.Event.DataEventTransaction}
+      description: ''
+    - id: values
+      type: System.Object
+      description: ''
+    - id: name
+      type: System.String
+      description: ''
+    - id: keyFieldNames
+      type: System.String[]
+      description: ''
+    return:
+      type: Task{Butterfly.Db.Dynamic.DynamicViewSet}
+      description: ''
+    content.vb: Function CreateAndStartDynamicViewAsync(sql As String, listener As Action(Of DataEventTransaction), values As Object = Nothing, name As String = Nothing, keyFieldNames As String() = Nothing) As Task(Of DynamicViewSet)
+  overload: Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync*
+  nameWithType.vb: IDatabase.CreateAndStartDynamicViewAsync(String, Action(Of DataEventTransaction), Object, String, String())
+  fullName.vb: Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync(System.String, Action(Of Butterfly.Db.Event.DataEventTransaction), System.Object, System.String, System.String())
+  name.vb: CreateAndStartDynamicViewAsync(String, Action(Of DataEventTransaction), Object, String, String())
+- uid: Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync(System.String,Func{Butterfly.Db.Event.DataEventTransaction,Task},System.Object,System.String,System.String[])
+  commentId: M:Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync(System.String,Func{Butterfly.Db.Event.DataEventTransaction,Task},System.Object,System.String,System.String[])
+  id: CreateAndStartDynamicViewAsync(System.String,Func{Butterfly.Db.Event.DataEventTransaction,Task},System.Object,System.String,System.String[])
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: CreateAndStartDynamicViewAsync(String, Func<DataEventTransaction, Task>, Object, String, String[])
+  nameWithType: IDatabase.CreateAndStartDynamicViewAsync(String, Func<DataEventTransaction, Task>, Object, String, String[])
+  fullName: Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync(System.String, Func<Butterfly.Db.Event.DataEventTransaction, Task>, System.Object, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: CreateAndStartDynamicViewAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 340
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  example: []
+  syntax:
+    content: Task<DynamicViewSet> CreateAndStartDynamicViewAsync(string sql, Func<DataEventTransaction, Task> listener, dynamic values = null, string name = null, string[] keyFieldNames = null)
+    parameters:
+    - id: sql
+      type: System.String
+    - id: listener
+      type: Func{Butterfly.Db.Event.DataEventTransaction,Task}
+    - id: values
+      type: System.Object
+    - id: name
+      type: System.String
+    - id: keyFieldNames
+      type: System.String[]
+    return:
+      type: Task{Butterfly.Db.Dynamic.DynamicViewSet}
+    content.vb: Function CreateAndStartDynamicViewAsync(sql As String, listener As Func(Of DataEventTransaction, Task), values As Object = Nothing, name As String = Nothing, keyFieldNames As String() = Nothing) As Task(Of DynamicViewSet)
+  overload: Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync*
+  nameWithType.vb: IDatabase.CreateAndStartDynamicViewAsync(String, Func(Of DataEventTransaction, Task), Object, String, String())
+  fullName.vb: Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync(System.String, Func(Of Butterfly.Db.Event.DataEventTransaction, Task), System.Object, System.String, System.String())
+  name.vb: CreateAndStartDynamicViewAsync(String, Func(Of DataEventTransaction, Task), Object, String, String())
+- uid: Butterfly.Db.IDatabase.GetInitialDataEventsAsync(System.String,System.String[],Butterfly.Db.SelectStatement,System.Object)
+  commentId: M:Butterfly.Db.IDatabase.GetInitialDataEventsAsync(System.String,System.String[],Butterfly.Db.SelectStatement,System.Object)
+  id: GetInitialDataEventsAsync(System.String,System.String[],Butterfly.Db.SelectStatement,System.Object)
+  parent: Butterfly.Db.IDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetInitialDataEventsAsync(String, String[], SelectStatement, Object)
+  nameWithType: IDatabase.GetInitialDataEventsAsync(String, String[], SelectStatement, Object)
+  fullName: Butterfly.Db.IDatabase.GetInitialDataEventsAsync(System.String, System.String[], Butterfly.Db.SelectStatement, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+    id: GetInitialDataEventsAsync
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 350
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nExecutes the <code data-dev-comment-type=\"paramref\" class=\"paramref\">selectStatement</code> and returns the results as an array of <xref href=\"Butterfly.Db.Event.DataEvent\" data-throw-if-not-resolved=\"false\"></xref> instances\n"
+  example: []
+  syntax:
+    content: Task<DataEvent[]> GetInitialDataEventsAsync(string dataEventName, string[] keyFieldNames, SelectStatement selectStatement, dynamic statementParams = null)
+    parameters:
+    - id: dataEventName
+      type: System.String
+      description: ''
+    - id: keyFieldNames
+      type: System.String[]
+      description: ''
+    - id: selectStatement
+      type: Butterfly.Db.SelectStatement
+      description: ''
+    - id: statementParams
+      type: System.Object
+      description: ''
+    return:
+      type: Task{Butterfly.Db.Event.DataEvent[]}
+      description: ''
+    content.vb: Function GetInitialDataEventsAsync(dataEventName As String, keyFieldNames As String(), selectStatement As SelectStatement, statementParams As Object = Nothing) As Task(Of DataEvent())
+  overload: Butterfly.Db.IDatabase.GetInitialDataEventsAsync*
+  nameWithType.vb: IDatabase.GetInitialDataEventsAsync(String, String(), SelectStatement, Object)
+  fullName.vb: Butterfly.Db.IDatabase.GetInitialDataEventsAsync(System.String, System.String(), Butterfly.Db.SelectStatement, System.Object)
+  name.vb: GetInitialDataEventsAsync(String, String(), SelectStatement, Object)
+references:
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: Butterfly.Db.IDatabase.CanJoin*
+  commentId: Overload:Butterfly.Db.IDatabase.CanJoin
+  name: CanJoin
+  nameWithType: IDatabase.CanJoin
+  fullName: Butterfly.Db.IDatabase.CanJoin
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Butterfly.Db.IDatabase.CanFieldAlias*
+  commentId: Overload:Butterfly.Db.IDatabase.CanFieldAlias
+  name: CanFieldAlias
+  nameWithType: IDatabase.CanFieldAlias
+  fullName: Butterfly.Db.IDatabase.CanFieldAlias
+- uid: Butterfly.Db.IDatabase.SelectCount*
+  commentId: Overload:Butterfly.Db.IDatabase.SelectCount
+  name: SelectCount
+  nameWithType: IDatabase.SelectCount
+  fullName: Butterfly.Db.IDatabase.SelectCount
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Butterfly.Db.Table
+  commentId: T:Butterfly.Db.Table
+  parent: Butterfly.Db
+  name: Table
+  nameWithType: Table
+  fullName: Butterfly.Db.Table
+- uid: Butterfly.Db.IDatabase.TableByName*
+  commentId: Overload:Butterfly.Db.IDatabase.TableByName
+  name: TableByName
+  nameWithType: IDatabase.TableByName
+  fullName: Butterfly.Db.IDatabase.TableByName
+- uid: Dictionary{System.String,Butterfly.Db.Table}
+  commentId: '!:Dictionary{System.String,Butterfly.Db.Table}'
+  definition: Dictionary`2
+  name: Dictionary<String, Table>
+  nameWithType: Dictionary<String, Table>
+  fullName: Dictionary<System.String, Butterfly.Db.Table>
+  nameWithType.vb: Dictionary(Of String, Table)
+  fullName.vb: Dictionary(Of System.String, Butterfly.Db.Table)
+  name.vb: Dictionary(Of String, Table)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Butterfly.Db.Table
+    name: Table
+    nameWithType: Table
+    fullName: Butterfly.Db.Table
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Butterfly.Db.Table
+    name: Table
+    nameWithType: Table
+    fullName: Butterfly.Db.Table
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.Event.DataEventTransaction
+  commentId: T:Butterfly.Db.Event.DataEventTransaction
+  parent: Butterfly.Db.Event
+  name: DataEventTransaction
+  nameWithType: DataEventTransaction
+  fullName: Butterfly.Db.Event.DataEventTransaction
+- uid: Butterfly.Db.IDatabase.OnNewUncommittedTransaction*
+  commentId: Overload:Butterfly.Db.IDatabase.OnNewUncommittedTransaction
+  name: OnNewUncommittedTransaction
+  nameWithType: IDatabase.OnNewUncommittedTransaction
+  fullName: Butterfly.Db.IDatabase.OnNewUncommittedTransaction
+- uid: Action{Butterfly.Db.Event.DataEventTransaction}
+  commentId: '!:Action{Butterfly.Db.Event.DataEventTransaction}'
+  definition: Action`1
+  name: Action<DataEventTransaction>
+  nameWithType: Action<DataEventTransaction>
+  fullName: Action<Butterfly.Db.Event.DataEventTransaction>
+  nameWithType.vb: Action(Of DataEventTransaction)
+  fullName.vb: Action(Of Butterfly.Db.Event.DataEventTransaction)
+  name.vb: Action(Of DataEventTransaction)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Butterfly.Db.Event.DataEventTransaction
+    name: DataEventTransaction
+    nameWithType: DataEventTransaction
+    fullName: Butterfly.Db.Event.DataEventTransaction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Butterfly.Db.Event.DataEventTransaction
+    name: DataEventTransaction
+    nameWithType: DataEventTransaction
+    fullName: Butterfly.Db.Event.DataEventTransaction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDisposable
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: IDisposable
+- uid: Butterfly.Db.Event
+  commentId: N:Butterfly.Db.Event
+  name: Butterfly.Db.Event
+  nameWithType: Butterfly.Db.Event
+  fullName: Butterfly.Db.Event
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func{Butterfly.Db.Event.DataEventTransaction,Task}
+  commentId: '!:Func{Butterfly.Db.Event.DataEventTransaction,Task}'
+  definition: Func`2
+  name: Func<DataEventTransaction, Task>
+  nameWithType: Func<DataEventTransaction, Task>
+  fullName: Func<Butterfly.Db.Event.DataEventTransaction, Task>
+  nameWithType.vb: Func(Of DataEventTransaction, Task)
+  fullName.vb: Func(Of Butterfly.Db.Event.DataEventTransaction, Task)
+  name.vb: Func(Of DataEventTransaction, Task)
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Butterfly.Db.Event.DataEventTransaction
+    name: DataEventTransaction
+    nameWithType: DataEventTransaction
+    fullName: Butterfly.Db.Event.DataEventTransaction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Butterfly.Db.Event.DataEventTransaction
+    name: DataEventTransaction
+    nameWithType: DataEventTransaction
+    fullName: Butterfly.Db.Event.DataEventTransaction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.IDatabase.OnNewCommittedTransaction*
+  commentId: Overload:Butterfly.Db.IDatabase.OnNewCommittedTransaction
+  name: OnNewCommittedTransaction
+  nameWithType: IDatabase.OnNewCommittedTransaction
+  fullName: Butterfly.Db.IDatabase.OnNewCommittedTransaction
+- uid: Butterfly.Db.IDatabase.SelectValueAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.SelectValueAsync
+  name: SelectValueAsync
+  nameWithType: IDatabase.SelectValueAsync
+  fullName: Butterfly.Db.IDatabase.SelectValueAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Task{{T}}
+  commentId: '!:Task{``0}'
+  definition: Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.IDatabase.SelectValuesAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.SelectValuesAsync
+  name: SelectValuesAsync
+  nameWithType: IDatabase.SelectValuesAsync
+  fullName: Butterfly.Db.IDatabase.SelectValuesAsync
+- uid: Task{{T}[]}
+  commentId: '!:Task{``0[]}'
+  definition: Task`1
+  name: Task<T[]>
+  nameWithType: Task<T[]>
+  fullName: Task<T[]>
+  nameWithType.vb: Task(Of T())
+  fullName.vb: Task(Of T())
+  name.vb: Task(Of T())
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.IDatabase.SelectRowAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.SelectRowAsync
+  name: SelectRowAsync
+  nameWithType: IDatabase.SelectRowAsync
+  fullName: Butterfly.Db.IDatabase.SelectRowAsync
+- uid: Task{System.Collections.Generic.Dictionary{System.String,System.Object}}
+  commentId: '!:Task{System.Collections.Generic.Dictionary{System.String,System.Object}}'
+  definition: Task`1
+  name: Task<System.Collections.Generic.Dictionary<String, Object>>
+  nameWithType: Task<System.Collections.Generic.Dictionary<String, Object>>
+  fullName: Task<System.Collections.Generic.Dictionary<System.String, System.Object>>
+  nameWithType.vb: Task(Of System.Collections.Generic.Dictionary(Of String, Object))
+  fullName.vb: Task(Of System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  name.vb: Task(Of System.Collections.Generic.Dictionary(Of String, Object))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.IDatabase.SelectRowsAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.SelectRowsAsync
+  name: SelectRowsAsync
+  nameWithType: IDatabase.SelectRowsAsync
+  fullName: Butterfly.Db.IDatabase.SelectRowsAsync
+- uid: Task{System.Collections.Generic.Dictionary{System.String,System.Object}[]}
+  commentId: '!:Task{System.Collections.Generic.Dictionary{System.String,System.Object}[]}'
+  definition: Task`1
+  name: Task<System.Collections.Generic.Dictionary<String, Object>[]>
+  nameWithType: Task<System.Collections.Generic.Dictionary<String, Object>[]>
+  fullName: Task<System.Collections.Generic.Dictionary<System.String, System.Object>[]>
+  nameWithType.vb: Task(Of System.Collections.Generic.Dictionary(Of String, Object)())
+  fullName.vb: Task(Of System.Collections.Generic.Dictionary(Of System.String, System.Object)())
+  name.vb: Task(Of System.Collections.Generic.Dictionary(Of String, Object)())
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.SelectStatement
+  commentId: T:Butterfly.Db.SelectStatement
+  parent: Butterfly.Db
+  name: SelectStatement
+  nameWithType: SelectStatement
+  fullName: Butterfly.Db.SelectStatement
+- uid: Butterfly.Db.IDatabase.QueryValueAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.QueryValueAsync
+  name: QueryValueAsync
+  nameWithType: IDatabase.QueryValueAsync
+  fullName: Butterfly.Db.IDatabase.QueryValueAsync
+- uid: Butterfly.Db.IDatabase.QueryRowAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.QueryRowAsync
+  name: QueryRowAsync
+  nameWithType: IDatabase.QueryRowAsync
+  fullName: Butterfly.Db.IDatabase.QueryRowAsync
+- uid: Butterfly.Db.IDatabase.QueryRowsAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.QueryRowsAsync
+  name: QueryRowsAsync
+  nameWithType: IDatabase.QueryRowsAsync
+  fullName: Butterfly.Db.IDatabase.QueryRowsAsync
+- uid: Butterfly.Db.DuplicateKeyDatabaseException
+  commentId: T:Butterfly.Db.DuplicateKeyDatabaseException
+  name: DuplicateKeyDatabaseException
+  nameWithType: DuplicateKeyDatabaseException
+  fullName: Butterfly.Db.DuplicateKeyDatabaseException
+- uid: Butterfly.Db.IDatabase.InsertAndCommitAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.InsertAndCommitAsync
+  name: InsertAndCommitAsync
+  nameWithType: IDatabase.InsertAndCommitAsync
+  fullName: Butterfly.Db.IDatabase.InsertAndCommitAsync
+- uid: Butterfly.Db.IDatabase.UpdateAndCommitAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.UpdateAndCommitAsync
+  name: UpdateAndCommitAsync
+  nameWithType: IDatabase.UpdateAndCommitAsync
+  fullName: Butterfly.Db.IDatabase.UpdateAndCommitAsync
+- uid: Task{System.Int32}
+  commentId: '!:Task{System.Int32}'
+  definition: Task`1
+  name: Task<Int32>
+  nameWithType: Task<Int32>
+  fullName: Task<System.Int32>
+  nameWithType.vb: Task(Of Int32)
+  fullName.vb: Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.IDatabase.DeleteAndCommitAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.DeleteAndCommitAsync
+  name: DeleteAndCommitAsync
+  nameWithType: IDatabase.DeleteAndCommitAsync
+  fullName: Butterfly.Db.IDatabase.DeleteAndCommitAsync
+- uid: Butterfly.Db.ITransaction
+  commentId: T:Butterfly.Db.ITransaction
+  parent: Butterfly.Db
+  name: ITransaction
+  nameWithType: ITransaction
+  fullName: Butterfly.Db.ITransaction
+- uid: Butterfly.Db.ITransaction.CommitAsync
+  commentId: M:Butterfly.Db.ITransaction.CommitAsync
+  parent: Butterfly.Db.ITransaction
+  name: CommitAsync()
+  nameWithType: ITransaction.CommitAsync()
+  fullName: Butterfly.Db.ITransaction.CommitAsync()
+  spec.csharp:
+  - uid: Butterfly.Db.ITransaction.CommitAsync
+    name: CommitAsync
+    nameWithType: ITransaction.CommitAsync
+    fullName: Butterfly.Db.ITransaction.CommitAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.ITransaction.CommitAsync
+    name: CommitAsync
+    nameWithType: ITransaction.CommitAsync
+    fullName: Butterfly.Db.ITransaction.CommitAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.IDatabase.BeginTransaction*
+  commentId: Overload:Butterfly.Db.IDatabase.BeginTransaction
+  name: BeginTransaction
+  nameWithType: IDatabase.BeginTransaction
+  fullName: Butterfly.Db.IDatabase.BeginTransaction
+- uid: Butterfly.Db.IDatabase.BeginTransactionAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.BeginTransactionAsync
+  name: BeginTransactionAsync
+  nameWithType: IDatabase.BeginTransactionAsync
+  fullName: Butterfly.Db.IDatabase.BeginTransactionAsync
+- uid: Task{Butterfly.Db.ITransaction}
+  commentId: '!:Task{Butterfly.Db.ITransaction}'
+  definition: Task`1
+  name: Task<ITransaction>
+  nameWithType: Task<ITransaction>
+  fullName: Task<Butterfly.Db.ITransaction>
+  nameWithType.vb: Task(Of ITransaction)
+  fullName.vb: Task(Of Butterfly.Db.ITransaction)
+  name.vb: Task(Of ITransaction)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Butterfly.Db.ITransaction
+    name: ITransaction
+    nameWithType: ITransaction
+    fullName: Butterfly.Db.ITransaction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Butterfly.Db.ITransaction
+    name: ITransaction
+    nameWithType: ITransaction
+    fullName: Butterfly.Db.ITransaction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.IDatabase.SetDefaultValue*
+  commentId: Overload:Butterfly.Db.IDatabase.SetDefaultValue
+  name: SetDefaultValue
+  nameWithType: IDatabase.SetDefaultValue
+  fullName: Butterfly.Db.IDatabase.SetDefaultValue
+- uid: Func{System.String,System.Object}
+  commentId: '!:Func{System.String,System.Object}'
+  definition: Func`2
+  name: Func<String, Object>
+  nameWithType: Func<String, Object>
+  fullName: Func<System.String, System.Object>
+  nameWithType.vb: Func(Of String, Object)
+  fullName.vb: Func(Of System.String, System.Object)
+  name.vb: Func(Of String, Object)
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.IDatabase.SetOverrideValue*
+  commentId: Overload:Butterfly.Db.IDatabase.SetOverrideValue
+  name: SetOverrideValue
+  nameWithType: IDatabase.SetOverrideValue
+  fullName: Butterfly.Db.IDatabase.SetOverrideValue
+- uid: Butterfly.Db.IDatabase.AddInputPreprocessor*
+  commentId: Overload:Butterfly.Db.IDatabase.AddInputPreprocessor
+  name: AddInputPreprocessor
+  nameWithType: IDatabase.AddInputPreprocessor
+  fullName: Butterfly.Db.IDatabase.AddInputPreprocessor
+- uid: Action{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}}
+  commentId: '!:Action{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}}'
+  definition: Action`2
+  name: Action<String, System.Collections.Generic.Dictionary<String, Object>>
+  nameWithType: Action<String, System.Collections.Generic.Dictionary<String, Object>>
+  fullName: Action<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>>
+  nameWithType.vb: Action(Of String, System.Collections.Generic.Dictionary(Of String, Object))
+  fullName.vb: Action(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  name.vb: Action(Of String, System.Collections.Generic.Dictionary(Of String, Object))
+  spec.csharp:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`2
+  isExternal: true
+  name: Action<, >
+  nameWithType: Action<, >
+  fullName: Action<, >
+  nameWithType.vb: Action(Of , )
+  fullName.vb: Action(Of , )
+  name.vb: Action(Of , )
+  spec.csharp:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.Dynamic.DynamicView
+  commentId: T:Butterfly.Db.Dynamic.DynamicView
+  parent: Butterfly.Db.Dynamic
+  name: DynamicView
+  nameWithType: DynamicView
+  fullName: Butterfly.Db.Dynamic.DynamicView
+- uid: Butterfly.Db.Dynamic.DynamicViewSet
+  commentId: T:Butterfly.Db.Dynamic.DynamicViewSet
+  parent: Butterfly.Db.Dynamic
+  name: DynamicViewSet
+  nameWithType: DynamicViewSet
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet
+- uid: Butterfly.Db.IDatabase.CreateDynamicViewSet*
+  commentId: Overload:Butterfly.Db.IDatabase.CreateDynamicViewSet
+  name: CreateDynamicViewSet
+  nameWithType: IDatabase.CreateDynamicViewSet
+  fullName: Butterfly.Db.IDatabase.CreateDynamicViewSet
+- uid: Butterfly.Db.Dynamic
+  commentId: N:Butterfly.Db.Dynamic
+  name: Butterfly.Db.Dynamic
+  nameWithType: Butterfly.Db.Dynamic
+  fullName: Butterfly.Db.Dynamic
+- uid: Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync
+  name: CreateAndStartDynamicViewAsync
+  nameWithType: IDatabase.CreateAndStartDynamicViewAsync
+  fullName: Butterfly.Db.IDatabase.CreateAndStartDynamicViewAsync
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Task{Butterfly.Db.Dynamic.DynamicViewSet}
+  commentId: '!:Task{Butterfly.Db.Dynamic.DynamicViewSet}'
+  definition: Task`1
+  name: Task<DynamicViewSet>
+  nameWithType: Task<DynamicViewSet>
+  fullName: Task<Butterfly.Db.Dynamic.DynamicViewSet>
+  nameWithType.vb: Task(Of DynamicViewSet)
+  fullName.vb: Task(Of Butterfly.Db.Dynamic.DynamicViewSet)
+  name.vb: Task(Of DynamicViewSet)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Butterfly.Db.Dynamic.DynamicViewSet
+    name: DynamicViewSet
+    nameWithType: DynamicViewSet
+    fullName: Butterfly.Db.Dynamic.DynamicViewSet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Butterfly.Db.Dynamic.DynamicViewSet
+    name: DynamicViewSet
+    nameWithType: DynamicViewSet
+    fullName: Butterfly.Db.Dynamic.DynamicViewSet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.Event.DataEvent
+  commentId: T:Butterfly.Db.Event.DataEvent
+  parent: Butterfly.Db.Event
+  name: DataEvent
+  nameWithType: DataEvent
+  fullName: Butterfly.Db.Event.DataEvent
+- uid: Butterfly.Db.IDatabase.GetInitialDataEventsAsync*
+  commentId: Overload:Butterfly.Db.IDatabase.GetInitialDataEventsAsync
+  name: GetInitialDataEventsAsync
+  nameWithType: IDatabase.GetInitialDataEventsAsync
+  fullName: Butterfly.Db.IDatabase.GetInitialDataEventsAsync
+- uid: Task{Butterfly.Db.Event.DataEvent[]}
+  commentId: '!:Task{Butterfly.Db.Event.DataEvent[]}'
+  definition: Task`1
+  name: Task<DataEvent[]>
+  nameWithType: Task<DataEvent[]>
+  fullName: Task<Butterfly.Db.Event.DataEvent[]>
+  nameWithType.vb: Task(Of DataEvent())
+  fullName.vb: Task(Of Butterfly.Db.Event.DataEvent())
+  name.vb: Task(Of DataEvent())
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Butterfly.Db.Event.DataEvent
+    name: DataEvent
+    nameWithType: DataEvent
+    fullName: Butterfly.Db.Event.DataEvent
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Butterfly.Db.Event.DataEvent
+    name: DataEvent
+    nameWithType: DataEvent
+    fullName: Butterfly.Db.Event.DataEvent
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+shouldSkipMarkup: true

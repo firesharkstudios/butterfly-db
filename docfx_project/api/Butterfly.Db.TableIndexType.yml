@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.TableIndexType
+  commentId: T:Butterfly.Db.TableIndexType
+  id: TableIndexType
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.TableIndexType.Other
+  - Butterfly.Db.TableIndexType.Primary
+  - Butterfly.Db.TableIndexType.Unique
+  langs:
+  - csharp
+  - vb
+  name: TableIndexType
+  nameWithType: TableIndexType
+  fullName: Butterfly.Db.TableIndexType
+  type: Enum
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+    id: TableIndexType
+    path: ../Butterfly.Db/TableIndex.cs
+    startLine: 6
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: 'public enum TableIndexType : int'
+    content.vb: Public Enum TableIndexType As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Butterfly.Db.TableIndexType.Primary
+  commentId: F:Butterfly.Db.TableIndexType.Primary
+  id: Primary
+  parent: Butterfly.Db.TableIndexType
+  langs:
+  - csharp
+  - vb
+  name: Primary
+  nameWithType: TableIndexType.Primary
+  fullName: Butterfly.Db.TableIndexType.Primary
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+    id: Primary
+    path: ../Butterfly.Db/TableIndex.cs
+    startLine: 7
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: Primary = 0
+    return:
+      type: Butterfly.Db.TableIndexType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Butterfly.Db.TableIndexType.Unique
+  commentId: F:Butterfly.Db.TableIndexType.Unique
+  id: Unique
+  parent: Butterfly.Db.TableIndexType
+  langs:
+  - csharp
+  - vb
+  name: Unique
+  nameWithType: TableIndexType.Unique
+  fullName: Butterfly.Db.TableIndexType.Unique
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+    id: Unique
+    path: ../Butterfly.Db/TableIndex.cs
+    startLine: 8
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: Unique = 1
+    return:
+      type: Butterfly.Db.TableIndexType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Butterfly.Db.TableIndexType.Other
+  commentId: F:Butterfly.Db.TableIndexType.Other
+  id: Other
+  parent: Butterfly.Db.TableIndexType
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: TableIndexType.Other
+  fullName: Butterfly.Db.TableIndexType.Other
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+    id: Other
+    path: ../Butterfly.Db/TableIndex.cs
+    startLine: 9
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: Other = 2
+    return:
+      type: Butterfly.Db.TableIndexType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: Butterfly.Db.TableIndexType
+  commentId: T:Butterfly.Db.TableIndexType
+  parent: Butterfly.Db
+  name: TableIndexType
+  nameWithType: TableIndexType
+  fullName: Butterfly.Db.TableIndexType
+shouldSkipMarkup: true

@@ -1,0 +1,400 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam
+  commentId: T:Butterfly.Db.Dynamic.BaseDynamicParam
+  id: BaseDynamicParam
+  parent: Butterfly.Db.Dynamic
+  children:
+  - Butterfly.Db.Dynamic.BaseDynamicParam.#ctor(System.String)
+  - Butterfly.Db.Dynamic.BaseDynamicParam.Clear
+  - Butterfly.Db.Dynamic.BaseDynamicParam.Dirty
+  - Butterfly.Db.Dynamic.BaseDynamicParam.GetValue
+  - Butterfly.Db.Dynamic.BaseDynamicParam.logger
+  - Butterfly.Db.Dynamic.BaseDynamicParam.name
+  - Butterfly.Db.Dynamic.BaseDynamicParam.ResetDirty
+  - Butterfly.Db.Dynamic.BaseDynamicParam.SetDirty
+  langs:
+  - csharp
+  - vb
+  name: BaseDynamicParam
+  nameWithType: BaseDynamicParam
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    id: BaseDynamicParam
+    path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    startLine: 10
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  summary: "\nBase class for implementing dynamic params (see <xref href=\"Butterfly.Db.IDynamicParam\" data-throw-if-not-resolved=\"false\"></xref>)\n"
+  example: []
+  syntax:
+    content: 'public abstract class BaseDynamicParam : object, IDynamicParam'
+    content.vb: >-
+      Public MustInherit Class BaseDynamicParam
+          Inherits Object
+          Implements IDynamicParam
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Butterfly.Db.Dynamic.MultiValueDynamicParam
+  - Butterfly.Db.Dynamic.SingleValueDynamicParam
+  implements:
+  - Butterfly.Db.IDynamicParam
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.logger
+  commentId: F:Butterfly.Db.Dynamic.BaseDynamicParam.logger
+  id: logger
+  parent: Butterfly.Db.Dynamic.BaseDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: logger
+  nameWithType: BaseDynamicParam.logger
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.logger
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    id: logger
+    path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    startLine: 11
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected static readonly Logger logger
+    return:
+      type: Logger
+    content.vb: Protected Shared ReadOnly logger As Logger
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.name
+  commentId: F:Butterfly.Db.Dynamic.BaseDynamicParam.name
+  id: name
+  parent: Butterfly.Db.Dynamic.BaseDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: BaseDynamicParam.name
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.name
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    id: name
+    path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    startLine: 15
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public readonly string name
+    return:
+      type: System.String
+    content.vb: Public ReadOnly name As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.#ctor(System.String)
+  commentId: M:Butterfly.Db.Dynamic.BaseDynamicParam.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Butterfly.Db.Dynamic.BaseDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: BaseDynamicParam(String)
+  nameWithType: BaseDynamicParam.BaseDynamicParam(String)
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.BaseDynamicParam(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    id: .ctor
+    path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    startLine: 18
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public BaseDynamicParam(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub New(name As String)
+  overload: Butterfly.Db.Dynamic.BaseDynamicParam.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.Dirty
+  commentId: P:Butterfly.Db.Dynamic.BaseDynamicParam.Dirty
+  id: Dirty
+  parent: Butterfly.Db.Dynamic.BaseDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: Dirty
+  nameWithType: BaseDynamicParam.Dirty
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.Dirty
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    id: Dirty
+    path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    startLine: 22
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public bool Dirty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Dirty As Boolean
+  overload: Butterfly.Db.Dynamic.BaseDynamicParam.Dirty*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.SetDirty
+  commentId: M:Butterfly.Db.Dynamic.BaseDynamicParam.SetDirty
+  id: SetDirty
+  parent: Butterfly.Db.Dynamic.BaseDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: SetDirty()
+  nameWithType: BaseDynamicParam.SetDirty()
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.SetDirty()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    id: SetDirty
+    path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    startLine: 24
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected void SetDirty()
+    content.vb: Protected Sub SetDirty
+  overload: Butterfly.Db.Dynamic.BaseDynamicParam.SetDirty*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.ResetDirty
+  commentId: M:Butterfly.Db.Dynamic.BaseDynamicParam.ResetDirty
+  id: ResetDirty
+  parent: Butterfly.Db.Dynamic.BaseDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: ResetDirty()
+  nameWithType: BaseDynamicParam.ResetDirty()
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.ResetDirty()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    id: ResetDirty
+    path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    startLine: 29
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public void ResetDirty()
+    content.vb: Public Sub ResetDirty
+  overload: Butterfly.Db.Dynamic.BaseDynamicParam.ResetDirty*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.Clear
+  commentId: M:Butterfly.Db.Dynamic.BaseDynamicParam.Clear
+  id: Clear
+  parent: Butterfly.Db.Dynamic.BaseDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: BaseDynamicParam.Clear()
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.Clear()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    id: Clear
+    path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    startLine: 34
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public abstract void Clear()
+    content.vb: Public MustOverride Sub Clear
+  overload: Butterfly.Db.Dynamic.BaseDynamicParam.Clear*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.GetValue
+  commentId: M:Butterfly.Db.Dynamic.BaseDynamicParam.GetValue
+  id: GetValue
+  parent: Butterfly.Db.Dynamic.BaseDynamicParam
+  langs:
+  - csharp
+  - vb
+  name: GetValue()
+  nameWithType: BaseDynamicParam.GetValue()
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.GetValue()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    id: GetValue
+    path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
+    startLine: 36
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public abstract object GetValue()
+    return:
+      type: System.Object
+    content.vb: Public MustOverride Function GetValue As Object
+  overload: Butterfly.Db.Dynamic.BaseDynamicParam.GetValue*
+  implements:
+  - Butterfly.Db.IDynamicParam.GetValue
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: Butterfly.Db.IDynamicParam
+  commentId: T:Butterfly.Db.IDynamicParam
+  parent: Butterfly.Db
+  name: IDynamicParam
+  nameWithType: IDynamicParam
+  fullName: Butterfly.Db.IDynamicParam
+- uid: Butterfly.Db.Dynamic
+  commentId: N:Butterfly.Db.Dynamic
+  name: Butterfly.Db.Dynamic
+  nameWithType: Butterfly.Db.Dynamic
+  fullName: Butterfly.Db.Dynamic
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: Logger
+  commentId: '!:Logger'
+  isExternal: true
+  name: Logger
+  nameWithType: Logger
+  fullName: Logger
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.#ctor*
+  commentId: Overload:Butterfly.Db.Dynamic.BaseDynamicParam.#ctor
+  name: BaseDynamicParam
+  nameWithType: BaseDynamicParam.BaseDynamicParam
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.BaseDynamicParam
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.Dirty*
+  commentId: Overload:Butterfly.Db.Dynamic.BaseDynamicParam.Dirty
+  name: Dirty
+  nameWithType: BaseDynamicParam.Dirty
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.Dirty
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.SetDirty*
+  commentId: Overload:Butterfly.Db.Dynamic.BaseDynamicParam.SetDirty
+  name: SetDirty
+  nameWithType: BaseDynamicParam.SetDirty
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.SetDirty
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.ResetDirty*
+  commentId: Overload:Butterfly.Db.Dynamic.BaseDynamicParam.ResetDirty
+  name: ResetDirty
+  nameWithType: BaseDynamicParam.ResetDirty
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.ResetDirty
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.Clear*
+  commentId: Overload:Butterfly.Db.Dynamic.BaseDynamicParam.Clear
+  name: Clear
+  nameWithType: BaseDynamicParam.Clear
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.Clear
+- uid: Butterfly.Db.Dynamic.BaseDynamicParam.GetValue*
+  commentId: Overload:Butterfly.Db.Dynamic.BaseDynamicParam.GetValue
+  name: GetValue
+  nameWithType: BaseDynamicParam.GetValue
+  fullName: Butterfly.Db.Dynamic.BaseDynamicParam.GetValue
+- uid: Butterfly.Db.IDynamicParam.GetValue
+  commentId: M:Butterfly.Db.IDynamicParam.GetValue
+  parent: Butterfly.Db.IDynamicParam
+  name: GetValue()
+  nameWithType: IDynamicParam.GetValue()
+  fullName: Butterfly.Db.IDynamicParam.GetValue()
+  spec.csharp:
+  - uid: Butterfly.Db.IDynamicParam.GetValue
+    name: GetValue
+    nameWithType: IDynamicParam.GetValue
+    fullName: Butterfly.Db.IDynamicParam.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.IDynamicParam.GetValue
+    name: GetValue
+    nameWithType: IDynamicParam.GetValue
+    fullName: Butterfly.Db.IDynamicParam.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+shouldSkipMarkup: true

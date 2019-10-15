@@ -1,0 +1,335 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.TableFieldDef
+  commentId: T:Butterfly.Db.TableFieldDef
+  id: TableFieldDef
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.TableFieldDef.#ctor(System.String,Type,System.Int32,System.Boolean,System.Boolean)
+  - Butterfly.Db.TableFieldDef.allowNull
+  - Butterfly.Db.TableFieldDef.FromDataColumn(DataColumn)
+  - Butterfly.Db.TableFieldDef.isAutoIncrement
+  - Butterfly.Db.TableFieldDef.maxLength
+  - Butterfly.Db.TableFieldDef.name
+  - Butterfly.Db.TableFieldDef.type
+  langs:
+  - csharp
+  - vb
+  name: TableFieldDef
+  nameWithType: TableFieldDef
+  fullName: Butterfly.Db.TableFieldDef
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+    id: TableFieldDef
+    path: ../Butterfly.Db/TableFieldDef.cs
+    startLine: 11
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nDefines a field definition for a <xref href=\"Butterfly.Db.Table\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class TableFieldDef : object'
+    content.vb: >-
+      Public Class TableFieldDef
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.TableFieldDef.name
+  commentId: F:Butterfly.Db.TableFieldDef.name
+  id: name
+  parent: Butterfly.Db.TableFieldDef
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: TableFieldDef.name
+  fullName: Butterfly.Db.TableFieldDef.name
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+    id: name
+    path: ../Butterfly.Db/TableFieldDef.cs
+    startLine: 12
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string name
+    return:
+      type: System.String
+    content.vb: Public ReadOnly name As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.TableFieldDef.type
+  commentId: F:Butterfly.Db.TableFieldDef.type
+  id: type
+  parent: Butterfly.Db.TableFieldDef
+  langs:
+  - csharp
+  - vb
+  name: type
+  nameWithType: TableFieldDef.type
+  fullName: Butterfly.Db.TableFieldDef.type
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+    id: type
+    path: ../Butterfly.Db/TableFieldDef.cs
+    startLine: 13
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly Type type
+    return:
+      type: Type
+    content.vb: Public ReadOnly type As Type
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.TableFieldDef.maxLength
+  commentId: F:Butterfly.Db.TableFieldDef.maxLength
+  id: maxLength
+  parent: Butterfly.Db.TableFieldDef
+  langs:
+  - csharp
+  - vb
+  name: maxLength
+  nameWithType: TableFieldDef.maxLength
+  fullName: Butterfly.Db.TableFieldDef.maxLength
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+    id: maxLength
+    path: ../Butterfly.Db/TableFieldDef.cs
+    startLine: 14
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly int maxLength
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly maxLength As Integer
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.TableFieldDef.allowNull
+  commentId: F:Butterfly.Db.TableFieldDef.allowNull
+  id: allowNull
+  parent: Butterfly.Db.TableFieldDef
+  langs:
+  - csharp
+  - vb
+  name: allowNull
+  nameWithType: TableFieldDef.allowNull
+  fullName: Butterfly.Db.TableFieldDef.allowNull
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+    id: allowNull
+    path: ../Butterfly.Db/TableFieldDef.cs
+    startLine: 15
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly bool allowNull
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly allowNull As Boolean
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.TableFieldDef.isAutoIncrement
+  commentId: F:Butterfly.Db.TableFieldDef.isAutoIncrement
+  id: isAutoIncrement
+  parent: Butterfly.Db.TableFieldDef
+  langs:
+  - csharp
+  - vb
+  name: isAutoIncrement
+  nameWithType: TableFieldDef.isAutoIncrement
+  fullName: Butterfly.Db.TableFieldDef.isAutoIncrement
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+    id: isAutoIncrement
+    path: ../Butterfly.Db/TableFieldDef.cs
+    startLine: 16
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly bool isAutoIncrement
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly isAutoIncrement As Boolean
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.TableFieldDef.#ctor(System.String,Type,System.Int32,System.Boolean,System.Boolean)
+  commentId: M:Butterfly.Db.TableFieldDef.#ctor(System.String,Type,System.Int32,System.Boolean,System.Boolean)
+  id: '#ctor(System.String,Type,System.Int32,System.Boolean,System.Boolean)'
+  parent: Butterfly.Db.TableFieldDef
+  langs:
+  - csharp
+  - vb
+  name: TableFieldDef(String, Type, Int32, Boolean, Boolean)
+  nameWithType: TableFieldDef.TableFieldDef(String, Type, Int32, Boolean, Boolean)
+  fullName: Butterfly.Db.TableFieldDef.TableFieldDef(System.String, Type, System.Int32, System.Boolean, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+    id: .ctor
+    path: ../Butterfly.Db/TableFieldDef.cs
+    startLine: 18
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public TableFieldDef(string name, Type type, int maxLength, bool allowNull, bool isAutoIncrement)
+    parameters:
+    - id: name
+      type: System.String
+    - id: type
+      type: Type
+    - id: maxLength
+      type: System.Int32
+    - id: allowNull
+      type: System.Boolean
+    - id: isAutoIncrement
+      type: System.Boolean
+    content.vb: Public Sub New(name As String, type As Type, maxLength As Integer, allowNull As Boolean, isAutoIncrement As Boolean)
+  overload: Butterfly.Db.TableFieldDef.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.TableFieldDef.FromDataColumn(DataColumn)
+  commentId: M:Butterfly.Db.TableFieldDef.FromDataColumn(DataColumn)
+  id: FromDataColumn(DataColumn)
+  parent: Butterfly.Db.TableFieldDef
+  langs:
+  - csharp
+  - vb
+  name: FromDataColumn(DataColumn)
+  nameWithType: TableFieldDef.FromDataColumn(DataColumn)
+  fullName: Butterfly.Db.TableFieldDef.FromDataColumn(DataColumn)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+    id: FromDataColumn
+    path: ../Butterfly.Db/TableFieldDef.cs
+    startLine: 26
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public static TableFieldDef FromDataColumn(DataColumn dataColumn)
+    parameters:
+    - id: dataColumn
+      type: DataColumn
+    return:
+      type: Butterfly.Db.TableFieldDef
+    content.vb: Public Shared Function FromDataColumn(dataColumn As DataColumn) As TableFieldDef
+  overload: Butterfly.Db.TableFieldDef.FromDataColumn*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Butterfly.Db.Table
+  commentId: T:Butterfly.Db.Table
+  parent: Butterfly.Db
+  name: Table
+  nameWithType: Table
+  fullName: Butterfly.Db.Table
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Butterfly.Db.TableFieldDef.#ctor*
+  commentId: Overload:Butterfly.Db.TableFieldDef.#ctor
+  name: TableFieldDef
+  nameWithType: TableFieldDef.TableFieldDef
+  fullName: Butterfly.Db.TableFieldDef.TableFieldDef
+- uid: Butterfly.Db.TableFieldDef.FromDataColumn*
+  commentId: Overload:Butterfly.Db.TableFieldDef.FromDataColumn
+  name: FromDataColumn
+  nameWithType: TableFieldDef.FromDataColumn
+  fullName: Butterfly.Db.TableFieldDef.FromDataColumn
+- uid: DataColumn
+  commentId: '!:DataColumn'
+  isExternal: true
+  name: DataColumn
+  nameWithType: DataColumn
+  fullName: DataColumn
+- uid: Butterfly.Db.TableFieldDef
+  commentId: T:Butterfly.Db.TableFieldDef
+  parent: Butterfly.Db
+  name: TableFieldDef
+  nameWithType: TableFieldDef
+  fullName: Butterfly.Db.TableFieldDef
+shouldSkipMarkup: true

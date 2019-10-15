@@ -1,0 +1,654 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Table
+  commentId: T:Butterfly.Db.Table
+  id: Table
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.Table.#ctor(System.String,Butterfly.Db.TableFieldDef[],Butterfly.Db.TableIndex[])
+  - Butterfly.Db.Table.AutoIncrementFieldName
+  - Butterfly.Db.Table.FieldDefs
+  - Butterfly.Db.Table.FindFieldDef(System.String)
+  - Butterfly.Db.Table.getDefaultValueByFieldName
+  - Butterfly.Db.Table.GetDefaultValueByFieldName
+  - Butterfly.Db.Table.getOverrideValueByFieldName
+  - Butterfly.Db.Table.GetOverrideValueByFieldName
+  - Butterfly.Db.Table.Indexes
+  - Butterfly.Db.Table.Name
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: Table
+  fullName: Butterfly.Db.Table
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: Table
+    path: ../Butterfly.Db/Table.cs
+    startLine: 13
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nRepresents a table in an <xref href=\"Butterfly.Db.IDatabase\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class Table : object'
+    content.vb: >-
+      Public Class Table
+          Inherits Object
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Butterfly.Db.Memory.MemoryTable
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.Table.#ctor(System.String,Butterfly.Db.TableFieldDef[],Butterfly.Db.TableIndex[])
+  commentId: M:Butterfly.Db.Table.#ctor(System.String,Butterfly.Db.TableFieldDef[],Butterfly.Db.TableIndex[])
+  id: '#ctor(System.String,Butterfly.Db.TableFieldDef[],Butterfly.Db.TableIndex[])'
+  parent: Butterfly.Db.Table
+  langs:
+  - csharp
+  - vb
+  name: Table(String, TableFieldDef[], TableIndex[])
+  nameWithType: Table.Table(String, TableFieldDef[], TableIndex[])
+  fullName: Butterfly.Db.Table.Table(System.String, Butterfly.Db.TableFieldDef[], Butterfly.Db.TableIndex[])
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: .ctor
+    path: ../Butterfly.Db/Table.cs
+    startLine: 14
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public Table(string name, TableFieldDef[] fieldDefs, TableIndex[] indexes)
+    parameters:
+    - id: name
+      type: System.String
+    - id: fieldDefs
+      type: Butterfly.Db.TableFieldDef[]
+    - id: indexes
+      type: Butterfly.Db.TableIndex[]
+    content.vb: Public Sub New(name As String, fieldDefs As TableFieldDef(), indexes As TableIndex())
+  overload: Butterfly.Db.Table.#ctor*
+  nameWithType.vb: Table.Table(String, TableFieldDef(), TableIndex())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Db.Table.Table(System.String, Butterfly.Db.TableFieldDef(), Butterfly.Db.TableIndex())
+  name.vb: Table(String, TableFieldDef(), TableIndex())
+- uid: Butterfly.Db.Table.Name
+  commentId: P:Butterfly.Db.Table.Name
+  id: Name
+  parent: Butterfly.Db.Table
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Table.Name
+  fullName: Butterfly.Db.Table.Name
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: Name
+    path: ../Butterfly.Db/Table.cs
+    startLine: 25
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public string Name { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Butterfly.Db.Table.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Butterfly.Db.Table.FieldDefs
+  commentId: P:Butterfly.Db.Table.FieldDefs
+  id: FieldDefs
+  parent: Butterfly.Db.Table
+  langs:
+  - csharp
+  - vb
+  name: FieldDefs
+  nameWithType: Table.FieldDefs
+  fullName: Butterfly.Db.Table.FieldDefs
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: FieldDefs
+    path: ../Butterfly.Db/Table.cs
+    startLine: 30
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public TableFieldDef[] FieldDefs { get; protected set; }
+    parameters: []
+    return:
+      type: Butterfly.Db.TableFieldDef[]
+    content.vb: Public Property FieldDefs As TableFieldDef()
+  overload: Butterfly.Db.Table.FieldDefs*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Butterfly.Db.Table.FindFieldDef(System.String)
+  commentId: M:Butterfly.Db.Table.FindFieldDef(System.String)
+  id: FindFieldDef(System.String)
+  parent: Butterfly.Db.Table
+  langs:
+  - csharp
+  - vb
+  name: FindFieldDef(String)
+  nameWithType: Table.FindFieldDef(String)
+  fullName: Butterfly.Db.Table.FindFieldDef(System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: FindFieldDef
+    path: ../Butterfly.Db/Table.cs
+    startLine: 35
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public TableFieldDef FindFieldDef(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Butterfly.Db.TableFieldDef
+    content.vb: Public Function FindFieldDef(name As String) As TableFieldDef
+  overload: Butterfly.Db.Table.FindFieldDef*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.Table.Indexes
+  commentId: P:Butterfly.Db.Table.Indexes
+  id: Indexes
+  parent: Butterfly.Db.Table
+  langs:
+  - csharp
+  - vb
+  name: Indexes
+  nameWithType: Table.Indexes
+  fullName: Butterfly.Db.Table.Indexes
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: Indexes
+    path: ../Butterfly.Db/Table.cs
+    startLine: 39
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public TableIndex[] Indexes { get; protected set; }
+    parameters: []
+    return:
+      type: Butterfly.Db.TableIndex[]
+    content.vb: Public Property Indexes As TableIndex()
+  overload: Butterfly.Db.Table.Indexes*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Butterfly.Db.Table.AutoIncrementFieldName
+  commentId: P:Butterfly.Db.Table.AutoIncrementFieldName
+  id: AutoIncrementFieldName
+  parent: Butterfly.Db.Table
+  langs:
+  - csharp
+  - vb
+  name: AutoIncrementFieldName
+  nameWithType: Table.AutoIncrementFieldName
+  fullName: Butterfly.Db.Table.AutoIncrementFieldName
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: AutoIncrementFieldName
+    path: ../Butterfly.Db/Table.cs
+    startLine: 44
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public string AutoIncrementFieldName { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AutoIncrementFieldName As String
+  overload: Butterfly.Db.Table.AutoIncrementFieldName*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Butterfly.Db.Table.getDefaultValueByFieldName
+  commentId: F:Butterfly.Db.Table.getDefaultValueByFieldName
+  id: getDefaultValueByFieldName
+  parent: Butterfly.Db.Table
+  langs:
+  - csharp
+  - vb
+  name: getDefaultValueByFieldName
+  nameWithType: Table.getDefaultValueByFieldName
+  fullName: Butterfly.Db.Table.getDefaultValueByFieldName
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: getDefaultValueByFieldName
+    path: ../Butterfly.Db/Table.cs
+    startLine: 49
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected readonly Dictionary<string, Func<string, object>> getDefaultValueByFieldName
+    return:
+      type: Dictionary{System.String,Func{System.String,System.Object}}
+    content.vb: Protected ReadOnly getDefaultValueByFieldName As Dictionary(Of String, Func(Of String, Object))
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Table.GetDefaultValueByFieldName
+  commentId: P:Butterfly.Db.Table.GetDefaultValueByFieldName
+  id: GetDefaultValueByFieldName
+  parent: Butterfly.Db.Table
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultValueByFieldName
+  nameWithType: Table.GetDefaultValueByFieldName
+  fullName: Butterfly.Db.Table.GetDefaultValueByFieldName
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: GetDefaultValueByFieldName
+    path: ../Butterfly.Db/Table.cs
+    startLine: 53
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public Dictionary<string, Func<string, object>> GetDefaultValueByFieldName { get; }
+    parameters: []
+    return:
+      type: Dictionary{System.String,Func{System.String,System.Object}}
+    content.vb: Public ReadOnly Property GetDefaultValueByFieldName As Dictionary(Of String, Func(Of String, Object))
+  overload: Butterfly.Db.Table.GetDefaultValueByFieldName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.Table.getOverrideValueByFieldName
+  commentId: F:Butterfly.Db.Table.getOverrideValueByFieldName
+  id: getOverrideValueByFieldName
+  parent: Butterfly.Db.Table
+  langs:
+  - csharp
+  - vb
+  name: getOverrideValueByFieldName
+  nameWithType: Table.getOverrideValueByFieldName
+  fullName: Butterfly.Db.Table.getOverrideValueByFieldName
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: getOverrideValueByFieldName
+    path: ../Butterfly.Db/Table.cs
+    startLine: 55
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected readonly Dictionary<string, Func<string, object>> getOverrideValueByFieldName
+    return:
+      type: Dictionary{System.String,Func{System.String,System.Object}}
+    content.vb: Protected ReadOnly getOverrideValueByFieldName As Dictionary(Of String, Func(Of String, Object))
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Table.GetOverrideValueByFieldName
+  commentId: P:Butterfly.Db.Table.GetOverrideValueByFieldName
+  id: GetOverrideValueByFieldName
+  parent: Butterfly.Db.Table
+  langs:
+  - csharp
+  - vb
+  name: GetOverrideValueByFieldName
+  nameWithType: Table.GetOverrideValueByFieldName
+  fullName: Butterfly.Db.Table.GetOverrideValueByFieldName
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+    id: GetOverrideValueByFieldName
+    path: ../Butterfly.Db/Table.cs
+    startLine: 59
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public Dictionary<string, Func<string, object>> GetOverrideValueByFieldName { get; }
+    parameters: []
+    return:
+      type: Dictionary{System.String,Func{System.String,System.Object}}
+    content.vb: Public ReadOnly Property GetOverrideValueByFieldName As Dictionary(Of String, Func(Of String, Object))
+  overload: Butterfly.Db.Table.GetOverrideValueByFieldName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Butterfly.Db.IDatabase
+  commentId: T:Butterfly.Db.IDatabase
+  parent: Butterfly.Db
+  name: IDatabase
+  nameWithType: IDatabase
+  fullName: Butterfly.Db.IDatabase
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db.Table.#ctor*
+  commentId: Overload:Butterfly.Db.Table.#ctor
+  name: Table
+  nameWithType: Table.Table
+  fullName: Butterfly.Db.Table.Table
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Butterfly.Db.TableFieldDef[]
+  isExternal: true
+  name: TableFieldDef[]
+  nameWithType: TableFieldDef[]
+  fullName: Butterfly.Db.TableFieldDef[]
+  nameWithType.vb: TableFieldDef()
+  fullName.vb: Butterfly.Db.TableFieldDef()
+  name.vb: TableFieldDef()
+  spec.csharp:
+  - uid: Butterfly.Db.TableFieldDef
+    name: TableFieldDef
+    nameWithType: TableFieldDef
+    fullName: Butterfly.Db.TableFieldDef
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Butterfly.Db.TableFieldDef
+    name: TableFieldDef
+    nameWithType: TableFieldDef
+    fullName: Butterfly.Db.TableFieldDef
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Butterfly.Db.TableIndex[]
+  isExternal: true
+  name: TableIndex[]
+  nameWithType: TableIndex[]
+  fullName: Butterfly.Db.TableIndex[]
+  nameWithType.vb: TableIndex()
+  fullName.vb: Butterfly.Db.TableIndex()
+  name.vb: TableIndex()
+  spec.csharp:
+  - uid: Butterfly.Db.TableIndex
+    name: TableIndex
+    nameWithType: TableIndex
+    fullName: Butterfly.Db.TableIndex
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Butterfly.Db.TableIndex
+    name: TableIndex
+    nameWithType: TableIndex
+    fullName: Butterfly.Db.TableIndex
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Butterfly.Db.Table.Name*
+  commentId: Overload:Butterfly.Db.Table.Name
+  name: Name
+  nameWithType: Table.Name
+  fullName: Butterfly.Db.Table.Name
+- uid: Butterfly.Db.Table.FieldDefs*
+  commentId: Overload:Butterfly.Db.Table.FieldDefs
+  name: FieldDefs
+  nameWithType: Table.FieldDefs
+  fullName: Butterfly.Db.Table.FieldDefs
+- uid: Butterfly.Db.Table.FindFieldDef*
+  commentId: Overload:Butterfly.Db.Table.FindFieldDef
+  name: FindFieldDef
+  nameWithType: Table.FindFieldDef
+  fullName: Butterfly.Db.Table.FindFieldDef
+- uid: Butterfly.Db.TableFieldDef
+  commentId: T:Butterfly.Db.TableFieldDef
+  parent: Butterfly.Db
+  name: TableFieldDef
+  nameWithType: TableFieldDef
+  fullName: Butterfly.Db.TableFieldDef
+- uid: Butterfly.Db.Table.Indexes*
+  commentId: Overload:Butterfly.Db.Table.Indexes
+  name: Indexes
+  nameWithType: Table.Indexes
+  fullName: Butterfly.Db.Table.Indexes
+- uid: Butterfly.Db.Table.AutoIncrementFieldName*
+  commentId: Overload:Butterfly.Db.Table.AutoIncrementFieldName
+  name: AutoIncrementFieldName
+  nameWithType: Table.AutoIncrementFieldName
+  fullName: Butterfly.Db.Table.AutoIncrementFieldName
+- uid: Dictionary{System.String,Func{System.String,System.Object}}
+  commentId: '!:Dictionary{System.String,Func{System.String,System.Object}}'
+  definition: Dictionary`2
+  name: Dictionary<String, Func<String, Object>>
+  nameWithType: Dictionary<String, Func<String, Object>>
+  fullName: Dictionary<System.String, Func<System.String, System.Object>>
+  nameWithType.vb: Dictionary(Of String, Func(Of String, Object))
+  fullName.vb: Dictionary(Of System.String, Func(Of System.String, System.Object))
+  name.vb: Dictionary(Of String, Func(Of String, Object))
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.Table.GetDefaultValueByFieldName*
+  commentId: Overload:Butterfly.Db.Table.GetDefaultValueByFieldName
+  name: GetDefaultValueByFieldName
+  nameWithType: Table.GetDefaultValueByFieldName
+  fullName: Butterfly.Db.Table.GetDefaultValueByFieldName
+- uid: Butterfly.Db.Table.GetOverrideValueByFieldName*
+  commentId: Overload:Butterfly.Db.Table.GetOverrideValueByFieldName
+  name: GetOverrideValueByFieldName
+  nameWithType: Table.GetOverrideValueByFieldName
+  fullName: Butterfly.Db.Table.GetOverrideValueByFieldName
+shouldSkipMarkup: true

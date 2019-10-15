@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Event.InitialEndDataEvent
+  commentId: T:Butterfly.Db.Event.InitialEndDataEvent
+  id: InitialEndDataEvent
+  parent: Butterfly.Db.Event
+  children:
+  - Butterfly.Db.Event.InitialEndDataEvent.#ctor
+  langs:
+  - csharp
+  - vb
+  name: InitialEndDataEvent
+  nameWithType: InitialEndDataEvent
+  fullName: Butterfly.Db.Event.InitialEndDataEvent
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+    id: InitialEndDataEvent
+    path: ../Butterfly.Db/Event/DataEvent.cs
+    startLine: 49
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: 'public class InitialEndDataEvent : DataEvent'
+    content.vb: >-
+      Public Class InitialEndDataEvent
+          Inherits DataEvent
+  inheritance:
+  - System.Object
+  - Butterfly.Db.Event.DataEvent
+  inheritedMembers:
+  - Butterfly.Db.Event.DataEvent.id
+  - Butterfly.Db.Event.DataEvent.dataEventType
+  - Butterfly.Db.Event.DataEvent.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.Event.InitialEndDataEvent.#ctor
+  commentId: M:Butterfly.Db.Event.InitialEndDataEvent.#ctor
+  id: '#ctor'
+  parent: Butterfly.Db.Event.InitialEndDataEvent
+  langs:
+  - csharp
+  - vb
+  name: InitialEndDataEvent()
+  nameWithType: InitialEndDataEvent.InitialEndDataEvent()
+  fullName: Butterfly.Db.Event.InitialEndDataEvent.InitialEndDataEvent()
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+    id: .ctor
+    path: ../Butterfly.Db/Event/DataEvent.cs
+    startLine: 50
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public InitialEndDataEvent()
+    content.vb: Public Sub New
+  overload: Butterfly.Db.Event.InitialEndDataEvent.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Butterfly.Db.Event
+  commentId: N:Butterfly.Db.Event
+  name: Butterfly.Db.Event
+  nameWithType: Butterfly.Db.Event
+  fullName: Butterfly.Db.Event
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db.Event.DataEvent
+  commentId: T:Butterfly.Db.Event.DataEvent
+  parent: Butterfly.Db.Event
+  name: DataEvent
+  nameWithType: DataEvent
+  fullName: Butterfly.Db.Event.DataEvent
+- uid: Butterfly.Db.Event.DataEvent.id
+  commentId: F:Butterfly.Db.Event.DataEvent.id
+  parent: Butterfly.Db.Event.DataEvent
+  name: id
+  nameWithType: DataEvent.id
+  fullName: Butterfly.Db.Event.DataEvent.id
+- uid: Butterfly.Db.Event.DataEvent.dataEventType
+  commentId: F:Butterfly.Db.Event.DataEvent.dataEventType
+  parent: Butterfly.Db.Event.DataEvent
+  name: dataEventType
+  nameWithType: DataEvent.dataEventType
+  fullName: Butterfly.Db.Event.DataEvent.dataEventType
+- uid: Butterfly.Db.Event.DataEvent.ToString
+  commentId: M:Butterfly.Db.Event.DataEvent.ToString
+  parent: Butterfly.Db.Event.DataEvent
+  name: ToString()
+  nameWithType: DataEvent.ToString()
+  fullName: Butterfly.Db.Event.DataEvent.ToString()
+  spec.csharp:
+  - uid: Butterfly.Db.Event.DataEvent.ToString
+    name: ToString
+    nameWithType: DataEvent.ToString
+    fullName: Butterfly.Db.Event.DataEvent.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.Event.DataEvent.ToString
+    name: ToString
+    nameWithType: DataEvent.ToString
+    fullName: Butterfly.Db.Event.DataEvent.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.Event.InitialEndDataEvent.#ctor*
+  commentId: Overload:Butterfly.Db.Event.InitialEndDataEvent.#ctor
+  name: InitialEndDataEvent
+  nameWithType: InitialEndDataEvent.InitialEndDataEvent
+  fullName: Butterfly.Db.Event.InitialEndDataEvent.InitialEndDataEvent
+shouldSkipMarkup: true

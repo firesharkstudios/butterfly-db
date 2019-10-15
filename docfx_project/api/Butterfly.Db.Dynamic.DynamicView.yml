@@ -1,0 +1,821 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Dynamic.DynamicView
+  commentId: T:Butterfly.Db.Dynamic.DynamicView
+  id: DynamicView
+  parent: Butterfly.Db.Dynamic
+  children:
+  - Butterfly.Db.Dynamic.DynamicView.#ctor(Butterfly.Db.Dynamic.DynamicViewSet,System.String,System.Object,System.String,System.String[],System.String[],System.Int32)
+  - Butterfly.Db.Dynamic.DynamicView.childDynamicParams
+  - Butterfly.Db.Dynamic.DynamicView.dynamicStatementFromRefByTableName
+  - Butterfly.Db.Dynamic.DynamicView.dynamicViewSet
+  - Butterfly.Db.Dynamic.DynamicView.Id
+  - Butterfly.Db.Dynamic.DynamicView.keyFieldNames
+  - Butterfly.Db.Dynamic.DynamicView.name
+  - Butterfly.Db.Dynamic.DynamicView.Name
+  - Butterfly.Db.Dynamic.DynamicView.selectStatement
+  - Butterfly.Db.Dynamic.DynamicView.TryGetDynamicStatementFromRef(System.String,Butterfly.Db.StatementFromRef@)
+  - Butterfly.Db.Dynamic.DynamicView.varsDict
+  langs:
+  - csharp
+  - vb
+  name: DynamicView
+  nameWithType: DynamicView
+  fullName: Butterfly.Db.Dynamic.DynamicView
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: DynamicView
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 24
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  summary: "\nRepresents a specific view (SELECT statement) that should be executed\nto return the initial data as a sequence of <xref href=\"Butterfly.Db.Event.DataEvent\" data-throw-if-not-resolved=\"false\"></xref> instances\nand should publish <xref href=\"Butterfly.Db.Event.DataEvent\" data-throw-if-not-resolved=\"false\"></xref> instances when any data in the\nview changes\n"
+  example: []
+  syntax:
+    content: 'public class DynamicView : object'
+    content.vb: >-
+      Public Class DynamicView
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.Dynamic.DynamicView.dynamicViewSet
+  commentId: F:Butterfly.Db.Dynamic.DynamicView.dynamicViewSet
+  id: dynamicViewSet
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: dynamicViewSet
+  nameWithType: DynamicView.dynamicViewSet
+  fullName: Butterfly.Db.Dynamic.DynamicView.dynamicViewSet
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: dynamicViewSet
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 27
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly DynamicViewSet dynamicViewSet
+    return:
+      type: Butterfly.Db.Dynamic.DynamicViewSet
+    content.vb: Protected ReadOnly dynamicViewSet As DynamicViewSet
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicView.selectStatement
+  commentId: F:Butterfly.Db.Dynamic.DynamicView.selectStatement
+  id: selectStatement
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: selectStatement
+  nameWithType: DynamicView.selectStatement
+  fullName: Butterfly.Db.Dynamic.DynamicView.selectStatement
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: selectStatement
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 28
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly SelectStatement selectStatement
+    return:
+      type: Butterfly.Db.SelectStatement
+    content.vb: Protected ReadOnly selectStatement As SelectStatement
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicView.varsDict
+  commentId: F:Butterfly.Db.Dynamic.DynamicView.varsDict
+  id: varsDict
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: varsDict
+  nameWithType: DynamicView.varsDict
+  fullName: Butterfly.Db.Dynamic.DynamicView.varsDict
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: varsDict
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 29
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly System.Collections.Generic.Dictionary<string, object> varsDict
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Protected ReadOnly varsDict As System.Collections.Generic.Dictionary(Of String, Object)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicView.name
+  commentId: F:Butterfly.Db.Dynamic.DynamicView.name
+  id: name
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: DynamicView.name
+  fullName: Butterfly.Db.Dynamic.DynamicView.name
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: name
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 30
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly string name
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly name As String
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicView.keyFieldNames
+  commentId: F:Butterfly.Db.Dynamic.DynamicView.keyFieldNames
+  id: keyFieldNames
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: keyFieldNames
+  nameWithType: DynamicView.keyFieldNames
+  fullName: Butterfly.Db.Dynamic.DynamicView.keyFieldNames
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: keyFieldNames
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 31
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly string[] keyFieldNames
+    return:
+      type: System.String[]
+    content.vb: Protected ReadOnly keyFieldNames As String()
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicView.dynamicStatementFromRefByTableName
+  commentId: F:Butterfly.Db.Dynamic.DynamicView.dynamicStatementFromRefByTableName
+  id: dynamicStatementFromRefByTableName
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: dynamicStatementFromRefByTableName
+  nameWithType: DynamicView.dynamicStatementFromRefByTableName
+  fullName: Butterfly.Db.Dynamic.DynamicView.dynamicStatementFromRefByTableName
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: dynamicStatementFromRefByTableName
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 32
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly Dictionary<string, StatementFromRef> dynamicStatementFromRefByTableName
+    return:
+      type: Dictionary{System.String,Butterfly.Db.StatementFromRef}
+    content.vb: Protected ReadOnly dynamicStatementFromRefByTableName As Dictionary(Of String, StatementFromRef)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicView.childDynamicParams
+  commentId: F:Butterfly.Db.Dynamic.DynamicView.childDynamicParams
+  id: childDynamicParams
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: childDynamicParams
+  nameWithType: DynamicView.childDynamicParams
+  fullName: Butterfly.Db.Dynamic.DynamicView.childDynamicParams
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: childDynamicParams
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 34
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly List<ChildDynamicParam> childDynamicParams
+    return:
+      type: List{Butterfly.Db.Dynamic.ChildDynamicParam}
+    content.vb: Protected ReadOnly childDynamicParams As List(Of ChildDynamicParam)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicView.#ctor(Butterfly.Db.Dynamic.DynamicViewSet,System.String,System.Object,System.String,System.String[],System.String[],System.Int32)
+  commentId: M:Butterfly.Db.Dynamic.DynamicView.#ctor(Butterfly.Db.Dynamic.DynamicViewSet,System.String,System.Object,System.String,System.String[],System.String[],System.Int32)
+  id: '#ctor(Butterfly.Db.Dynamic.DynamicViewSet,System.String,System.Object,System.String,System.String[],System.String[],System.Int32)'
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: DynamicView(DynamicViewSet, String, Object, String, String[], String[], Int32)
+  nameWithType: DynamicView.DynamicView(DynamicViewSet, String, Object, String, String[], String[], Int32)
+  fullName: Butterfly.Db.Dynamic.DynamicView.DynamicView(Butterfly.Db.Dynamic.DynamicViewSet, System.String, System.Object, System.String, System.String[], System.String[], System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: .ctor
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 36
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public DynamicView(DynamicViewSet dynamicQuerySet, string sql, dynamic vars = null, string name = null, string[] keyFieldNames = null, string[] dynamicTableAliases = null, int limit = null)
+    parameters:
+    - id: dynamicQuerySet
+      type: Butterfly.Db.Dynamic.DynamicViewSet
+    - id: sql
+      type: System.String
+    - id: vars
+      type: System.Object
+    - id: name
+      type: System.String
+    - id: keyFieldNames
+      type: System.String[]
+    - id: dynamicTableAliases
+      type: System.String[]
+    - id: limit
+      type: System.Int32
+    content.vb: Public Sub New(dynamicQuerySet As DynamicViewSet, sql As String, vars As Object = Nothing, name As String = Nothing, keyFieldNames As String() = Nothing, dynamicTableAliases As String() = Nothing, limit As Integer = Nothing)
+  overload: Butterfly.Db.Dynamic.DynamicView.#ctor*
+  nameWithType.vb: DynamicView.DynamicView(DynamicViewSet, String, Object, String, String(), String(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Db.Dynamic.DynamicView.DynamicView(Butterfly.Db.Dynamic.DynamicViewSet, System.String, System.Object, System.String, System.String(), System.String(), System.Int32)
+  name.vb: DynamicView(DynamicViewSet, String, Object, String, String(), String(), Int32)
+- uid: Butterfly.Db.Dynamic.DynamicView.Id
+  commentId: P:Butterfly.Db.Dynamic.DynamicView.Id
+  id: Id
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: DynamicView.Id
+  fullName: Butterfly.Db.Dynamic.DynamicView.Id
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: Id
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 81
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public string Id { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Butterfly.Db.Dynamic.DynamicView.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Butterfly.Db.Dynamic.DynamicView.Name
+  commentId: P:Butterfly.Db.Dynamic.DynamicView.Name
+  id: Name
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: DynamicView.Name
+  fullName: Butterfly.Db.Dynamic.DynamicView.Name
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: Name
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 86
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Butterfly.Db.Dynamic.DynamicView.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicView.TryGetDynamicStatementFromRef(System.String,Butterfly.Db.StatementFromRef@)
+  commentId: M:Butterfly.Db.Dynamic.DynamicView.TryGetDynamicStatementFromRef(System.String,Butterfly.Db.StatementFromRef@)
+  id: TryGetDynamicStatementFromRef(System.String,Butterfly.Db.StatementFromRef@)
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: TryGetDynamicStatementFromRef(String, out StatementFromRef)
+  nameWithType: DynamicView.TryGetDynamicStatementFromRef(String, out StatementFromRef)
+  fullName: Butterfly.Db.Dynamic.DynamicView.TryGetDynamicStatementFromRef(System.String, out Butterfly.Db.StatementFromRef)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+    id: TryGetDynamicStatementFromRef
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 88
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public bool TryGetDynamicStatementFromRef(string tableName, out StatementFromRef dynamicStatementFromRef)
+    parameters:
+    - id: tableName
+      type: System.String
+    - id: dynamicStatementFromRef
+      type: Butterfly.Db.StatementFromRef
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetDynamicStatementFromRef(tableName As String, ByRef dynamicStatementFromRef As StatementFromRef) As Boolean
+  overload: Butterfly.Db.Dynamic.DynamicView.TryGetDynamicStatementFromRef*
+  nameWithType.vb: DynamicView.TryGetDynamicStatementFromRef(String, ByRef StatementFromRef)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Db.Dynamic.DynamicView.TryGetDynamicStatementFromRef(System.String, ByRef Butterfly.Db.StatementFromRef)
+  name.vb: TryGetDynamicStatementFromRef(String, ByRef StatementFromRef)
+references:
+- uid: Butterfly.Db.Event.DataEvent
+  commentId: T:Butterfly.Db.Event.DataEvent
+  parent: Butterfly.Db.Event
+  name: DataEvent
+  nameWithType: DataEvent
+  fullName: Butterfly.Db.Event.DataEvent
+- uid: Butterfly.Db.Dynamic
+  commentId: N:Butterfly.Db.Dynamic
+  name: Butterfly.Db.Dynamic
+  nameWithType: Butterfly.Db.Dynamic
+  fullName: Butterfly.Db.Dynamic
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db.Event
+  commentId: N:Butterfly.Db.Event
+  name: Butterfly.Db.Event
+  nameWithType: Butterfly.Db.Event
+  fullName: Butterfly.Db.Event
+- uid: Butterfly.Db.Dynamic.DynamicViewSet
+  commentId: T:Butterfly.Db.Dynamic.DynamicViewSet
+  parent: Butterfly.Db.Dynamic
+  name: DynamicViewSet
+  nameWithType: DynamicViewSet
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet
+- uid: Butterfly.Db.SelectStatement
+  commentId: T:Butterfly.Db.SelectStatement
+  parent: Butterfly.Db
+  name: SelectStatement
+  nameWithType: SelectStatement
+  fullName: Butterfly.Db.SelectStatement
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: '!:System.Collections.Generic.Dictionary{System.String,System.Object}'
+  definition: System.Collections.Generic.Dictionary`2
+  name: System.Collections.Generic.Dictionary<String, Object>
+  nameWithType: System.Collections.Generic.Dictionary<String, Object>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>
+  nameWithType.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)
+  name.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: System.Collections.Generic.Dictionary<, >
+  nameWithType: System.Collections.Generic.Dictionary<, >
+  fullName: System.Collections.Generic.Dictionary<, >
+  nameWithType.vb: System.Collections.Generic.Dictionary(Of , )
+  fullName.vb: System.Collections.Generic.Dictionary(Of , )
+  name.vb: System.Collections.Generic.Dictionary(Of , )
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Dictionary{System.String,Butterfly.Db.StatementFromRef}
+  commentId: '!:Dictionary{System.String,Butterfly.Db.StatementFromRef}'
+  definition: Dictionary`2
+  name: Dictionary<String, StatementFromRef>
+  nameWithType: Dictionary<String, StatementFromRef>
+  fullName: Dictionary<System.String, Butterfly.Db.StatementFromRef>
+  nameWithType.vb: Dictionary(Of String, StatementFromRef)
+  fullName.vb: Dictionary(Of System.String, Butterfly.Db.StatementFromRef)
+  name.vb: Dictionary(Of String, StatementFromRef)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Butterfly.Db.StatementFromRef
+    name: StatementFromRef
+    nameWithType: StatementFromRef
+    fullName: Butterfly.Db.StatementFromRef
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Butterfly.Db.StatementFromRef
+    name: StatementFromRef
+    nameWithType: StatementFromRef
+    fullName: Butterfly.Db.StatementFromRef
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List{Butterfly.Db.Dynamic.ChildDynamicParam}
+  commentId: '!:List{Butterfly.Db.Dynamic.ChildDynamicParam}'
+  definition: List`1
+  name: List<ChildDynamicParam>
+  nameWithType: List<ChildDynamicParam>
+  fullName: List<Butterfly.Db.Dynamic.ChildDynamicParam>
+  nameWithType.vb: List(Of ChildDynamicParam)
+  fullName.vb: List(Of Butterfly.Db.Dynamic.ChildDynamicParam)
+  name.vb: List(Of ChildDynamicParam)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Butterfly.Db.Dynamic.ChildDynamicParam
+    name: ChildDynamicParam
+    nameWithType: ChildDynamicParam
+    fullName: Butterfly.Db.Dynamic.ChildDynamicParam
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Butterfly.Db.Dynamic.ChildDynamicParam
+    name: ChildDynamicParam
+    nameWithType: ChildDynamicParam
+    fullName: Butterfly.Db.Dynamic.ChildDynamicParam
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.Dynamic.DynamicView.#ctor*
+  commentId: Overload:Butterfly.Db.Dynamic.DynamicView.#ctor
+  name: DynamicView
+  nameWithType: DynamicView.DynamicView
+  fullName: Butterfly.Db.Dynamic.DynamicView.DynamicView
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Butterfly.Db.Dynamic.DynamicView.Id*
+  commentId: Overload:Butterfly.Db.Dynamic.DynamicView.Id
+  name: Id
+  nameWithType: DynamicView.Id
+  fullName: Butterfly.Db.Dynamic.DynamicView.Id
+- uid: Butterfly.Db.Dynamic.DynamicView.Name*
+  commentId: Overload:Butterfly.Db.Dynamic.DynamicView.Name
+  name: Name
+  nameWithType: DynamicView.Name
+  fullName: Butterfly.Db.Dynamic.DynamicView.Name
+- uid: Butterfly.Db.Dynamic.DynamicView.TryGetDynamicStatementFromRef*
+  commentId: Overload:Butterfly.Db.Dynamic.DynamicView.TryGetDynamicStatementFromRef
+  name: TryGetDynamicStatementFromRef
+  nameWithType: DynamicView.TryGetDynamicStatementFromRef
+  fullName: Butterfly.Db.Dynamic.DynamicView.TryGetDynamicStatementFromRef
+- uid: Butterfly.Db.StatementFromRef
+  commentId: T:Butterfly.Db.StatementFromRef
+  parent: Butterfly.Db
+  name: StatementFromRef
+  nameWithType: StatementFromRef
+  fullName: Butterfly.Db.StatementFromRef
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+shouldSkipMarkup: true

@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.MySql
+  commentId: N:Butterfly.Db.MySql
+  id: Butterfly.Db.MySql
+  children:
+  - Butterfly.Db.MySql.MySqlDatabase
+  - Butterfly.Db.MySql.MySqlTransaction
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Db.MySql
+  nameWithType: Butterfly.Db.MySql
+  fullName: Butterfly.Db.MySql
+  type: Namespace
+  assemblies:
+  - Butterfly.Db.MySql
+references:
+- uid: Butterfly.Db.MySql.MySqlDatabase
+  commentId: T:Butterfly.Db.MySql.MySqlDatabase
+  parent: Butterfly.Db.MySql
+  name: MySqlDatabase
+  nameWithType: MySqlDatabase
+  fullName: Butterfly.Db.MySql.MySqlDatabase
+- uid: Butterfly.Db.MySql.MySqlTransaction
+  commentId: T:Butterfly.Db.MySql.MySqlTransaction
+  name: MySqlTransaction
+  nameWithType: MySqlTransaction
+  fullName: Butterfly.Db.MySql.MySqlTransaction
+- uid: Butterfly.Db.MySql
+  commentId: N:Butterfly.Db.MySql
+  name: Butterfly.Db.MySql
+  nameWithType: Butterfly.Db.MySql
+  fullName: Butterfly.Db.MySql
+shouldSkipMarkup: true

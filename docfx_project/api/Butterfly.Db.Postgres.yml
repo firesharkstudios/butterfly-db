@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Postgres
+  commentId: N:Butterfly.Db.Postgres
+  id: Butterfly.Db.Postgres
+  children:
+  - Butterfly.Db.Postgres.PostgresDatabase
+  - Butterfly.Db.Postgres.PostgresTransaction
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Db.Postgres
+  nameWithType: Butterfly.Db.Postgres
+  fullName: Butterfly.Db.Postgres
+  type: Namespace
+  assemblies:
+  - Butterfly.Db.Postgres
+references:
+- uid: Butterfly.Db.Postgres.PostgresDatabase
+  commentId: T:Butterfly.Db.Postgres.PostgresDatabase
+  parent: Butterfly.Db.Postgres
+  name: PostgresDatabase
+  nameWithType: PostgresDatabase
+  fullName: Butterfly.Db.Postgres.PostgresDatabase
+- uid: Butterfly.Db.Postgres.PostgresTransaction
+  commentId: T:Butterfly.Db.Postgres.PostgresTransaction
+  name: PostgresTransaction
+  nameWithType: PostgresTransaction
+  fullName: Butterfly.Db.Postgres.PostgresTransaction
+- uid: Butterfly.Db.Postgres
+  commentId: N:Butterfly.Db.Postgres
+  name: Butterfly.Db.Postgres
+  nameWithType: Butterfly.Db.Postgres
+  fullName: Butterfly.Db.Postgres
+shouldSkipMarkup: true

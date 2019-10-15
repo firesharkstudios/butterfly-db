@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.Event.DataEvent
+  commentId: T:Butterfly.Db.Event.DataEvent
+  id: DataEvent
+  parent: Butterfly.Db.Event
+  children:
+  - Butterfly.Db.Event.DataEvent.#ctor(Butterfly.Db.Event.DataEventType)
+  - Butterfly.Db.Event.DataEvent.dataEventType
+  - Butterfly.Db.Event.DataEvent.id
+  - Butterfly.Db.Event.DataEvent.ToString
+  langs:
+  - csharp
+  - vb
+  name: DataEvent
+  nameWithType: DataEvent
+  fullName: Butterfly.Db.Event.DataEvent
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+    id: DataEvent
+    path: ../Butterfly.Db/Event/DataEvent.cs
+    startLine: 21
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  summary: "\nRepresents a data event (see <xref href=\"Butterfly.Db.Event.DataEventType\" data-throw-if-not-resolved=\"false\"></xref>)\n"
+  example: []
+  syntax:
+    content: 'public class DataEvent : object'
+    content.vb: >-
+      Public Class DataEvent
+          Inherits Object
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Butterfly.Db.Event.InitialBeginDataEvent
+  - Butterfly.Db.Event.InitialEndDataEvent
+  - Butterfly.Db.Event.KeyValueDataEvent
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.Event.DataEvent.id
+  commentId: F:Butterfly.Db.Event.DataEvent.id
+  id: id
+  parent: Butterfly.Db.Event.DataEvent
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: DataEvent.id
+  fullName: Butterfly.Db.Event.DataEvent.id
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+    id: id
+    path: ../Butterfly.Db/Event/DataEvent.cs
+    startLine: 22
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public readonly string id
+    return:
+      type: System.String
+    content.vb: Public ReadOnly id As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.Event.DataEvent.dataEventType
+  commentId: F:Butterfly.Db.Event.DataEvent.dataEventType
+  id: dataEventType
+  parent: Butterfly.Db.Event.DataEvent
+  langs:
+  - csharp
+  - vb
+  name: dataEventType
+  nameWithType: DataEvent.dataEventType
+  fullName: Butterfly.Db.Event.DataEvent.dataEventType
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+    id: dataEventType
+    path: ../Butterfly.Db/Event/DataEvent.cs
+    startLine: 23
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public readonly DataEventType dataEventType
+    return:
+      type: Butterfly.Db.Event.DataEventType
+    content.vb: Public ReadOnly dataEventType As DataEventType
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.Event.DataEvent.#ctor(Butterfly.Db.Event.DataEventType)
+  commentId: M:Butterfly.Db.Event.DataEvent.#ctor(Butterfly.Db.Event.DataEventType)
+  id: '#ctor(Butterfly.Db.Event.DataEventType)'
+  parent: Butterfly.Db.Event.DataEvent
+  langs:
+  - csharp
+  - vb
+  name: DataEvent(DataEventType)
+  nameWithType: DataEvent.DataEvent(DataEventType)
+  fullName: Butterfly.Db.Event.DataEvent.DataEvent(Butterfly.Db.Event.DataEventType)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+    id: .ctor
+    path: ../Butterfly.Db/Event/DataEvent.cs
+    startLine: 25
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public DataEvent(DataEventType dataEventType)
+    parameters:
+    - id: dataEventType
+      type: Butterfly.Db.Event.DataEventType
+    content.vb: Public Sub New(dataEventType As DataEventType)
+  overload: Butterfly.Db.Event.DataEvent.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.Event.DataEvent.ToString
+  commentId: M:Butterfly.Db.Event.DataEvent.ToString
+  id: ToString
+  parent: Butterfly.Db.Event.DataEvent
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: DataEvent.ToString()
+  fullName: Butterfly.Db.Event.DataEvent.ToString()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+    id: ToString
+    path: ../Butterfly.Db/Event/DataEvent.cs
+    startLine: 30
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Event
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Butterfly.Db.Event.DataEvent.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Butterfly.Db.Event.DataEventType
+  commentId: T:Butterfly.Db.Event.DataEventType
+  parent: Butterfly.Db.Event
+  name: DataEventType
+  nameWithType: DataEventType
+  fullName: Butterfly.Db.Event.DataEventType
+- uid: Butterfly.Db.Event
+  commentId: N:Butterfly.Db.Event
+  name: Butterfly.Db.Event
+  nameWithType: Butterfly.Db.Event
+  fullName: Butterfly.Db.Event
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Butterfly.Db.Event.DataEvent.#ctor*
+  commentId: Overload:Butterfly.Db.Event.DataEvent.#ctor
+  name: DataEvent
+  nameWithType: DataEvent.DataEvent
+  fullName: Butterfly.Db.Event.DataEvent.DataEvent
+- uid: Butterfly.Db.Event.DataEvent.ToString*
+  commentId: Overload:Butterfly.Db.Event.DataEvent.ToString
+  name: ToString
+  nameWithType: DataEvent.ToString
+  fullName: Butterfly.Db.Event.DataEvent.ToString
+shouldSkipMarkup: true

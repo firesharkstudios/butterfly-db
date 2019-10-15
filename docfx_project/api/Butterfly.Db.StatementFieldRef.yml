@@ -1,0 +1,370 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.StatementFieldRef
+  commentId: T:Butterfly.Db.StatementFieldRef
+  id: StatementFieldRef
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.StatementFieldRef.#ctor(System.String)
+  - Butterfly.Db.StatementFieldRef.#ctor(System.String,System.String,System.String)
+  - Butterfly.Db.StatementFieldRef.fieldAlias
+  - Butterfly.Db.StatementFieldRef.fieldExpression
+  - Butterfly.Db.StatementFieldRef.ParseFieldRefs(System.String,System.Boolean)
+  - Butterfly.Db.StatementFieldRef.REGEX
+  - Butterfly.Db.StatementFieldRef.REGEX_WILDCARD
+  - Butterfly.Db.StatementFieldRef.tableAlias
+  langs:
+  - csharp
+  - vb
+  name: StatementFieldRef
+  nameWithType: StatementFieldRef
+  fullName: Butterfly.Db.StatementFieldRef
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: StatementFieldRef
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 178
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  summary: "\nInternal class representing a SQL field reference like &quot;table_alias.field_name field_alias&quot;\n"
+  example: []
+  syntax:
+    content: 'public class StatementFieldRef : object'
+    content.vb: >-
+      Public Class StatementFieldRef
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.StatementFieldRef.tableAlias
+  commentId: F:Butterfly.Db.StatementFieldRef.tableAlias
+  id: tableAlias
+  parent: Butterfly.Db.StatementFieldRef
+  langs:
+  - csharp
+  - vb
+  name: tableAlias
+  nameWithType: StatementFieldRef.tableAlias
+  fullName: Butterfly.Db.StatementFieldRef.tableAlias
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: tableAlias
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 179
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string tableAlias
+    return:
+      type: System.String
+    content.vb: Public ReadOnly tableAlias As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.StatementFieldRef.fieldExpression
+  commentId: F:Butterfly.Db.StatementFieldRef.fieldExpression
+  id: fieldExpression
+  parent: Butterfly.Db.StatementFieldRef
+  langs:
+  - csharp
+  - vb
+  name: fieldExpression
+  nameWithType: StatementFieldRef.fieldExpression
+  fullName: Butterfly.Db.StatementFieldRef.fieldExpression
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: fieldExpression
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 180
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string fieldExpression
+    return:
+      type: System.String
+    content.vb: Public ReadOnly fieldExpression As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.StatementFieldRef.fieldAlias
+  commentId: F:Butterfly.Db.StatementFieldRef.fieldAlias
+  id: fieldAlias
+  parent: Butterfly.Db.StatementFieldRef
+  langs:
+  - csharp
+  - vb
+  name: fieldAlias
+  nameWithType: StatementFieldRef.fieldAlias
+  fullName: Butterfly.Db.StatementFieldRef.fieldAlias
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: fieldAlias
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 181
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string fieldAlias
+    return:
+      type: System.String
+    content.vb: Public ReadOnly fieldAlias As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.StatementFieldRef.#ctor(System.String)
+  commentId: M:Butterfly.Db.StatementFieldRef.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Butterfly.Db.StatementFieldRef
+  langs:
+  - csharp
+  - vb
+  name: StatementFieldRef(String)
+  nameWithType: StatementFieldRef.StatementFieldRef(String)
+  fullName: Butterfly.Db.StatementFieldRef.StatementFieldRef(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: .ctor
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 183
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public StatementFieldRef(string fieldName)
+    parameters:
+    - id: fieldName
+      type: System.String
+    content.vb: Public Sub New(fieldName As String)
+  overload: Butterfly.Db.StatementFieldRef.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.StatementFieldRef.#ctor(System.String,System.String,System.String)
+  commentId: M:Butterfly.Db.StatementFieldRef.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: Butterfly.Db.StatementFieldRef
+  langs:
+  - csharp
+  - vb
+  name: StatementFieldRef(String, String, String)
+  nameWithType: StatementFieldRef.StatementFieldRef(String, String, String)
+  fullName: Butterfly.Db.StatementFieldRef.StatementFieldRef(System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: .ctor
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 186
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public StatementFieldRef(string tableAlias, string fieldName, string fieldAlias)
+    parameters:
+    - id: tableAlias
+      type: System.String
+    - id: fieldName
+      type: System.String
+    - id: fieldAlias
+      type: System.String
+    content.vb: Public Sub New(tableAlias As String, fieldName As String, fieldAlias As String)
+  overload: Butterfly.Db.StatementFieldRef.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Db.StatementFieldRef.REGEX_WILDCARD
+  commentId: F:Butterfly.Db.StatementFieldRef.REGEX_WILDCARD
+  id: REGEX_WILDCARD
+  parent: Butterfly.Db.StatementFieldRef
+  langs:
+  - csharp
+  - vb
+  name: REGEX_WILDCARD
+  nameWithType: StatementFieldRef.REGEX_WILDCARD
+  fullName: Butterfly.Db.StatementFieldRef.REGEX_WILDCARD
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: REGEX_WILDCARD
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 192
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected static readonly Regex REGEX_WILDCARD
+    return:
+      type: Regex
+    content.vb: Protected Shared ReadOnly REGEX_WILDCARD As Regex
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Butterfly.Db.StatementFieldRef.REGEX
+  commentId: F:Butterfly.Db.StatementFieldRef.REGEX
+  id: REGEX
+  parent: Butterfly.Db.StatementFieldRef
+  langs:
+  - csharp
+  - vb
+  name: REGEX
+  nameWithType: StatementFieldRef.REGEX
+  fullName: Butterfly.Db.StatementFieldRef.REGEX
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: REGEX
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 193
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected static readonly Regex REGEX
+    return:
+      type: Regex
+    content.vb: Protected Shared ReadOnly REGEX As Regex
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Butterfly.Db.StatementFieldRef.ParseFieldRefs(System.String,System.Boolean)
+  commentId: M:Butterfly.Db.StatementFieldRef.ParseFieldRefs(System.String,System.Boolean)
+  id: ParseFieldRefs(System.String,System.Boolean)
+  parent: Butterfly.Db.StatementFieldRef
+  langs:
+  - csharp
+  - vb
+  name: ParseFieldRefs(String, Boolean)
+  nameWithType: StatementFieldRef.ParseFieldRefs(String, Boolean)
+  fullName: Butterfly.Db.StatementFieldRef.ParseFieldRefs(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+    id: ParseFieldRefs
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 194
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public static StatementFieldRef[] ParseFieldRefs(string selectClause, bool allowWildcard)
+    parameters:
+    - id: selectClause
+      type: System.String
+    - id: allowWildcard
+      type: System.Boolean
+    return:
+      type: Butterfly.Db.StatementFieldRef[]
+    content.vb: Public Shared Function ParseFieldRefs(selectClause As String, allowWildcard As Boolean) As StatementFieldRef()
+  overload: Butterfly.Db.StatementFieldRef.ParseFieldRefs*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Butterfly.Db.StatementFieldRef.#ctor*
+  commentId: Overload:Butterfly.Db.StatementFieldRef.#ctor
+  name: StatementFieldRef
+  nameWithType: StatementFieldRef.StatementFieldRef
+  fullName: Butterfly.Db.StatementFieldRef.StatementFieldRef
+- uid: Regex
+  isExternal: true
+  name: Regex
+  nameWithType: Regex
+  fullName: Regex
+- uid: Butterfly.Db.StatementFieldRef.ParseFieldRefs*
+  commentId: Overload:Butterfly.Db.StatementFieldRef.ParseFieldRefs
+  name: ParseFieldRefs
+  nameWithType: StatementFieldRef.ParseFieldRefs
+  fullName: Butterfly.Db.StatementFieldRef.ParseFieldRefs
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Butterfly.Db.StatementFieldRef[]
+  isExternal: true
+  name: StatementFieldRef[]
+  nameWithType: StatementFieldRef[]
+  fullName: Butterfly.Db.StatementFieldRef[]
+  nameWithType.vb: StatementFieldRef()
+  fullName.vb: Butterfly.Db.StatementFieldRef()
+  name.vb: StatementFieldRef()
+  spec.csharp:
+  - uid: Butterfly.Db.StatementFieldRef
+    name: StatementFieldRef
+    nameWithType: StatementFieldRef
+    fullName: Butterfly.Db.StatementFieldRef
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Butterfly.Db.StatementFieldRef
+    name: StatementFieldRef
+    nameWithType: StatementFieldRef
+    fullName: Butterfly.Db.StatementFieldRef
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+shouldSkipMarkup: true
