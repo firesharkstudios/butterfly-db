@@ -1,4 +1,4 @@
-# Butterfly.Util ![Butterfly Logo](https://raw.githubusercontent.com/firesharkstudios/Butterfly/master/img/logo-40x40.png) 
+# Butterfly.Db ![Butterfly Logo](https://raw.githubusercontent.com/firesharkstudios/Butterfly/master/img/logo-40x40.png) 
 
 > Collection of utility methods used in the Butterfly Server
 
@@ -16,11 +16,11 @@
 
 ### Install from Source Code
 
-git clone https://github.com/firesharkstudios/butterfly-util
+git clone https://github.com/firesharkstudios/butterfly-db
 
 ## API Documentation
 
-Available [here](http://htmlpreview.github.io/?https://github.com/firesharkstudios/butterfly-util/blob/master/docs/api/Butterfly.Util.html).
+Available [here](http://htmlpreview.github.io/?https://github.com/firesharkstudios/butterfly-db/blob/master/docs/api/Butterfly.Db.html).
 
 ## Contributing
 
