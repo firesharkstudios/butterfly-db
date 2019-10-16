@@ -16,19 +16,17 @@
 
 ### Install from Source Code
 
-git clone https://github.com/firesharkstudios/butterfly-db
+```git clone https://github.com/firesharkstudios/butterfly-db```
 
 ## Overview
 
 *Butterfly.Db* defines interfaces to access a database and receive events when a database changes.
 
-*Butterfly.Db.Mysql*, *Butterfly.Db.Postgres*, *Butterfly.Db.SQLite*, and *Butterfly.Db.Postgress* implement the Butterfly.Db interfaces in the respective databases.
+*Butterfly.Db.Mysql*, *Butterfly.Db.Postgres*, *Butterfly.Db.SQLite*, and *Butterfly.Db.Postgress* implement the *Butterfly.Db* interfaces in the respective databases.
 
 ## Accessing a Database
 
-### Overview
-
-An [IDatabase](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.IDatabase.html) instance allows modifying data, selecting data, and creating *DynamicViews*.
+An *IDatabase* instance allows modifying data, selecting data, and creating *DynamicViews*.
 
 ```cs
 var id = await database.InsertAndCommitAsync<string>("todo", new {
@@ -127,7 +125,7 @@ Dict[] rows = await database.SelectRowsAsync("SELECT * employee WHERE department
 ```
 ### Modifying Data
 
-A [IDatabase](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.IDatabase.html) instance has convenience methods that create a transaction, perform a specific action, and commit the transaction as follows...
+A *IDatabase* instance has convenience methods that create a transaction, perform a specific action, and commit the transaction as follows...
 
 ```cs
 // Execute a single INSERT and return the value of the primary key
@@ -208,7 +206,7 @@ public async Task SynchronizeTags(string articleId, string[] tagNames) {
 
 ### Defaults, Overrides, and Preprocessors
 
-A [IDatabase](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.IDatabase.html) instance allows defining...
+A *IDatabase* instance allows defining...
 
 - Default Values (applies to INSERTs)
 - Override Values (applies to INSERTs and UPDATEs)
@@ -265,7 +263,7 @@ You can use the [Butterfly Client](#butterfly-client) libraries to consume these
 
 Key limitations...
 
-- Only INSERTs, UPDATEs, and DELETEs executed via an [IDatabase](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.IDatabase.html) instance will trigger data change events
+- Only INSERTs, UPDATEs, and DELETEs executed via an *IDatabase* instance will trigger data change events
 - SELECT statements with UNIONs are not supported
 - SELECT statements with subqueries may not be supported depending on the type of subquery
 - SELECT statements with multiple references to the same table can only trigger updates on one of the references
