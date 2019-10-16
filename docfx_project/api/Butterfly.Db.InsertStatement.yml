@@ -24,7 +24,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: InsertStatement
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 17
@@ -71,7 +73,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: STATEMENT_REGEX
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 22
@@ -104,7 +108,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: fromClause
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 24
@@ -135,7 +141,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: namesClause
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 25
@@ -166,7 +174,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: valuesClause
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 26
@@ -197,7 +207,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 33
@@ -234,7 +246,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ParseNamesClause
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 57
@@ -269,7 +283,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ParseValuesClause
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 61
@@ -304,7 +320,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetExecutableSqlAndParams
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 65
@@ -342,7 +360,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetInsertRefs
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 81
@@ -378,7 +398,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/InsertStatement.cs
+      path: Butterfly.Db/Statements/InsertStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetNamesAndValues
     path: ../Butterfly.Db/Statements/InsertStatement.cs
     startLine: 91

@@ -16,7 +16,9 @@ items:
   type: Enum
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: TransactionState
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 9
@@ -45,7 +47,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Uncommitted
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 10
@@ -75,7 +79,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Committed
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 11

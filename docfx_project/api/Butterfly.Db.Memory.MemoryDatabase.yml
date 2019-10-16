@@ -29,7 +29,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: MemoryDatabase
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 20
@@ -110,7 +112,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 24
@@ -138,7 +142,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateFromResourceFileAsync
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 33
@@ -178,7 +184,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateFromSqlAsync
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 45
@@ -213,7 +221,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateStatement
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 72
@@ -248,7 +258,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: LoadSchemaAsync
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 76
@@ -281,7 +293,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: LoadTableSchemaAsync
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 80
@@ -317,7 +331,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateTransaction
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 84
@@ -350,7 +366,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoSelectRowsAsync
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 88
@@ -393,7 +411,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoQueryRowsAsync
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 110
@@ -434,7 +454,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SIMPLE_REPLACE
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 114
@@ -467,7 +489,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: IN_REPLACE
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 115
@@ -500,7 +524,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CanJoin
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 117
@@ -536,7 +562,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CanFieldAlias
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 118
@@ -572,7 +600,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: EvaluateWhereClause
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 120
@@ -614,7 +644,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryDatabase.cs
+      path: Butterfly.Db/Memory/MemoryDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: EvaluateWhereClauseReplace
     path: ../Butterfly.Db/Memory/MemoryDatabase.cs
     startLine: 130

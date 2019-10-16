@@ -24,7 +24,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Table
     path: ../Butterfly.Db/Table.cs
     startLine: 13
@@ -61,7 +63,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Table.cs
     startLine: 14
@@ -99,7 +103,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Name
     path: ../Butterfly.Db/Table.cs
     startLine: 25
@@ -134,7 +140,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: FieldDefs
     path: ../Butterfly.Db/Table.cs
     startLine: 30
@@ -169,7 +177,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: FindFieldDef
     path: ../Butterfly.Db/Table.cs
     startLine: 35
@@ -202,7 +212,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Indexes
     path: ../Butterfly.Db/Table.cs
     startLine: 39
@@ -237,7 +249,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: AutoIncrementFieldName
     path: ../Butterfly.Db/Table.cs
     startLine: 44
@@ -272,7 +286,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: getDefaultValueByFieldName
     path: ../Butterfly.Db/Table.cs
     startLine: 49
@@ -303,7 +319,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetDefaultValueByFieldName
     path: ../Butterfly.Db/Table.cs
     startLine: 53
@@ -336,7 +354,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: getOverrideValueByFieldName
     path: ../Butterfly.Db/Table.cs
     startLine: 55
@@ -367,7 +387,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Table.cs
+      path: Butterfly.Db/Table.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetOverrideValueByFieldName
     path: ../Butterfly.Db/Table.cs
     startLine: 59

@@ -22,7 +22,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DataEventTransaction
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 18
@@ -57,7 +59,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: dateTime
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 19
@@ -88,7 +92,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: dataEvents
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 20
@@ -119,7 +125,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: storage
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 22
@@ -150,7 +158,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 24
@@ -186,7 +196,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Store
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 29
@@ -219,7 +231,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Fetch
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 31
@@ -252,7 +266,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ToString
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 36
@@ -284,7 +300,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEventTransaction.cs
+      path: Butterfly.Db/Event/DataEventTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: FilterDataEvents
     path: ../Butterfly.Db/Event/DataEventTransaction.cs
     startLine: 40

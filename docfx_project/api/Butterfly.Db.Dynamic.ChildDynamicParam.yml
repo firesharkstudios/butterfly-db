@@ -19,7 +19,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+      path: Butterfly.Db/Dynamic/DynamicView.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ChildDynamicParam
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 263
@@ -52,7 +54,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+      path: Butterfly.Db/Dynamic/DynamicView.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: dynamicParam
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 266
@@ -83,7 +87,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+      path: Butterfly.Db/Dynamic/DynamicView.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: fieldName
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 267
@@ -114,7 +120,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+      path: Butterfly.Db/Dynamic/DynamicView.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: valueByKeyValue
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 269
@@ -145,7 +153,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+      path: Butterfly.Db/Dynamic/DynamicView.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 271
@@ -178,7 +188,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicView.cs
+      path: Butterfly.Db/Dynamic/DynamicView.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: UpdateFrom
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 276

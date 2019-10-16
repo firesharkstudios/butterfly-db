@@ -17,7 +17,9 @@ items:
   type: Enum
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+      path: Butterfly.Db/TableIndex.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: TableIndexType
     path: ../Butterfly.Db/TableIndex.cs
     startLine: 6
@@ -46,7 +48,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+      path: Butterfly.Db/TableIndex.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Primary
     path: ../Butterfly.Db/TableIndex.cs
     startLine: 7
@@ -76,7 +80,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+      path: Butterfly.Db/TableIndex.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Unique
     path: ../Butterfly.Db/TableIndex.cs
     startLine: 8
@@ -106,7 +112,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+      path: Butterfly.Db/TableIndex.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Other
     path: ../Butterfly.Db/TableIndex.cs
     startLine: 9

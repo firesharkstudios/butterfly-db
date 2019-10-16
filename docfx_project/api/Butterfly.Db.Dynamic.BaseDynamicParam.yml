@@ -22,7 +22,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BaseDynamicParam
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 10
@@ -65,7 +67,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: logger
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 11
@@ -98,7 +102,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: name
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 15
@@ -129,7 +135,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 18
@@ -160,7 +168,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Dirty
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 22
@@ -193,7 +203,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SetDirty
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 24
@@ -221,7 +233,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ResetDirty
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 29
@@ -249,7 +263,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Clear
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 34
@@ -279,7 +295,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetValue
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 36

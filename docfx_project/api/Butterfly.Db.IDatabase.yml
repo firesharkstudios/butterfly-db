@@ -43,7 +43,9 @@ items:
   type: Interface
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: IDatabase
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 75
@@ -75,7 +77,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CanJoin
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 80
@@ -108,7 +112,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CanFieldAlias
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 85
@@ -141,7 +147,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SelectCount
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 90
@@ -174,7 +182,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: TableByName
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 95
@@ -207,7 +217,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: OnNewUncommittedTransaction
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 102
@@ -243,7 +255,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: OnNewUncommittedTransaction
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 105
@@ -276,7 +290,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: OnNewCommittedTransaction
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 112
@@ -312,7 +328,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: OnNewCommittedTransaction
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 115
@@ -345,7 +363,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SelectValueAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 129
@@ -390,7 +410,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SelectValuesAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 142
@@ -432,7 +454,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SelectRowAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 150
@@ -468,7 +492,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SelectRowsAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 158
@@ -504,7 +530,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SelectRowsAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 166
@@ -540,7 +568,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: QueryValueAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 176
@@ -585,7 +615,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: QueryRowAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 184
@@ -621,7 +653,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: QueryRowsAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 192
@@ -657,7 +691,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: InsertAndCommitAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 227
@@ -702,7 +738,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: UpdateAndCommitAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 257
@@ -739,7 +777,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DeleteAndCommitAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 285
@@ -776,7 +816,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BeginTransaction
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 291
@@ -805,7 +847,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BeginTransactionAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 294
@@ -832,7 +876,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SetDefaultValue
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 302
@@ -871,7 +917,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SetOverrideValue
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 310
@@ -910,7 +958,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: AddInputPreprocessor
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 316
@@ -943,7 +993,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateDynamicViewSet
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 323
@@ -979,7 +1031,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateDynamicViewSet
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 326
@@ -1012,7 +1066,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateAndStartDynamicViewAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 337
@@ -1060,7 +1116,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateAndStartDynamicViewAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 340
@@ -1101,7 +1159,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDatabase.cs
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetInitialDataEventsAsync
     path: ../Butterfly.Db/IDatabase.cs
     startLine: 350

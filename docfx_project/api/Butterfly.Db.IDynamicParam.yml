@@ -15,7 +15,9 @@ items:
   type: Interface
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDynamicParam.cs
+      path: Butterfly.Db/IDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: IDynamicParam
     path: ../Butterfly.Db/IDynamicParam.cs
     startLine: 8
@@ -46,7 +48,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/IDynamicParam.cs
+      path: Butterfly.Db/IDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetValue
     path: ../Butterfly.Db/IDynamicParam.cs
     startLine: 9

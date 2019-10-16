@@ -26,7 +26,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SQLiteDatabase
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 20
@@ -109,7 +111,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CanJoin
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 24
@@ -145,7 +149,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CanFieldAlias
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 26
@@ -181,7 +187,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 28
@@ -212,7 +220,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: LoadSchemaAsync
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 31
@@ -245,7 +255,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: LoadTableSchemaAsync
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 46
@@ -281,7 +293,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetFieldDefs
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 52
@@ -314,7 +328,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetIndexes
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 86
@@ -352,7 +368,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetIndexFieldNames
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 120
@@ -385,7 +403,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateTransaction
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 136
@@ -418,7 +438,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoSelectRowsAsync
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 140
@@ -460,7 +482,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoQueryRowsAsync
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 173
@@ -500,7 +524,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteDatabase.cs
+      path: Butterfly.Db.SQLite/SQLiteDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ConvertValue
     path: ../Butterfly.Db.SQLite/SQLiteDatabase.cs
     startLine: 177

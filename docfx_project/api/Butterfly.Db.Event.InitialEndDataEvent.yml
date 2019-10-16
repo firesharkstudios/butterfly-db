@@ -15,7 +15,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+      path: Butterfly.Db/Event/DataEvent.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: InitialEndDataEvent
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 49
@@ -53,7 +55,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+      path: Butterfly.Db/Event/DataEvent.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 50

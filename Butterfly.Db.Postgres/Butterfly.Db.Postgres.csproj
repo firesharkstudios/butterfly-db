@@ -3,17 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageLicenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/firesharkstudios/butterfly-server-dotnet</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/firesharkstudios/butterfly-server-dotnet/master/img/logo-40x40.png</PackageIconUrl>
-    <RepositoryUrl>https://github.com/firesharkstudios/butterfly-server-dotnet</RepositoryUrl>
-    <PackageTags>butterfly server database postgres</PackageTags>
-    <Product>Butterfly Server .NET</Product>
+    <PackageProjectUrl>https://github.com/firesharkstudios/butterfly-db</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/firesharkstudios/butterfly-db/master/img/logo-40x40.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/firesharkstudios/butterfly-db</RepositoryUrl>
+    <PackageTags>butterfly database postgres</PackageTags>
+    <Product>Butterfly.Db.Postgres</Product>
     <Company>Fireshark Studios, LLC</Company>
     <Authors>Johan van Rensburg, Kent Johnson</Authors>
-    <Copyright>Copyright 2017-2018 Fireshark Studios, LLC</Copyright>
-    <Description>Implementation of Butterfly.Core.Database for Postgres</Description>
+    <Copyright>Copyright 2017-2019 Fireshark Studios, LLC</Copyright>
+    <Description>Implementation of Butterfly.Db for Postgres</Description>
     <PackageReleaseNotes>Various improvements and bug fixes</PackageReleaseNotes>
-    <Version>2.0.0</Version>
+    <Version>2.0.1</Version>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildProjectName).xml</DocumentationFile>
   </PropertyGroup>
 

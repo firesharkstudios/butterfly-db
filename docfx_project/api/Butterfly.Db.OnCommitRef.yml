@@ -17,7 +17,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/OnCommitRef.cs
+      path: Butterfly.Db/OnCommitRef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: OnCommitRef
     path: ../Butterfly.Db/OnCommitRef.cs
     startLine: 4
@@ -50,7 +52,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/OnCommitRef.cs
+      path: Butterfly.Db/OnCommitRef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: onCommit
     path: ../Butterfly.Db/OnCommitRef.cs
     startLine: 5
@@ -81,7 +85,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/OnCommitRef.cs
+      path: Butterfly.Db/OnCommitRef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: key
     path: ../Butterfly.Db/OnCommitRef.cs
     startLine: 6
@@ -112,7 +118,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/OnCommitRef.cs
+      path: Butterfly.Db/OnCommitRef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/OnCommitRef.cs
     startLine: 7

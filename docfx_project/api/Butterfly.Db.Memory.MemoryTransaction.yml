@@ -28,7 +28,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: MemoryTransaction
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 18
@@ -88,7 +90,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: changedTables
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 22
@@ -119,7 +123,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 24
@@ -150,7 +156,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Begin
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 27
@@ -181,7 +189,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BeginAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 30
@@ -214,7 +224,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCommit
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 34
@@ -245,7 +257,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCommitAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 40
@@ -278,7 +292,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoRollback
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 45
@@ -309,7 +325,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Dispose
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 51
@@ -340,7 +358,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCreate
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 55
@@ -376,7 +396,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCreateAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 74
@@ -412,7 +434,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoInsertAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 78
@@ -455,7 +479,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoUpdateAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 101
@@ -496,7 +522,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoDeleteAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 126
@@ -537,7 +565,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTransaction.cs
+      path: Butterfly.Db/Memory/MemoryTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoTruncateAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 139

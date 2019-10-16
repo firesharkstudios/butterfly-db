@@ -383,7 +383,7 @@ You can run a more robust example [here](https://github.com/firesharkstudios/but
 
 ### Using a Memory Database
 
-[Butterfly.Db.MemoryDatabase](https://butterflyserver.io/docfx/api/Butterfly.Db.Memory.MemoryDatabase.html) database is included in [Butterfly.Core](api/Butterfly.Core.md) and doesn't require installing additional packages; however, *MemoryDatabase* has these key limitattions...
+[Butterfly.Db.MemoryDatabase](https://butterflyserver.io/docfx/api/Butterfly.Db.Memory.MemoryDatabase.html) database is included in *Butterfly.Db* and doesn't require installing additional packages; however, *MemoryDatabase* has these key limitattions...
 
 - Data is NOT persisted
 - SELECT statements with JOINs are NOT supported

@@ -21,7 +21,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/UpdateStatement.cs
+      path: Butterfly.Db/Statements/UpdateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: UpdateStatement
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 14
@@ -68,7 +70,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/UpdateStatement.cs
+      path: Butterfly.Db/Statements/UpdateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: STATEMENT_REGEX
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 15
@@ -101,7 +105,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/UpdateStatement.cs
+      path: Butterfly.Db/Statements/UpdateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: fromClause
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 17
@@ -132,7 +138,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/UpdateStatement.cs
+      path: Butterfly.Db/Statements/UpdateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: setClause
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 18
@@ -163,7 +171,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/UpdateStatement.cs
+      path: Butterfly.Db/Statements/UpdateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: whereClause
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 19
@@ -194,7 +204,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/UpdateStatement.cs
+      path: Butterfly.Db/Statements/UpdateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 26
@@ -231,7 +243,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/UpdateStatement.cs
+      path: Butterfly.Db/Statements/UpdateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetWhereIndexSetRefsAndWhereRefs
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 49
@@ -269,7 +283,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/UpdateStatement.cs
+      path: Butterfly.Db/Statements/UpdateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetExecutableSqlAndParams
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 71

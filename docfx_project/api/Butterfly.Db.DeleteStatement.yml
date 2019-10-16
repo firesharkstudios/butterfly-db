@@ -20,7 +20,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/DeleteStatement.cs
+      path: Butterfly.Db/Statements/DeleteStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DeleteStatement
     path: ../Butterfly.Db/Statements/DeleteStatement.cs
     startLine: 14
@@ -67,7 +69,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/DeleteStatement.cs
+      path: Butterfly.Db/Statements/DeleteStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: STATEMENT_REGEX
     path: ../Butterfly.Db/Statements/DeleteStatement.cs
     startLine: 15
@@ -100,7 +104,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/DeleteStatement.cs
+      path: Butterfly.Db/Statements/DeleteStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: fromClause
     path: ../Butterfly.Db/Statements/DeleteStatement.cs
     startLine: 17
@@ -131,7 +137,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/DeleteStatement.cs
+      path: Butterfly.Db/Statements/DeleteStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: whereClause
     path: ../Butterfly.Db/Statements/DeleteStatement.cs
     startLine: 18
@@ -162,7 +170,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/DeleteStatement.cs
+      path: Butterfly.Db/Statements/DeleteStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Statements/DeleteStatement.cs
     startLine: 20
@@ -195,7 +205,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/DeleteStatement.cs
+      path: Butterfly.Db/Statements/DeleteStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetWhereIndexAndWhereRefs
     path: ../Butterfly.Db/Statements/DeleteStatement.cs
     startLine: 42
@@ -233,7 +245,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/DeleteStatement.cs
+      path: Butterfly.Db/Statements/DeleteStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetExecutableSqlAndParams
     path: ../Butterfly.Db/Statements/DeleteStatement.cs
     startLine: 59

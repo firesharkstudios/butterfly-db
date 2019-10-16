@@ -23,7 +23,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      path: Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SqlServerDatabase
     path: ../Butterfly.Db.SqlServer/SqlServerDatabase.cs
     startLine: 18
@@ -106,7 +108,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      path: Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: forceIsolationLevelSnapshot
     path: ../Butterfly.Db.SqlServer/SqlServerDatabase.cs
     startLine: 24
@@ -137,7 +141,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      path: Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db.SqlServer/SqlServerDatabase.cs
     startLine: 31
@@ -174,7 +180,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      path: Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CanJoin
     path: ../Butterfly.Db.SqlServer/SqlServerDatabase.cs
     startLine: 36
@@ -210,7 +218,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      path: Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CanFieldAlias
     path: ../Butterfly.Db.SqlServer/SqlServerDatabase.cs
     startLine: 38
@@ -246,7 +256,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      path: Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateTransaction
     path: ../Butterfly.Db.SqlServer/SqlServerDatabase.cs
     startLine: 40
@@ -279,7 +291,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      path: Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoQueryRowsAsync
     path: ../Butterfly.Db.SqlServer/SqlServerDatabase.cs
     startLine: 45
@@ -319,7 +333,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      path: Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoSelectRowsAsync
     path: ../Butterfly.Db.SqlServer/SqlServerDatabase.cs
     startLine: 68
@@ -361,7 +377,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      path: Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: LoadSchemaAsync
     path: ../Butterfly.Db.SqlServer/SqlServerDatabase.cs
     startLine: 101
@@ -394,7 +412,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      path: Butterfly.Db.SqlServer/SqlServerDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: LoadTableSchemaAsync
     path: ../Butterfly.Db.SqlServer/SqlServerDatabase.cs
     startLine: 120

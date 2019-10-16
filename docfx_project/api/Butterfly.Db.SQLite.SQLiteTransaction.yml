@@ -32,7 +32,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SQLiteTransaction
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 18
@@ -95,7 +97,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: connection
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 22
@@ -124,7 +128,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: transaction
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 23
@@ -153,7 +159,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 25
@@ -184,7 +192,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Begin
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 28
@@ -215,7 +225,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BeginAsync
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 35
@@ -248,7 +260,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCommit
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 42
@@ -279,7 +293,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCommitAsync
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 46
@@ -312,7 +328,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoRollback
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 51
@@ -343,7 +361,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Dispose
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 55
@@ -374,7 +394,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCreate
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 60
@@ -410,7 +432,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCreateAsync
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 66
@@ -446,7 +470,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BuildCreate
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 79
@@ -481,7 +507,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoInsertAsync
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 144
@@ -523,7 +551,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoUpdateAsync
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 177
@@ -563,7 +593,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoDeleteAsync
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 181
@@ -603,7 +635,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoTruncateAsync
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 185
@@ -639,7 +673,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoExecute
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 189
@@ -677,7 +713,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SQLite/SQLiteTransaction.cs
+      path: Butterfly.Db.SQLite/SQLiteTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoExecuteAsync
     path: ../Butterfly.Db.SQLite/SQLiteTransaction.cs
     startLine: 204

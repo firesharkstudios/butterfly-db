@@ -25,7 +25,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: PostgresDatabase
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 23
@@ -108,7 +110,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 28
@@ -139,7 +143,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CanJoin
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 32
@@ -175,7 +181,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CanFieldAlias
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 34
@@ -211,7 +219,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: LoadSchemaAsync
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 36
@@ -244,7 +254,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: LoadTableSchemaAsync
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 56
@@ -280,7 +292,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateTransaction
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 150
@@ -313,7 +327,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoSelectRowsAsync
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 155
@@ -355,7 +371,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoQueryRowsAsync
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 184
@@ -395,7 +413,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ConvertValue
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 207
@@ -430,7 +450,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: PARSE_TYPE
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 219
@@ -463,7 +485,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.Postgres/PostgresDatabase.cs
+      path: Butterfly.Db.Postgres/PostgresDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ConvertType
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 222

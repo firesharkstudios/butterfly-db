@@ -16,7 +16,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTable.cs
+      path: Butterfly.Db/Memory/MemoryTable.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: MemoryTable
     path: ../Butterfly.Db/Memory/MemoryTable.cs
     startLine: 8
@@ -60,7 +62,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTable.cs
+      path: Butterfly.Db/Memory/MemoryTable.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Memory/MemoryTable.cs
     startLine: 9
@@ -98,7 +102,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Memory/MemoryTable.cs
+      path: Butterfly.Db/Memory/MemoryTable.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DataTable
     path: ../Butterfly.Db/Memory/MemoryTable.cs
     startLine: 13

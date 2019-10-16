@@ -31,7 +31,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: MySqlTransaction
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 18
@@ -94,7 +96,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: connection
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 22
@@ -123,7 +127,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: transaction
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 23
@@ -152,7 +158,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 25
@@ -183,7 +191,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Begin
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 28
@@ -214,7 +224,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BeginAsync
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 35
@@ -247,7 +259,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCommit
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 42
@@ -278,7 +292,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCommitAsync
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 46
@@ -311,7 +327,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoRollback
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 50
@@ -342,7 +360,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Dispose
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 54
@@ -373,7 +393,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCreate
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 59
@@ -409,7 +431,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCreateAsync
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 64
@@ -445,7 +469,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoInsertAsync
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 69
@@ -487,7 +513,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoUpdateAsync
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 90
@@ -527,7 +555,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoDeleteAsync
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 94
@@ -567,7 +597,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoTruncateAsync
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 98
@@ -603,7 +635,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoExecute
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 102
@@ -641,7 +675,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.MySql/MySqlTransaction.cs
+      path: Butterfly.Db.MySql/MySqlTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoExecuteAsync
     path: ../Butterfly.Db.MySql/MySqlTransaction.cs
     startLine: 117

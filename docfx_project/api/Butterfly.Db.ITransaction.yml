@@ -24,7 +24,9 @@ items:
   type: Interface
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ITransaction
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 19
@@ -57,7 +59,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Database
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 24
@@ -90,7 +94,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: InsertAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 59
@@ -135,7 +141,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: UpdateAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 89
@@ -172,7 +180,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DeleteAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 117
@@ -209,7 +219,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SynchronizeAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 129
@@ -260,7 +272,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: TruncateAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 136
@@ -293,7 +307,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Commit
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 141
@@ -319,7 +335,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CommitAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 144
@@ -346,7 +364,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: OnCommit
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 151
@@ -382,7 +402,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/ITransaction.cs
+      path: Butterfly.Db/ITransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Rollback
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 156

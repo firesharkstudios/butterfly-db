@@ -15,7 +15,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseDatabase.cs
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DatabaseException
     path: ../Butterfly.Db/BaseDatabase.cs
     startLine: 352
@@ -51,7 +53,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseDatabase.cs
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/BaseDatabase.cs
     startLine: 353

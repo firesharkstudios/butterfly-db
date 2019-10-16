@@ -28,7 +28,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SqlServerTransaction
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 17
@@ -91,7 +93,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: transaction
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 21
@@ -120,7 +124,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 25
@@ -151,7 +157,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Begin
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 30
@@ -182,7 +190,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BeginAsync
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 37
@@ -215,7 +225,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Dispose
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 44
@@ -246,7 +258,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCommit
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 50
@@ -277,7 +291,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCommitAsync
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 55
@@ -310,7 +326,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoRollback
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 61
@@ -341,7 +359,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCreate
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 66
@@ -377,7 +397,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCreateAsync
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 76
@@ -413,7 +435,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoDeleteAsync
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 86
@@ -453,7 +477,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoInsertAsync
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 96
@@ -495,7 +521,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoTruncateAsync
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 108
@@ -531,7 +559,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      path: Butterfly.Db.SqlServer/SqlServerTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoUpdateAsync
     path: ../Butterfly.Db.SqlServer/SqlServerTransaction.cs
     startLine: 116

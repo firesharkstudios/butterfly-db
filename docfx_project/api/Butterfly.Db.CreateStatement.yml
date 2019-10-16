@@ -24,7 +24,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateStatement
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 13
@@ -71,7 +73,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: STATEMENT_REGEX
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 14
@@ -104,7 +108,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: FIELD_REGEX
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 15
@@ -137,7 +143,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: PRIMARY_KEY_REGEX
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 16
@@ -170,7 +178,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: INDEX_REGEX
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 17
@@ -203,7 +213,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 19
@@ -234,7 +246,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: TableName
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 69
@@ -269,7 +283,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: FieldDefs
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 74
@@ -304,7 +320,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Indexes
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 79
@@ -339,7 +357,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: PARSE_TYPE
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 84
@@ -372,7 +392,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/CreateStatement.cs
+      path: Butterfly.Db/Statements/CreateStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ConvertMySqlType
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 86

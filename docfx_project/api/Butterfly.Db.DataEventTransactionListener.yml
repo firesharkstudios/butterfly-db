@@ -18,7 +18,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/DataEventTransactionListener.cs
+      path: Butterfly.Db/DataEventTransactionListener.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DataEventTransactionListener
     path: ../Butterfly.Db/DataEventTransactionListener.cs
     startLine: 13
@@ -53,7 +55,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/DataEventTransactionListener.cs
+      path: Butterfly.Db/DataEventTransactionListener.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: listener
     path: ../Butterfly.Db/DataEventTransactionListener.cs
     startLine: 14
@@ -84,7 +88,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/DataEventTransactionListener.cs
+      path: Butterfly.Db/DataEventTransactionListener.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: listenerAsync
     path: ../Butterfly.Db/DataEventTransactionListener.cs
     startLine: 15
@@ -115,7 +121,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/DataEventTransactionListener.cs
+      path: Butterfly.Db/DataEventTransactionListener.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/DataEventTransactionListener.cs
     startLine: 17
@@ -149,7 +157,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/DataEventTransactionListener.cs
+      path: Butterfly.Db/DataEventTransactionListener.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/DataEventTransactionListener.cs
     startLine: 22

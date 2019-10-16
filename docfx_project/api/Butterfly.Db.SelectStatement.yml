@@ -26,7 +26,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SelectStatement
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 18
@@ -73,7 +75,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: STRUCTURED_PARSER
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 21
@@ -106,7 +110,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: selectClause
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 23
@@ -137,7 +143,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: fromClause
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 24
@@ -168,7 +176,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: whereClause
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 25
@@ -199,7 +209,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: orderByClause
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 26
@@ -230,7 +242,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: limit
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 27
@@ -261,7 +275,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 29
@@ -296,7 +312,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 53
@@ -337,7 +355,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Compile
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 63
@@ -368,7 +388,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 67
@@ -403,7 +425,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetExecutableSqlAndParams
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 83
@@ -439,7 +463,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/SelectStatement.cs
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ReplaceAll
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 160

@@ -38,7 +38,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DynamicViewSet
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 24
@@ -73,7 +75,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: listener
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 27
@@ -104,7 +108,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: asyncListener
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 28
@@ -135,7 +141,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: dynamicViews
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 30
@@ -166,7 +174,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: incomingDataEventTransactions
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 31
@@ -197,7 +207,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: runCancellationTokenSource
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 33
@@ -228,7 +240,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: monitor
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 34
@@ -259,7 +273,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: disposables
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 36
@@ -290,7 +306,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 38
@@ -326,7 +344,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 44
@@ -362,7 +382,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Id
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 50
@@ -397,7 +419,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateDynamicView
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 64
@@ -443,7 +467,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: isStarted
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 70
@@ -472,7 +498,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: StartAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 77
@@ -505,7 +533,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ProcessUncommittedDataEventTransactionAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 98
@@ -538,7 +568,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ProcessCommittedDataEventTransactionAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 102
@@ -571,7 +603,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: StoreImpactedRecordsInDataEventTransaction
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 109
@@ -606,7 +640,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetImpactedRecordsStorageKey
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 125
@@ -643,7 +679,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: HasImpactedRecords
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 129
@@ -680,7 +718,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: RunAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 148
@@ -713,7 +753,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateDynamicViewDataEvents
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 178
@@ -748,7 +790,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SendToListenerAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 221
@@ -781,7 +825,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: RequeryDynamicViewsAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 238
@@ -818,7 +864,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetInitialDataEventsAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 254
@@ -851,7 +899,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/DynamicViewSet.cs
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Dispose
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 261

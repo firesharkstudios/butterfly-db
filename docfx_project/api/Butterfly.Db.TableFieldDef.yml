@@ -21,7 +21,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+      path: Butterfly.Db/TableFieldDef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: TableFieldDef
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 11
@@ -56,7 +58,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+      path: Butterfly.Db/TableFieldDef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: name
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 12
@@ -87,7 +91,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+      path: Butterfly.Db/TableFieldDef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: type
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 13
@@ -118,7 +124,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+      path: Butterfly.Db/TableFieldDef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: maxLength
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 14
@@ -149,7 +157,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+      path: Butterfly.Db/TableFieldDef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: allowNull
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 15
@@ -180,7 +190,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+      path: Butterfly.Db/TableFieldDef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: isAutoIncrement
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 16
@@ -211,7 +223,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+      path: Butterfly.Db/TableFieldDef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 18
@@ -250,7 +264,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableFieldDef.cs
+      path: Butterfly.Db/TableFieldDef.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: FromDataColumn
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 26

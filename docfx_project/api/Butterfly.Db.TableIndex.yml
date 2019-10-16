@@ -17,7 +17,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+      path: Butterfly.Db/TableIndex.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: TableIndex
     path: ../Butterfly.Db/TableIndex.cs
     startLine: 15
@@ -52,7 +54,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+      path: Butterfly.Db/TableIndex.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/TableIndex.cs
     startLine: 16
@@ -88,7 +92,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+      path: Butterfly.Db/TableIndex.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: IndexType
     path: ../Butterfly.Db/TableIndex.cs
     startLine: 21
@@ -123,7 +129,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/TableIndex.cs
+      path: Butterfly.Db/TableIndex.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: FieldNames
     path: ../Butterfly.Db/TableIndex.cs
     startLine: 26

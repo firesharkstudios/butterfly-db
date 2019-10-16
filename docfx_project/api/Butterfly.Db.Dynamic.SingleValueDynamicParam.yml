@@ -19,7 +19,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SingleValueDynamicParam
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 8
@@ -64,7 +66,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: value
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 9
@@ -93,7 +97,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 11
@@ -124,7 +130,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Clear
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 14
@@ -155,7 +163,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetValue
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 21
@@ -188,7 +198,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SetValue
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 25

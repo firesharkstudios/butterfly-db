@@ -20,7 +20,9 @@ items:
   type: Enum
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+      path: Butterfly.Db/Event/DataEvent.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DataEventType
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 9
@@ -49,7 +51,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+      path: Butterfly.Db/Event/DataEvent.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: InitialBegin
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 10
@@ -79,7 +83,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+      path: Butterfly.Db/Event/DataEvent.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Initial
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 11
@@ -109,7 +115,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+      path: Butterfly.Db/Event/DataEvent.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: InitialEnd
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 12
@@ -139,7 +147,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+      path: Butterfly.Db/Event/DataEvent.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Insert
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 13
@@ -169,7 +179,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+      path: Butterfly.Db/Event/DataEvent.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Update
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 14
@@ -199,7 +211,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Event/DataEvent.cs
+      path: Butterfly.Db/Event/DataEvent.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Delete
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 15

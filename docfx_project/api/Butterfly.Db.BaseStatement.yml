@@ -24,7 +24,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BaseStatement
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 16
@@ -67,7 +69,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: IsSqlTableName
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 17
@@ -100,7 +104,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Sql
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 23
@@ -135,7 +141,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: StatementFromRefs
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 29
@@ -170,7 +178,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: FindStatementFromRefByTableAlias
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 41
@@ -203,7 +213,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: fromTableNames
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 45
@@ -234,7 +246,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: HasTableInFrom
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 46
@@ -267,7 +281,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ConfirmAllParamsUsed
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 50
@@ -305,7 +321,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: ConvertParamsToDict
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 57
@@ -340,7 +358,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: EQUALS_REF_REGEX
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 82
@@ -373,7 +393,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Statements/BaseStatement.cs
+      path: Butterfly.Db/Statements/BaseStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: RemapStatementParamsToFieldValues
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 93

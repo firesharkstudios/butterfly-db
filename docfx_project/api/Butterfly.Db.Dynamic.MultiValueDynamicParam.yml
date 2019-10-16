@@ -19,7 +19,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: MultiValueDynamicParam
     path: ../Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
     startLine: 11
@@ -64,7 +66,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: values
     path: ../Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
     startLine: 12
@@ -95,7 +99,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
     startLine: 14
@@ -126,7 +132,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Clear
     path: ../Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
     startLine: 17
@@ -157,7 +165,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetValue
     path: ../Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
     startLine: 25
@@ -190,7 +200,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      path: Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SetValues
     path: ../Butterfly.Db/Dynamic/MultiValueDynamicParam.cs
     startLine: 29

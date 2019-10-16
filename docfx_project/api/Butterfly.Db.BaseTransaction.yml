@@ -46,7 +46,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BaseTransaction
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 20
@@ -93,7 +95,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: database
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 21
@@ -124,7 +128,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: dataEvents
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 23
@@ -155,7 +161,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: onCommitRefs
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 24
@@ -186,7 +194,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: .ctor
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 26
@@ -217,7 +227,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Database
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 31
@@ -252,7 +264,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Create
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 34
@@ -285,7 +299,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCreate
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 38
@@ -320,7 +336,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CreateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 40
@@ -353,7 +371,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCreateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 44
@@ -388,7 +408,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: InsertAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 47
@@ -432,7 +454,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: InsertAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 53
@@ -469,7 +493,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoInsertAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 91
@@ -511,7 +537,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: UpdateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 94
@@ -548,7 +576,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: UpdateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 99
@@ -583,7 +613,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoUpdateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 125
@@ -623,7 +655,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DeleteAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 128
@@ -660,7 +694,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DeleteAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 133
@@ -695,7 +731,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoDeleteAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 157
@@ -735,7 +773,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: GetKeyValue
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 159
@@ -781,7 +821,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: SynchronizeAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 177
@@ -829,7 +871,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: TruncateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 219
@@ -864,7 +908,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoTruncateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 223
@@ -899,7 +945,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Begin
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 226
@@ -929,7 +977,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: BeginAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 228
@@ -961,7 +1011,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Commit
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 231
@@ -991,7 +1043,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCommit
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 242
@@ -1021,7 +1075,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: CommitAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 244
@@ -1053,7 +1109,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: OnCommit
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 263
@@ -1091,7 +1149,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoCommitAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 267
@@ -1123,7 +1183,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Rollback
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 270
@@ -1153,7 +1215,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: DoRollback
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 274
@@ -1183,7 +1247,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Db/Butterfly.Db/BaseTransaction.cs
+      path: Butterfly.Db/BaseTransaction.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db.git
     id: Dispose
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 278
