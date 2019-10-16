@@ -47,10 +47,10 @@ There are four flavors of selecting data with different return values...
 
 | Method | Description |
 | --- | --- |
-| [SelectRowAsync()](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.IDatabase.html#Butterfly_Core_Database_IDatabase_SelectRowAsync_System_String_System_Object_) | Returns a single *Dict* instance |
-| [SelectRowsAsync()](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.IDatabase.html#Butterfly_Core_Database_IDatabase_SelectRowsAsync_System_String_System_Object_System_Int32_) | Returns an array of *Dict* instances |
-| [SelectValueAsync<T>()](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.IDatabase.html#Butterfly_Core_Database_IDatabase_SelectValueAsync__1_System_String_System_Object___0_) | Returns a single value |
-| [SelectValuesAsync<T>()](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.IDatabase.html#Butterfly_Core_Database_IDatabase_SelectValueAsync__1_System_String_System_Object___0_) | Returns an array of values |
+| [SelectRowAsync()](https://butterflyserver.io/docfx/api/Butterfly.Db.IDatabase.html#Butterfly_Core_Database_IDatabase_SelectRowAsync_System_String_System_Object_) | Returns a single *Dict* instance |
+| [SelectRowsAsync()](https://butterflyserver.io/docfx/api/Butterfly.Db.IDatabase.html#Butterfly_Core_Database_IDatabase_SelectRowsAsync_System_String_System_Object_System_Int32_) | Returns an array of *Dict* instances |
+| [SelectValueAsync<T>()](https://butterflyserver.io/docfx/api/Butterfly.Db.IDatabase.html#Butterfly_Core_Database_IDatabase_SelectValueAsync__1_System_String_System_Object___0_) | Returns a single value |
+| [SelectValuesAsync<T>()](https://butterflyserver.io/docfx/api/Butterfly.Db.IDatabase.html#Butterfly_Core_Database_IDatabase_SelectValueAsync__1_System_String_System_Object___0_) | Returns an array of values |
 
 Each flavor above takes a *sql* parameter and optional *values* parameter.
 
@@ -91,7 +91,7 @@ Dict[] departmentEmployees1 = await database.SelectRowsAsync("employee", new {
     department_id = "123"
 });
 Dict[] departmentEmployees1 = await database.SelectRowsAsync("employee", new Dict {
-    { "department_id", "123" }
+    ["department_id"] = "123"
 });
 
 // All three of these effectively run SELECT name FROM employee WHERE id='123'
@@ -100,7 +100,7 @@ string name2 = await database.SelectValueAsync<string>("SELECT name FROM employe
     id = "123"
 });
 string name3 = await database.SelectValueAsync<string>("SELECT name FROM employee", new Dict {
-    { "id", "123" },
+    ["id"] = "123"
 });
 
 // Effectively runs SELECT * FROM employee WHERE department_id IS NULL
@@ -165,13 +165,13 @@ using (ITransaction transaction = await database.BeginTransactionAsync()) {
 }
 ```
 
-Sometimes, it's useful to run code after a transaction is committed, this can be done using [OnCommit](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.ITransaction.html#Butterfly_Core_Database_ITransaction_OnCommit_Func_Task__) to register an action that will execute after the transaction is committed.
+Sometimes, it's useful to run code after a transaction is committed, this can be done using [OnCommit](https://butterflyserver.io/docfx/api/Butterfly.Db.ITransaction.html#Butterfly_Core_Database_ITransaction_OnCommit_Func_Task__) to register an action that will execute after the transaction is committed.
 
 ### Synchronizing Data
 
 It's common to synchronize a set of records in the database with a new set of inputs.  
 
-The [SynchronizeAsync](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.ITransaction.html#Butterfly_Core_Database_ITransaction_SynchronizeAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Object____System_Collections_Generic_Dictionary_System_String_System_Object____Func_System_Collections_Generic_Dictionary_System_String_System_Object__System_Object__System_String___) can be used to determine the right INSERT, UPDATE, and DELETE statements to synchronize two collections...
+The [SynchronizeAsync](https://butterflyserver.io/docfx/api/Butterfly.Db.ITransaction.html#Butterfly_Core_Database_ITransaction_SynchronizeAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Object____System_Collections_Generic_Dictionary_System_String_System_Object____Func_System_Collections_Generic_Dictionary_System_String_System_Object__System_Object__System_String___) can be used to determine the right INSERT, UPDATE, and DELETE statements to synchronize two collections...
 
 ```cs
 // Assumes an article_tag table with article_id and tag_name fields
@@ -200,6 +200,7 @@ public async Task SynchronizeTags(string articleId, string[] tagNames) {
             existingRecords, 
             newRecords
         );
+        await transaction.CommitAsync();
     }
 }
 ```
@@ -248,18 +249,18 @@ database.AddInputPreprocessor(BaseDatabase.CopyFieldValue("$UPDATED_AT$", "updat
 
 ### Overview
 
-A [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Dynamic.DynamicViewSet.html) allows...
+A [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicViewSet.html) allows...
 
-- Defining multiple [DynamicView](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Dynamic.DynamicView.html) instances using a familiar SELECT syntax
-- Publishing the initial rows as a single [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Event.DataEventTransaction.html) instance
-- Publishing any changes as new [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Event.DataEventTransaction.html) instances
+- Defining multiple [DynamicView](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicView.html) instances using a familiar SELECT syntax
+- Publishing the initial rows as a single [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Db.Event.DataEventTransaction.html) instance
+- Publishing any changes as new [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Db.Event.DataEventTransaction.html) instances
 
-Each [DynamicView](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Dynamic.DynamicView.html) instance must...
+Each [DynamicView](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicView.html) instance must...
 
-- Have a unique name (defaults to the first table name in the SELECT) within a [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Dynamic.DynamicViewSet.html)
+- Have a unique name (defaults to the first table name in the SELECT) within a [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicViewSet.html)
 - Have key field(s) that uniquely identify each row (defaults to the primary key of the first table in the SELECT) 
 
-You can use the [Butterfly Client](#butterfly-client) libraries to consume these [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Event.DataEventTransaction.html) instances to keep local javascript arrays synchronized with your server.
+You can use the [Butterfly Client](#butterfly-client) libraries to consume these [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Db.Event.DataEventTransaction.html) instances to keep local javascript arrays synchronized with your server.
 
 Key limitations...
 
@@ -268,11 +269,11 @@ Key limitations...
 - SELECT statements with subqueries may not be supported depending on the type of subquery
 - SELECT statements with multiple references to the same table can only trigger updates on one of the references
 
-A [DynamicView](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Dynamic.DynamicView.html) will execute additional modified SELECT statements on each underlying data change event.  These modified SELECT statements are designed to execute quickly (always includes a primary key of an underlying table); however, this is additional overhead that should be considered on higher traffic implementations.
+A [DynamicView](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicView.html) will execute additional modified SELECT statements on each underlying data change event.  These modified SELECT statements are designed to execute quickly (always includes a primary key of an underlying table); however, this is additional overhead that should be considered on higher traffic implementations.
 
 ### Example
 
-Here is an example of creating a [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Dynamic.DynamicViewSet.html) and triggering [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Event.DataEventTransaction.html) instances by starting the [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Dynamic.DynamicViewSet.html) and by executing an INSERT...
+Here is an example of creating a [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicViewSet.html) and triggering [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Db.Event.DataEventTransaction.html) instances by starting the [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicViewSet.html) and by executing an INSERT...
 ```cs
 var dynamicViewSet = database.CreateAndStartDynamicViewAsync(
     @"SELECT t.id, t.name todo_name, u.name user_name
@@ -290,7 +291,7 @@ var dynamicViewSet = database.CreateAndStartDynamicViewAsync(
 dynamicViewSet.Start();
 ```
 
-The above code would cause a [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Event.DataEventTransaction.html) like this to be echoed to the console...
+The above code would cause a [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Db.Event.DataEventTransaction.html) like this to be echoed to the console...
 
 ```js
 dataEventTransaction={
@@ -345,7 +346,7 @@ dataEventTransaction={
 }
 ```
 
-Now, let's add a record that impacts our [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Dynamic.DynamicViewSet.html)...
+Now, let's add a record that impacts our [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicViewSet.html)...
 
 ```cs
 await database.InsertAndCommitAsync<string>("todo", new {
@@ -355,7 +356,7 @@ await database.InsertAndCommitAsync<string>("todo", new {
 });
 ```
 
-The above code would trigger the following [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Event.DataEventTransaction.html) to be echoed to the console...
+The above code would trigger the following [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Db.Event.DataEventTransaction.html) to be echoed to the console...
 
 ```js
 dataEventTransaction={
@@ -382,7 +383,7 @@ You can run a more robust example [here](https://github.com/firesharkstudios/but
 
 ### Using a Memory Database
 
-[Butterfly.Core.Database.MemoryDatabase](https://butterflyserver.io/docfx/api/Butterfly.Core.Database.Memory.MemoryDatabase.html) database is included in [Butterfly.Core](api/Butterfly.Core.md) and doesn't require installing additional packages; however, *MemoryDatabase* has these key limitattions...
+[Butterfly.Db.MemoryDatabase](https://butterflyserver.io/docfx/api/Butterfly.Db.Memory.MemoryDatabase.html) database is included in [Butterfly.Core](api/Butterfly.Core.md) and doesn't require installing additional packages; however, *MemoryDatabase* has these key limitattions...
 
 - Data is NOT persisted
 - SELECT statements with JOINs are NOT supported
@@ -392,7 +393,7 @@ Under the hood, the *MemoryDatabase* is using a System.Data.DataTable instance t
 In your application...
 
 ```csharp
-var database = new Butterfly.Core.Database.Memory.MemoryDatabase();
+var database = new Butterfly.Db.Memory.MemoryDatabase();
 ```
 
 ### Using MySQL
@@ -400,13 +401,13 @@ var database = new Butterfly.Core.Database.Memory.MemoryDatabase();
 In the *Package Manager Console*...
 
 ```
-Install-Package Butterfly.MySql
+Install-Package Butterfly.Db.Mysql
 ```
 
 In your application...
 
 ```csharp
-var database = new Butterfly.MySql.MySqlDatabase("Server=127.0.0.1;Uid=test;Pwd=test!123;Database=butterfly_db_demo");
+var database = new Butterfly.Db.Mysql.MySqlDatabase("Server=127.0.0.1;Uid=test;Pwd=test!123;Database=butterfly_db_demo");
 ```
 
 ### Using Postgres
@@ -414,13 +415,13 @@ var database = new Butterfly.MySql.MySqlDatabase("Server=127.0.0.1;Uid=test;Pwd=
 In the *Package Manager Console*...
 
 ```
-Install-Package Butterfly.Postgres
+Install-Package Butterfly.Db.Postgres
 ```
 
 In your application...
 
 ```csharp
-var database = new Butterfly.Postgres.PostgresDatabase("User ID=test;Password=test!123;Host=localhost;Port=5432;Database=test;");
+var database = new Butterfly.Db.Postgres.PostgresDatabase("User ID=test;Password=test!123;Host=localhost;Port=5432;Database=test;");
 ```
 
 ### Using SQLite
@@ -428,13 +429,13 @@ var database = new Butterfly.Postgres.PostgresDatabase("User ID=test;Password=te
 In the *Package Manager Console*...
 
 ```
-Install-Package Butterfly.SQLite
+Install-Package Butterfly.Db.SQLite
 ```
 
 In your application...
 
 ```csharp
-var database = new Butterfly.SQLite.SQLiteDatabase("Filename=./my_database.db");
+var database = new Butterfly.Db.SQLite.SQLiteDatabase("Filename=./my_database.db");
 ```
 
 ### Using MS SQL Server
@@ -442,13 +443,13 @@ var database = new Butterfly.SQLite.SQLiteDatabase("Filename=./my_database.db");
 In the *Package Manager Console*...
 
 ```
-Install-Package Butterfly.SqlServer
+Install-Package Butterfly.Db.SqlServer
 ```
 
 In your application...
 
 ```csharp
-var database = new Butterfly.SqlServer.SqlServerDatabase("Server=localhost; Initial Catalog=Butterfly; User ID=test; Password=test!123");
+var database = new Butterfly.Db.SqlServer.SqlServerDatabase("Server=localhost; Initial Catalog=Butterfly; User ID=test; Password=test!123");
 ```
 
 ## Contributing
