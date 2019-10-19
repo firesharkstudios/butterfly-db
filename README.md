@@ -57,7 +57,7 @@ Each flavor above takes a *sql* parameter and optional *values* parameter.
 The *sql* parameter can be specified in multiple ways...
 
 | Name | Example Value |
-| --- | --- | --- |
+| --- | --- |
 | Table name only | `"todo"` |
 | SELECT without WHERE | `"SELECT * FROM todo"` |
 | SELECT with WHERE | `"SELECT * FROM todo WHERE id=@id"` |
