@@ -62,11 +62,10 @@ The *sql* parameter can be specified in multiple ways...
 | SELECT without WHERE | `"SELECT * FROM todo"` |
 | SELECT with WHERE | `"SELECT * FROM todo WHERE id=@id"` |
 
-
 The *values* parameter can also be specified in multiple ways...
 
 | Name | Example Value |
-| --- | --- | --- |
+| --- | --- |
 | Anonymous type | `new { id = "123" }` |
 | Dictionary | `new Dict { ["id"] = "123" }` |
 | Primary Key Value | `"123"` |
