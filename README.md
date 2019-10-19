@@ -60,7 +60,7 @@ The *sql* parameter can be specified in multiple ways...
 | --- | --- | --- |
 | Table name only | `"todo"` |
 | SELECT without WHERE | `"SELECT * FROM todo"` |
-| Full SELECT| `"SELECT * FROM todo WHERE id=@id"` |
+| SELECT with WHERE | `"SELECT * FROM todo WHERE id=@id"` |
 
 
 The *values* parameter can also be specified in multiple ways...
