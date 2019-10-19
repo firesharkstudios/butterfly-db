@@ -62,6 +62,7 @@ The *sql* parameter can be specified in multiple ways...
 | SELECT without WHERE | `"SELECT * FROM todo"` |
 | Full SELECT| `"SELECT * FROM todo WHERE id=@id"` |
 
+
 The *values* parameter can also be specified in multiple ways...
 
 | Name | Example Value |
