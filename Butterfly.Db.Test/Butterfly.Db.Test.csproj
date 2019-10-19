@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="db.sql" />
+    <None Remove="butterfly_db_test.sql" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="db.sql" />
+    <EmbeddedResource Include="butterfly_db_test.sql" />
   </ItemGroup>
 
   <ItemGroup>

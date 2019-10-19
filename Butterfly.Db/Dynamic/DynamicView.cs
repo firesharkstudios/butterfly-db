@@ -247,7 +247,7 @@ namespace Butterfly.Db.Dynamic {
                 }
             }
 
-            SelectStatement newStatement = new SelectStatement(this.dynamicViewSet.Database, this.selectStatement.selectClause, newFromClause.ToString(), newWhereClause.ToString(), null);
+            SelectStatement newStatement = new SelectStatement(this.dynamicViewSet.Database, this.selectStatement.selectClause, newFromClause.ToString(), newWhereClause?.ToString(), null);
 
             return await this.dynamicViewSet.Database.SelectRowsAsync(newStatement, newVarsDict);
         }
