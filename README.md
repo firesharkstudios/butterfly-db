@@ -15,6 +15,9 @@ Key benefits...
 - Support for async/await
 - Subscribe to data change events
 
+*Butterfly.Db* can be used with the other [Butterfly.Server](https://github.com/firesharkstudios/butterfly-server) packages
+or can be used on its own.
+
 # Install from Nuget
 
 | Name | Package | Install |
