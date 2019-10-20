@@ -6,14 +6,16 @@
 
 *Butterfly.Db* defines interfaces to select data, modify data, and receive data change events from a database.
 
-*Butterfly.Db.Mysql*, *Butterfly.Db.Postgres*, *Butterfly.Db.SQLite*, and *Butterfly.Db.Postgress* implement the *Butterfly.Db* interfaces in the respective databases.
+*Butterfly.Db* has implementations for memory, MySQL, Postgres, SQLite, and SqlServer.
 
 Key benefits...
 
-- Embraces SQL with minimal syntax
+- Minimal syntax
 - Support for transactions
 - Support for async/await
 - Subscribe to data change events
+
+The most unique capability of *Butterfly.Db* is the ability to define *DynamicViews* that publish data change events when the *DynamicView* changes.
 
 *Butterfly.Db* can be used with the other [Butterfly.Server](https://github.com/firesharkstudios/butterfly-server) packages
 or can be used on its own.
