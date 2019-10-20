@@ -28,6 +28,8 @@ namespace Butterfly.Db.Dynamic {
         protected readonly DynamicViewSet dynamicViewSet;
         protected readonly SelectStatement selectStatement;
         protected readonly Dict varsDict;
+
+        protected readonly string id;
         protected readonly string name;
         protected readonly string[] keyFieldNames;
         protected readonly Dictionary<string, StatementFromRef> dynamicStatementFromRefByTableName = new Dictionary<string, StatementFromRef>();
@@ -35,7 +37,7 @@ namespace Butterfly.Db.Dynamic {
         protected readonly List<ChildDynamicParam> childDynamicParams = new List<ChildDynamicParam>();
 
         public DynamicView(DynamicViewSet dynamicQuerySet, string sql, dynamic vars = null, string name = null, string[] keyFieldNames = null, string[] dynamicTableAliases = null, int limit = -1) {
-            this.Id = Guid.NewGuid().ToString();
+            this.id = Guid.NewGuid().ToString();
             this.dynamicViewSet = dynamicQuerySet; 
             this.selectStatement = new SelectStatement(dynamicQuerySet.Database, sql, limit);
             this.varsDict = this.selectStatement.ConvertParamsToDict(vars);
@@ -79,10 +81,7 @@ namespace Butterfly.Db.Dynamic {
             }
         }
 
-        public string Id {
-            get;
-            protected set;
-        }
+        public string Id => this.id;
 
         public string Name => this.name;
 

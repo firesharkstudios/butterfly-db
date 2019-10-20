@@ -25,6 +25,9 @@ namespace Butterfly.Db.Dynamic {
     public class DynamicViewSet : IDisposable {
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
+        protected readonly string id;
+        protected readonly IDatabase database;
+
         protected readonly Action<DataEventTransaction> listener;
         protected readonly Func<DataEventTransaction, Task> asyncListener;
 
@@ -37,26 +40,20 @@ namespace Butterfly.Db.Dynamic {
         protected readonly List<IDisposable> disposables = new List<IDisposable>();
 
         public DynamicViewSet(IDatabase database, Action<DataEventTransaction> listener) {
-            this.Id = Guid.NewGuid().ToString();
-            this.Database = database;
+            this.id = Guid.NewGuid().ToString();
+            this.database = database;
             this.listener = listener;
         }
 
         public DynamicViewSet(IDatabase database, Func<DataEventTransaction, Task> asyncListener) {
-            this.Id = Guid.NewGuid().ToString();
-            this.Database = database;
+            this.id = Guid.NewGuid().ToString();
+            this.database = database;
             this.asyncListener = asyncListener;
         }
 
-        public string Id {
-            get;
-            protected set;
-        }
+        public string Id => this.id;
 
-        internal IDatabase Database {
-            get;
-            set;
-        }
+        public IDatabase Database => this.database;
 
         /// <summary>
         /// Creates an instance of a DynamicView. Must call <see cref="StartAsync"/> to send 
@@ -265,6 +262,7 @@ namespace Butterfly.Db.Dynamic {
                 disposable.Dispose();
             }
             this.runCancellationTokenSource.Cancel();
+            this.runCancellationTokenSource.Dispose();
         }
 
     }
