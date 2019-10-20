@@ -43,7 +43,6 @@ namespace Butterfly.Db.Dynamic {
             this.varsDict = this.selectStatement.ConvertParamsToDict(vars);
 
             if (string.IsNullOrEmpty(name)) {
-                //if (this.statement.TableRefs.Length != 1) throw new System.Exception("Must specify name if the DynamicView contains multiple table references");
                 if (this.selectStatement.StatementFromRefs.Length > 1) {
                     logger.Debug($"DynamicView():Using '{this.selectStatement.StatementFromRefs[0].table.Name}' for the name of the dynamic view even though the SQL contained tables '{string.Join(",", this.selectStatement.StatementFromRefs.Select(x => x.table.Name))}'");
                 }
@@ -54,7 +53,6 @@ namespace Butterfly.Db.Dynamic {
             }
 
             if (keyFieldNames == null) {
-                //if (this.statement.TableRefs.Length != 1) throw new System.Exception("Must specify key field names if the DynamicView contains multiple table references");
                 if (this.selectStatement.StatementFromRefs.Length > 1) {
                     logger.Debug($"DynamicView():Using the key field names of the primary key of table '{this.selectStatement.StatementFromRefs[0].table.Name}' for the dynamic view name even though the SQL contained tables '{string.Join(",", this.selectStatement.StatementFromRefs.Select(x => x.table.Name))}'");
                 }
@@ -86,14 +84,6 @@ namespace Butterfly.Db.Dynamic {
         public string Name => this.name;
 
         public bool TryGetDynamicStatementFromRef(string tableName, out StatementFromRef dynamicStatementFromRef) => this.dynamicStatementFromRefByTableName.TryGetValue(tableName, out dynamicStatementFromRef);
-
-        /*
-        public BaseDynamicParam CreateMultiValueDynamicParam(string fieldName) {
-            BaseDynamicParam dynamicParam = new MultiValueDynamicParam(fieldName);
-            this.childDynamicParams.Add(new ChildDynamicParam(dynamicParam, fieldName));
-            return dynamicParam;
-        }
-        */
 
         internal bool HasDirtyParams {
             get {
