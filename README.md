@@ -4,7 +4,7 @@
 
 # Overview
 
-*Butterfly.Db* defines interfaces to select data, modify data, and receive data change evnets from a database.
+*Butterfly.Db* defines interfaces to select data, modify data, and receive data change events from a database.
 
 *Butterfly.Db.Mysql*, *Butterfly.Db.Postgres*, *Butterfly.Db.SQLite*, and *Butterfly.Db.Postgress* implement the *Butterfly.Db* interfaces in the respective databases.
 
