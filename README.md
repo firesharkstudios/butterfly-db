@@ -15,7 +15,8 @@ Key benefits...
 - Support for async/await
 - Subscribe to data change events
 
-The most unique capability of *Butterfly.Db* is the ability to define *DynamicViews* that publish data change events when the *DynamicView* changes.
+The most unique capability of *Butterfly.Db* is the ability to define multi-table
+*DynamicViews* that publish change events when the rows of the *DynamicView* change.
 
 *Butterfly.Db* can be used with the other [Butterfly.Server](https://github.com/firesharkstudios/butterfly-server) packages
 or can be used on its own.
