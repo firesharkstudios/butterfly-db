@@ -8,15 +8,18 @@
 
 *Butterfly.Db* has implementations for memory, MySQL, Postgres, SQLite, and SqlServer.
 
-Key benefits...
+Key features...
 
 - Minimal syntax
 - Support for transactions
 - Support for async/await
 - Subscribe to data change events
 
-The most unique capability of *Butterfly.Db* is the ability to define multi-table
-*DynamicViews* that publish change events when the rows of the *DynamicView* change.
+Unique abilities...
+
+- Create multi-table
+*DynamicViews* that publish change events when the rows of the *DynamicView* change
+- Call *SyncAsync* to automatically determine the underlying INSERT, UPDATE, and DELETE statements needed to synchronize records in the database
 
 *Butterfly.Db* can be used with the other [Butterfly.Server](https://github.com/firesharkstudios/butterfly-server) packages
 or can be used on its own.
