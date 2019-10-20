@@ -201,8 +201,8 @@ public async Task SynchronizeTags(string articleId, string[] tagNames) {
 
     // Next, create the new records collection from the tagNames parameter
     Dict[] newRecords = tagNames.Select(x => new Dict {
-        { "article_id", articleId },
-        { "tag_name", x },
+        ["article_id"] = articleId,
+        ["tag_name"] = x,
     }).ToArray();
 
     // Now, execute SynchronizeAsync() to determine the right 
