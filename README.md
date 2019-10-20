@@ -19,7 +19,7 @@ Unique abilities...
 
 - Create multi-table
 *DynamicViews* that publish change events when the data in the *DynamicView* changes
-- Call *SyncAsync* to automatically execute the appropriate INSERT, UPDATE, and DELETE statements to synchronize records in the database
+- Call *SyncAsync* to automatically execute the appropriate INSERT, UPDATE, and DELETE statements to synchronize records
 
 *Butterfly.Db* can be used with the other [Butterfly.Server](https://github.com/firesharkstudios/butterfly-server) packages
 or can be used on its own.
