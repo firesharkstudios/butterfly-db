@@ -2,9 +2,20 @@
 
 > Access a database without an ORM and subscribe to database change events in C#
 
-## Getting Started
+# Overview
 
-### Install from Nuget
+*Butterfly.Db* defines interfaces to select data, modify data, and receive data change evnets from a database.
+
+*Butterfly.Db.Mysql*, *Butterfly.Db.Postgres*, *Butterfly.Db.SQLite*, and *Butterfly.Db.Postgress* implement the *Butterfly.Db* interfaces in the respective databases.
+
+Key benefits...
+
+- Embraces SQL with minimal syntax
+- Support for transactions
+- Support for async/await
+- Subscribe to data change events
+
+# Install from Nuget
 
 | Name | Package | Install |
 | --- | --- | --- |
@@ -14,17 +25,19 @@
 | Butterfly.Db.SQLite | [![nuget](https://img.shields.io/nuget/v/Butterfly.Db.SQLite.svg)](https://www.nuget.org/packages/Butterfly.Db.SQLite/) | `nuget install Butterfly.Db.SQLite` |
 | Butterfly.Db.SqlServer | [![nuget](https://img.shields.io/nuget/v/Butterfly.Db.SqlServer.svg)](https://www.nuget.org/packages/Butterfly.Db.SqlServer/) | `nuget install Butterfly.Db.SqlServer` |
 
-### Install from Source Code
+# Install from Source Code
 
 ```git clone https://github.com/firesharkstudios/butterfly-db```
 
-## Overview
+# Import Dict
 
-*Butterfly.Db* defines interfaces to access a database and receive events when a database changes.
+Because *Dictionary<string, object>* is used so extensively, the following alias is defined...
 
-*Butterfly.Db.Mysql*, *Butterfly.Db.Postgres*, *Butterfly.Db.SQLite*, and *Butterfly.Db.Postgress* implement the *Butterfly.Db* interfaces in the respective databases.
+```cs
+using Dict = System.Collections.Generic.Dictionary<string, object>;
+```
 
-## Accessing a Database
+# Accessing a Database
 
 An *IDatabase* instance allows modifying data, selecting data, and creating *DynamicViews*.
 
@@ -41,7 +54,7 @@ await database.DeleteAndCommitAsync("todo", id);
 var name = await database.SelectValueAsync<string>("SELECT name FROM todo", id);
 ```
 
-### Selecting Data
+## Selecting Data
 
 There are four flavors of selecting data with different return values...
 
@@ -123,7 +136,7 @@ Dict[] rows = await database.SelectRowsAsync("SELECT * employee WHERE department
     department_id = new string[] { "123", "456"}
 });
 ```
-### Modifying Data
+## Modifying Data
 
 A *IDatabase* instance has convenience methods that create a transaction, perform a specific action, and commit the transaction as follows...
 
@@ -167,7 +180,7 @@ using (ITransaction transaction = await database.BeginTransactionAsync()) {
 
 Sometimes, it's useful to run code after a transaction is committed, this can be done using [OnCommit](https://butterflyserver.io/docfx/api/Butterfly.Db.ITransaction.html#Butterfly_Core_Database_ITransaction_OnCommit_Func_Task__) to register an action that will execute after the transaction is committed.
 
-### Synchronizing Data
+## Synchronizing Data
 
 It's common to synchronize a set of records in the database with a new set of inputs.  
 
@@ -205,7 +218,7 @@ public async Task SynchronizeTags(string articleId, string[] tagNames) {
 }
 ```
 
-### Defaults, Overrides, and Preprocessors
+## Defaults, Overrides, and Preprocessors
 
 A *IDatabase* instance allows defining...
 
@@ -245,9 +258,9 @@ database.AddInputPreprocessor(BaseDatabase.RemapTypeInputPreprocessor<string>(
 database.AddInputPreprocessor(BaseDatabase.CopyFieldValue("$UPDATED_AT$", "updated_at"));
 ```
 
-## Using Dynamic Views
+# Using Dynamic Views
 
-### Overview
+## Overview
 
 A [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicViewSet.html) allows...
 
@@ -271,7 +284,7 @@ Key limitations...
 
 A [DynamicView](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicView.html) will execute additional modified SELECT statements on each underlying data change event.  These modified SELECT statements are designed to execute quickly (always includes a primary key of an underlying table); however, this is additional overhead that should be considered on higher traffic implementations.
 
-### Example
+## Example
 
 Here is an example of creating a [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicViewSet.html) and triggering [DataEventTransaction](https://butterflyserver.io/docfx/api/Butterfly.Db.Event.DataEventTransaction.html) instances by starting the [DynamicViewSet](https://butterflyserver.io/docfx/api/Butterfly.Db.Dynamic.DynamicViewSet.html) and by executing an INSERT...
 ```cs
@@ -379,9 +392,9 @@ dataEventTransaction={
 
 You can run a more robust example [here](https://github.com/firesharkstudios/butterfly-server-dotnet/blob/master/Butterfly.Example.Database/Program.cs).
 
-## Implementations
+# Implementations
 
-### Using a Memory Database
+## Using a Memory Database
 
 [Butterfly.Db.MemoryDatabase](https://butterflyserver.io/docfx/api/Butterfly.Db.Memory.MemoryDatabase.html) database is included in *Butterfly.Db* and doesn't require installing additional packages; however, *MemoryDatabase* has these key limitattions...
 
@@ -396,7 +409,7 @@ In your application...
 var database = new Butterfly.Db.Memory.MemoryDatabase();
 ```
 
-### Using MySQL
+## Using MySQL
 
 In the *Package Manager Console*...
 
@@ -410,7 +423,7 @@ In your application...
 var database = new Butterfly.Db.Mysql.MySqlDatabase("Server=127.0.0.1;Uid=test;Pwd=test!123;Database=butterfly_db_demo");
 ```
 
-### Using Postgres
+## Using Postgres
 
 In the *Package Manager Console*...
 
@@ -424,7 +437,7 @@ In your application...
 var database = new Butterfly.Db.Postgres.PostgresDatabase("User ID=test;Password=test!123;Host=localhost;Port=5432;Database=test;");
 ```
 
-### Using SQLite
+## Using SQLite
 
 In the *Package Manager Console*...
 
@@ -438,7 +451,7 @@ In your application...
 var database = new Butterfly.Db.SQLite.SQLiteDatabase("Filename=./my_database.db");
 ```
 
-### Using MS SQL Server
+## Using MS SQL Server
 
 In the *Package Manager Console*...
 
@@ -452,11 +465,11 @@ In your application...
 var database = new Butterfly.Db.SqlServer.SqlServerDatabase("Server=localhost; Initial Catalog=Butterfly; User ID=test; Password=test!123");
 ```
 
-## Contributing
+# Contributing
 
 If you'd like to contribute, please fork the repository and use a feature
 branch. Pull requests are warmly welcome.
 
-## Licensing
+# Licensing
 
 The code is licensed under the [Mozilla Public License 2.0](http://mozilla.org/MPL/2.0/).  
