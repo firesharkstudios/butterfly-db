@@ -31,6 +31,16 @@ is part of a *DynamicView* in *Butterfly.Db*.
 
 *Butterfly.Db* has implementations for memory, MySQL, Postgres, SQLite, and SqlServer.
 
+See the example at [Butterfly.Example.DbEvents](https://github.com/firesharkstudios/butterfly-server/tree/master/Butterfly.Example.DbEvents) to see a console program that subscribes to
+the SELECT below and receives data change events when changes to the *todo* and *user* tables would modify the results of the SELECT...
+
+```
+SELECT t.id, t.name todo_name, u.name user_name
+FROM todo t 
+    INNER JOIN user u ON t.user_id=u.id
+WHERE is_done=@isDoneFilter
+```
+
 # Install from Nuget
 
 | Name | Package | Install |
