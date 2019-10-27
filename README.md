@@ -1,28 +1,35 @@
 # Butterfly.Db ![Butterfly Logo](https://raw.githubusercontent.com/firesharkstudios/Butterfly/master/img/logo-40x40.png) 
 
-> Access a database without an ORM and subscribe to database change events in C#
+> Reactive database SELECTs for popular relational databases in C#
 
 # Overview
 
-*Butterfly.Db* defines interfaces to select data, modify data, and receive data change events from a database.
+*Butterfly.Db* allows executing SELECTs **and** receiving data change events on 
+the SELECTs when the underyling data changes in the relational database.
+
+*Butterfly.Db* does this by parsing the SELECT statements and running
+a modified version of the SELECT after each INSERT, UPDATE, or DELETE.  Although 
+this adds overhead, the modified SELECT statements are filtered by primary key
+and run quickly.
+
+This has a few limitations...
+
+- All modifications must be executed via *Butterfly.Db* interface
+- All modifications must modify a single record at a time
+- Only tables in the FROM clause of the SELECT will detect changes (not in subqueries)
+
+Even with the limitations above, this is still a quite useful foundation to
+build real-time web apps.
+
+Want to push these data change events to a web client?  See the 
+*Subscription API* in [Butterfly.Web](https://github.com/firesharkstudios/butterfly-web) and the *Web Client* in [Butterfly.Client](https://github.com/firesharkstudios/butterfly-client).
+
+Executing a SELECT and receiving events when the results of the SELECT change
+is part of a *DynamicView* in *Butterfly.Db*.
+
+*Butterfly.Db* also provides a simple interface to retreive and modify data with support for transactions.
 
 *Butterfly.Db* has implementations for memory, MySQL, Postgres, SQLite, and SqlServer.
-
-Key features...
-
-- Minimal syntax
-- Support for transactions
-- Support for async/await
-- Subscribe to data change events
-
-Unique abilities...
-
-- Create multi-table
-*DynamicViews* that publish change events when the data in the *DynamicView* changes
-- Call *SyncAsync* to automatically execute the appropriate INSERT, UPDATE, and DELETE statements to synchronize records
-
-*Butterfly.Db* can be used with the other [Butterfly.Server](https://github.com/firesharkstudios/butterfly-server) packages
-or can be used on its own.
 
 # Install from Nuget
 
