@@ -247,6 +247,12 @@ references:
   isSpec: "True"
   fullName: Butterfly.Db.BaseDatabase.DoSelectRowsAsync
   nameWithType: BaseDatabase.DoSelectRowsAsync
+- uid: Butterfly.Db.BaseDatabase.foreignKeys
+  name: foreignKeys
+  href: api/Butterfly.Db.BaseDatabase.html#Butterfly_Db_BaseDatabase_foreignKeys
+  commentId: F:Butterfly.Db.BaseDatabase.foreignKeys
+  fullName: Butterfly.Db.BaseDatabase.foreignKeys
+  nameWithType: BaseDatabase.foreignKeys
 - uid: Butterfly.Db.BaseDatabase.getDefaultValueByFieldName
   name: getDefaultValueByFieldName
   href: api/Butterfly.Db.BaseDatabase.html#Butterfly_Db_BaseDatabase_getDefaultValueByFieldName
@@ -428,6 +434,22 @@ references:
   fullName.vb: Butterfly.Db.BaseDatabase.QueryValueAsync(Of T)(System.String, System.Object, T)
   nameWithType: BaseDatabase.QueryValueAsync<T>(String, Object, T)
   nameWithType.vb: BaseDatabase.QueryValueAsync(Of T)(String, Object, T)
+- uid: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  name: RegisterForeignKey(String, String, String, String, ForeignKeyRule[])
+  href: api/Butterfly.Db.BaseDatabase.html#Butterfly_Db_BaseDatabase_RegisterForeignKey_System_String_System_String_System_String_System_String_Butterfly_Db_ForeignKeyRule___
+  commentId: M:Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  name.vb: RegisterForeignKey(String, String, String, String, ForeignKeyRule())
+  fullName: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String, System.String, System.String, System.String, Butterfly.Db.ForeignKeyRule[])
+  fullName.vb: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String, System.String, System.String, System.String, Butterfly.Db.ForeignKeyRule())
+  nameWithType: BaseDatabase.RegisterForeignKey(String, String, String, String, ForeignKeyRule[])
+  nameWithType.vb: BaseDatabase.RegisterForeignKey(String, String, String, String, ForeignKeyRule())
+- uid: Butterfly.Db.BaseDatabase.RegisterForeignKey*
+  name: RegisterForeignKey
+  href: api/Butterfly.Db.BaseDatabase.html#Butterfly_Db_BaseDatabase_RegisterForeignKey_
+  commentId: Overload:Butterfly.Db.BaseDatabase.RegisterForeignKey
+  isSpec: "True"
+  fullName: Butterfly.Db.BaseDatabase.RegisterForeignKey
+  nameWithType: BaseDatabase.RegisterForeignKey
 - uid: Butterfly.Db.BaseDatabase.RemapTypeInputPreprocessor*
   name: RemapTypeInputPreprocessor
   href: api/Butterfly.Db.BaseDatabase.html#Butterfly_Db_BaseDatabase_RemapTypeInputPreprocessor_
@@ -1598,6 +1620,12 @@ references:
   commentId: F:Butterfly.Db.Dynamic.DynamicView.dynamicViewSet
   fullName: Butterfly.Db.Dynamic.DynamicView.dynamicViewSet
   nameWithType: DynamicView.dynamicViewSet
+- uid: Butterfly.Db.Dynamic.DynamicView.id
+  name: id
+  href: api/Butterfly.Db.Dynamic.DynamicView.html#Butterfly_Db_Dynamic_DynamicView_id
+  commentId: F:Butterfly.Db.Dynamic.DynamicView.id
+  fullName: Butterfly.Db.Dynamic.DynamicView.id
+  nameWithType: DynamicView.id
 - uid: Butterfly.Db.Dynamic.DynamicView.Id
   name: Id
   href: api/Butterfly.Db.Dynamic.DynamicView.html#Butterfly_Db_Dynamic_DynamicView_Id
@@ -1730,6 +1758,25 @@ references:
   isSpec: "True"
   fullName: Butterfly.Db.Dynamic.DynamicViewSet.CreateDynamicViewDataEvents
   nameWithType: DynamicViewSet.CreateDynamicViewDataEvents
+- uid: Butterfly.Db.Dynamic.DynamicViewSet.database
+  name: database
+  href: api/Butterfly.Db.Dynamic.DynamicViewSet.html#Butterfly_Db_Dynamic_DynamicViewSet_database
+  commentId: F:Butterfly.Db.Dynamic.DynamicViewSet.database
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet.database
+  nameWithType: DynamicViewSet.database
+- uid: Butterfly.Db.Dynamic.DynamicViewSet.Database
+  name: Database
+  href: api/Butterfly.Db.Dynamic.DynamicViewSet.html#Butterfly_Db_Dynamic_DynamicViewSet_Database
+  commentId: P:Butterfly.Db.Dynamic.DynamicViewSet.Database
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet.Database
+  nameWithType: DynamicViewSet.Database
+- uid: Butterfly.Db.Dynamic.DynamicViewSet.Database*
+  name: Database
+  href: api/Butterfly.Db.Dynamic.DynamicViewSet.html#Butterfly_Db_Dynamic_DynamicViewSet_Database_
+  commentId: Overload:Butterfly.Db.Dynamic.DynamicViewSet.Database
+  isSpec: "True"
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet.Database
+  nameWithType: DynamicViewSet.Database
 - uid: Butterfly.Db.Dynamic.DynamicViewSet.disposables
   name: disposables
   href: api/Butterfly.Db.Dynamic.DynamicViewSet.html#Butterfly_Db_Dynamic_DynamicViewSet_disposables
@@ -1794,6 +1841,12 @@ references:
   isSpec: "True"
   fullName: Butterfly.Db.Dynamic.DynamicViewSet.HasImpactedRecords
   nameWithType: DynamicViewSet.HasImpactedRecords
+- uid: Butterfly.Db.Dynamic.DynamicViewSet.id
+  name: id
+  href: api/Butterfly.Db.Dynamic.DynamicViewSet.html#Butterfly_Db_Dynamic_DynamicViewSet_id
+  commentId: F:Butterfly.Db.Dynamic.DynamicViewSet.id
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet.id
+  nameWithType: DynamicViewSet.id
 - uid: Butterfly.Db.Dynamic.DynamicViewSet.Id
   name: Id
   href: api/Butterfly.Db.Dynamic.DynamicViewSet.html#Butterfly_Db_Dynamic_DynamicViewSet_Id
@@ -2415,6 +2468,76 @@ references:
   commentId: F:Butterfly.Db.Event.TransactionState.Uncommitted
   fullName: Butterfly.Db.Event.TransactionState.Uncommitted
   nameWithType: TransactionState.Uncommitted
+- uid: Butterfly.Db.ForeignKey
+  name: ForeignKey
+  href: api/Butterfly.Db.ForeignKey.html
+  commentId: T:Butterfly.Db.ForeignKey
+  fullName: Butterfly.Db.ForeignKey
+  nameWithType: ForeignKey
+- uid: Butterfly.Db.ForeignKey.#ctor(Butterfly.Db.Table,System.String[],Butterfly.Db.Table,System.String[],Butterfly.Db.ForeignKeyRule)
+  name: ForeignKey(Table, String[], Table, String[], ForeignKeyRule)
+  href: api/Butterfly.Db.ForeignKey.html#Butterfly_Db_ForeignKey__ctor_Butterfly_Db_Table_System_String___Butterfly_Db_Table_System_String___Butterfly_Db_ForeignKeyRule_
+  commentId: M:Butterfly.Db.ForeignKey.#ctor(Butterfly.Db.Table,System.String[],Butterfly.Db.Table,System.String[],Butterfly.Db.ForeignKeyRule)
+  name.vb: ForeignKey(Table, String(), Table, String(), ForeignKeyRule)
+  fullName: Butterfly.Db.ForeignKey.ForeignKey(Butterfly.Db.Table, System.String[], Butterfly.Db.Table, System.String[], Butterfly.Db.ForeignKeyRule)
+  fullName.vb: Butterfly.Db.ForeignKey.ForeignKey(Butterfly.Db.Table, System.String(), Butterfly.Db.Table, System.String(), Butterfly.Db.ForeignKeyRule)
+  nameWithType: ForeignKey.ForeignKey(Table, String[], Table, String[], ForeignKeyRule)
+  nameWithType.vb: ForeignKey.ForeignKey(Table, String(), Table, String(), ForeignKeyRule)
+- uid: Butterfly.Db.ForeignKey.#ctor*
+  name: ForeignKey
+  href: api/Butterfly.Db.ForeignKey.html#Butterfly_Db_ForeignKey__ctor_
+  commentId: Overload:Butterfly.Db.ForeignKey.#ctor
+  isSpec: "True"
+  fullName: Butterfly.Db.ForeignKey.ForeignKey
+  nameWithType: ForeignKey.ForeignKey
+- uid: Butterfly.Db.ForeignKey.childFieldNames
+  name: childFieldNames
+  href: api/Butterfly.Db.ForeignKey.html#Butterfly_Db_ForeignKey_childFieldNames
+  commentId: F:Butterfly.Db.ForeignKey.childFieldNames
+  fullName: Butterfly.Db.ForeignKey.childFieldNames
+  nameWithType: ForeignKey.childFieldNames
+- uid: Butterfly.Db.ForeignKey.childTable
+  name: childTable
+  href: api/Butterfly.Db.ForeignKey.html#Butterfly_Db_ForeignKey_childTable
+  commentId: F:Butterfly.Db.ForeignKey.childTable
+  fullName: Butterfly.Db.ForeignKey.childTable
+  nameWithType: ForeignKey.childTable
+- uid: Butterfly.Db.ForeignKey.foreignKeyRule
+  name: foreignKeyRule
+  href: api/Butterfly.Db.ForeignKey.html#Butterfly_Db_ForeignKey_foreignKeyRule
+  commentId: F:Butterfly.Db.ForeignKey.foreignKeyRule
+  fullName: Butterfly.Db.ForeignKey.foreignKeyRule
+  nameWithType: ForeignKey.foreignKeyRule
+- uid: Butterfly.Db.ForeignKey.parentFieldNames
+  name: parentFieldNames
+  href: api/Butterfly.Db.ForeignKey.html#Butterfly_Db_ForeignKey_parentFieldNames
+  commentId: F:Butterfly.Db.ForeignKey.parentFieldNames
+  fullName: Butterfly.Db.ForeignKey.parentFieldNames
+  nameWithType: ForeignKey.parentFieldNames
+- uid: Butterfly.Db.ForeignKey.parentTable
+  name: parentTable
+  href: api/Butterfly.Db.ForeignKey.html#Butterfly_Db_ForeignKey_parentTable
+  commentId: F:Butterfly.Db.ForeignKey.parentTable
+  fullName: Butterfly.Db.ForeignKey.parentTable
+  nameWithType: ForeignKey.parentTable
+- uid: Butterfly.Db.ForeignKeyRule
+  name: ForeignKeyRule
+  href: api/Butterfly.Db.ForeignKeyRule.html
+  commentId: T:Butterfly.Db.ForeignKeyRule
+  fullName: Butterfly.Db.ForeignKeyRule
+  nameWithType: ForeignKeyRule
+- uid: Butterfly.Db.ForeignKeyRule.DeleteChildOnParentDelete
+  name: DeleteChildOnParentDelete
+  href: api/Butterfly.Db.ForeignKeyRule.html#Butterfly_Db_ForeignKeyRule_DeleteChildOnParentDelete
+  commentId: F:Butterfly.Db.ForeignKeyRule.DeleteChildOnParentDelete
+  fullName: Butterfly.Db.ForeignKeyRule.DeleteChildOnParentDelete
+  nameWithType: ForeignKeyRule.DeleteChildOnParentDelete
+- uid: Butterfly.Db.ForeignKeyRule.NullChildOnParentDelete
+  name: NullChildOnParentDelete
+  href: api/Butterfly.Db.ForeignKeyRule.html#Butterfly_Db_ForeignKeyRule_NullChildOnParentDelete
+  commentId: F:Butterfly.Db.ForeignKeyRule.NullChildOnParentDelete
+  fullName: Butterfly.Db.ForeignKeyRule.NullChildOnParentDelete
+  nameWithType: ForeignKeyRule.NullChildOnParentDelete
 - uid: Butterfly.Db.IDatabase
   name: IDatabase
   href: api/Butterfly.Db.IDatabase.html
@@ -2676,6 +2799,22 @@ references:
   fullName.vb: Butterfly.Db.IDatabase.QueryValueAsync(Of T)(System.String, System.Object, T)
   nameWithType: IDatabase.QueryValueAsync<T>(String, Object, T)
   nameWithType.vb: IDatabase.QueryValueAsync(Of T)(String, Object, T)
+- uid: Butterfly.Db.IDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  name: RegisterForeignKey(String, String, String, String, ForeignKeyRule[])
+  href: api/Butterfly.Db.IDatabase.html#Butterfly_Db_IDatabase_RegisterForeignKey_System_String_System_String_System_String_System_String_Butterfly_Db_ForeignKeyRule___
+  commentId: M:Butterfly.Db.IDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  name.vb: RegisterForeignKey(String, String, String, String, ForeignKeyRule())
+  fullName: Butterfly.Db.IDatabase.RegisterForeignKey(System.String, System.String, System.String, System.String, Butterfly.Db.ForeignKeyRule[])
+  fullName.vb: Butterfly.Db.IDatabase.RegisterForeignKey(System.String, System.String, System.String, System.String, Butterfly.Db.ForeignKeyRule())
+  nameWithType: IDatabase.RegisterForeignKey(String, String, String, String, ForeignKeyRule[])
+  nameWithType.vb: IDatabase.RegisterForeignKey(String, String, String, String, ForeignKeyRule())
+- uid: Butterfly.Db.IDatabase.RegisterForeignKey*
+  name: RegisterForeignKey
+  href: api/Butterfly.Db.IDatabase.html#Butterfly_Db_IDatabase_RegisterForeignKey_
+  commentId: Overload:Butterfly.Db.IDatabase.RegisterForeignKey
+  isSpec: "True"
+  fullName: Butterfly.Db.IDatabase.RegisterForeignKey
+  nameWithType: IDatabase.RegisterForeignKey
 - uid: Butterfly.Db.IDatabase.SelectCount
   name: SelectCount
   href: api/Butterfly.Db.IDatabase.html#Butterfly_Db_IDatabase_SelectCount

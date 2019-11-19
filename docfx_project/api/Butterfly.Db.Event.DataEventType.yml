@@ -22,7 +22,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DataEventType
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 9
@@ -53,7 +53,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: InitialBegin
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 10
@@ -85,7 +85,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Initial
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 11
@@ -117,7 +117,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: InitialEnd
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 12
@@ -149,7 +149,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Insert
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 13
@@ -181,7 +181,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Update
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 14
@@ -213,7 +213,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Delete
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 15

@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Db.BaseDatabase.html",
-          "hash": "IHQGwPUZjRwhX4lWTYD6wg=="
+          "hash": "5yBbI1esaZRpQ1/A1fVjWg=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Db.Dynamic.DynamicView.html",
-          "hash": "+e/MF3QKsTmoBUKTVS8T6w=="
+          "hash": "BMNF+8UodMJT/aZIPlDZ/A=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Db.Dynamic.DynamicViewSet.html",
-          "hash": "N8LdvAARdmyeJ9iCupbsaA=="
+          "hash": "AGflYXB6TzjMRiHKRPVK0A=="
         }
       },
       "is_incremental": false,
@@ -293,11 +293,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.ForeignKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.ForeignKey.html",
+          "hash": "yUyIebL+mkkcnLg8drGlsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Db.ForeignKeyRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Db.ForeignKeyRule.html",
+          "hash": "Eyb0vemq69WzNqykyIwidA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Butterfly.Db.IDatabase.yml",
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Db.IDatabase.html",
-          "hash": "nyte09J7MZOIQ1hISvR+wQ=="
+          "hash": "/qJWTbLI66Hjv4gjxJEUYQ=="
         }
       },
       "is_incremental": false,
@@ -357,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Db.Memory.MemoryDatabase.html",
-          "hash": "Rn+/IuSebc39yG00yLH1kQ=="
+          "hash": "vBgQGEsrMMLw8l8JGQYvRw=="
         }
       },
       "is_incremental": false,
@@ -405,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Db.MySql.MySqlDatabase.html",
-          "hash": "SFu5f8xOrTFhye1nDSL3kQ=="
+          "hash": "vv1H/+0lI/7/XUv6R3Uumg=="
         }
       },
       "is_incremental": false,
@@ -453,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Db.Postgres.PostgresDatabase.html",
-          "hash": "Q9KQ+bcJe58PZqHyFU+OrQ=="
+          "hash": "4UuxF05ee4ANeI8KdJ/4oQ=="
         }
       },
       "is_incremental": false,
@@ -489,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Db.SQLite.SQLiteDatabase.html",
-          "hash": "5BTwMiJ1ysuJSIySW+tjVg=="
+          "hash": "DubYxbF5PEfMjJgswjUdrg=="
         }
       },
       "is_incremental": false,
@@ -537,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Db.SqlServer.SqlServerDatabase.html",
-          "hash": "KEC59UxhnsPX0lrqew75rg=="
+          "hash": "wtV7wb5RMujPx2jH4nCuBQ=="
         }
       },
       "is_incremental": false,
@@ -681,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Db.html",
-          "hash": "7H424oSl2gJgg6kbWQ66vg=="
+          "hash": "YxAFVJOZT8/CqcquEqn7Jw=="
         }
       },
       "is_incremental": false,
@@ -696,7 +720,7 @@
           "hash": "LO3XnDWiEpYKNfOjJrosmA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -705,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "bXcCrIJQfM3u2wo39r9McQ=="
+          "hash": "1d5zTuRgnb7cv7RxhhvETQ=="
         }
       },
       "is_incremental": false,
@@ -756,16 +780,16 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ResourceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
@@ -779,8 +803,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 57,
-          "skipped_file_count": 8
+          "total_file_count": 59,
+          "skipped_file_count": 7
         }
       }
     },

@@ -26,7 +26,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CreateStatement
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 13
@@ -75,7 +75,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: STATEMENT_REGEX
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 14
@@ -110,7 +110,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: FIELD_REGEX
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 15
@@ -145,7 +145,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: PRIMARY_KEY_REGEX
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 16
@@ -180,7 +180,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: INDEX_REGEX
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 17
@@ -215,7 +215,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 19
@@ -248,7 +248,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: TableName
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 69
@@ -285,7 +285,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: FieldDefs
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 74
@@ -322,7 +322,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Indexes
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 79
@@ -359,7 +359,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: PARSE_TYPE
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 84
@@ -394,7 +394,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/CreateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ConvertMySqlType
     path: ../Butterfly.Db/Statements/CreateStatement.cs
     startLine: 86

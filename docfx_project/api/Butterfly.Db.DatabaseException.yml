@@ -17,10 +17,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DatabaseException
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 352
+    startLine: 375
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -55,10 +55,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 353
+    startLine: 376
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db

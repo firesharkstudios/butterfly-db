@@ -13,7 +13,7 @@
     <Copyright>Copyright 2017-2019 Fireshark Studios, LLC</Copyright>
     <Description>Implementation of Butterfly.Db for Postgres</Description>
     <PackageReleaseNotes>Various improvements and bug fixes</PackageReleaseNotes>
-    <Version>2.0.1</Version>
+    <Version>2.0.2</Version>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildProjectName).xml</DocumentationFile>
   </PropertyGroup>
 

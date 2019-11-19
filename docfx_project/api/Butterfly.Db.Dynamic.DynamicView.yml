@@ -9,6 +9,7 @@ items:
   - Butterfly.Db.Dynamic.DynamicView.childDynamicParams
   - Butterfly.Db.Dynamic.DynamicView.dynamicStatementFromRefByTableName
   - Butterfly.Db.Dynamic.DynamicView.dynamicViewSet
+  - Butterfly.Db.Dynamic.DynamicView.id
   - Butterfly.Db.Dynamic.DynamicView.Id
   - Butterfly.Db.Dynamic.DynamicView.keyFieldNames
   - Butterfly.Db.Dynamic.DynamicView.name
@@ -27,7 +28,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DynamicView
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 24
@@ -64,7 +65,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: dynamicViewSet
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 27
@@ -97,7 +98,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: selectStatement
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 28
@@ -130,7 +131,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: varsDict
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 29
@@ -142,6 +143,39 @@ items:
     return:
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
     content.vb: Protected ReadOnly varsDict As System.Collections.Generic.Dictionary(Of String, Object)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicView.id
+  commentId: F:Butterfly.Db.Dynamic.DynamicView.id
+  id: id
+  parent: Butterfly.Db.Dynamic.DynamicView
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: DynamicView.id
+  fullName: Butterfly.Db.Dynamic.DynamicView.id
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/Dynamic/DynamicView.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: id
+    path: ../Butterfly.Db/Dynamic/DynamicView.cs
+    startLine: 31
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly string id
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly id As String
   modifiers.csharp:
   - protected
   - readonly
@@ -163,10 +197,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: name
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -196,10 +230,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: keyFieldNames
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -229,10 +263,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: dynamicStatementFromRefByTableName
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
-    startLine: 32
+    startLine: 34
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -262,10 +296,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: childDynamicParams
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
-    startLine: 34
+    startLine: 36
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -295,10 +329,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
-    startLine: 36
+    startLine: 38
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -343,7 +377,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Id
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
     startLine: 81
@@ -351,20 +385,18 @@ items:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
   syntax:
-    content: public string Id { get; protected set; }
+    content: public string Id { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property Id As String
+    content.vb: Public ReadOnly Property Id As String
   overload: Butterfly.Db.Dynamic.DynamicView.Id*
   modifiers.csharp:
   - public
   - get
-  - protected set
   modifiers.vb:
   - Public
-  - Get
-  - Protected Set
+  - ReadOnly
 - uid: Butterfly.Db.Dynamic.DynamicView.Name
   commentId: P:Butterfly.Db.Dynamic.DynamicView.Name
   id: Name
@@ -380,10 +412,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Name
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
-    startLine: 86
+    startLine: 83
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -415,10 +447,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicView.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: TryGetDynamicStatementFromRef
     path: ../Butterfly.Db/Dynamic/DynamicView.cs
-    startLine: 88
+    startLine: 85
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic

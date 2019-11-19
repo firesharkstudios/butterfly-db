@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.ForeignKeyRule
+  commentId: T:Butterfly.Db.ForeignKeyRule
+  id: ForeignKeyRule
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.ForeignKeyRule.DeleteChildOnParentDelete
+  - Butterfly.Db.ForeignKeyRule.NullChildOnParentDelete
+  langs:
+  - csharp
+  - vb
+  name: ForeignKeyRule
+  nameWithType: ForeignKeyRule
+  fullName: Butterfly.Db.ForeignKeyRule
+  type: Enum
+  source:
+    remote:
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: ForeignKeyRule
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 15
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: 'public enum ForeignKeyRule : int'
+    content.vb: Public Enum ForeignKeyRule As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Butterfly.Db.ForeignKeyRule.DeleteChildOnParentDelete
+  commentId: F:Butterfly.Db.ForeignKeyRule.DeleteChildOnParentDelete
+  id: DeleteChildOnParentDelete
+  parent: Butterfly.Db.ForeignKeyRule
+  langs:
+  - csharp
+  - vb
+  name: DeleteChildOnParentDelete
+  nameWithType: ForeignKeyRule.DeleteChildOnParentDelete
+  fullName: Butterfly.Db.ForeignKeyRule.DeleteChildOnParentDelete
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: DeleteChildOnParentDelete
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 16
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: DeleteChildOnParentDelete = 0
+    return:
+      type: Butterfly.Db.ForeignKeyRule
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Butterfly.Db.ForeignKeyRule.NullChildOnParentDelete
+  commentId: F:Butterfly.Db.ForeignKeyRule.NullChildOnParentDelete
+  id: NullChildOnParentDelete
+  parent: Butterfly.Db.ForeignKeyRule
+  langs:
+  - csharp
+  - vb
+  name: NullChildOnParentDelete
+  nameWithType: ForeignKeyRule.NullChildOnParentDelete
+  fullName: Butterfly.Db.ForeignKeyRule.NullChildOnParentDelete
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/IDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: NullChildOnParentDelete
+    path: ../Butterfly.Db/IDatabase.cs
+    startLine: 17
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: NullChildOnParentDelete = 1
+    return:
+      type: Butterfly.Db.ForeignKeyRule
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: Butterfly.Db.ForeignKeyRule
+  commentId: T:Butterfly.Db.ForeignKeyRule
+  parent: Butterfly.Db
+  name: ForeignKeyRule
+  nameWithType: ForeignKeyRule
+  fullName: Butterfly.Db.ForeignKeyRule
+shouldSkipMarkup: true

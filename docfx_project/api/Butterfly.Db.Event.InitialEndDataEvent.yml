@@ -17,7 +17,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: InitialEndDataEvent
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 49
@@ -57,7 +57,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 50

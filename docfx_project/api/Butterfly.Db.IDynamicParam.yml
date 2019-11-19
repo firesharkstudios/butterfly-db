@@ -17,7 +17,7 @@ items:
     remote:
       path: Butterfly.Db/IDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: IDynamicParam
     path: ../Butterfly.Db/IDynamicParam.cs
     startLine: 8
@@ -50,7 +50,7 @@ items:
     remote:
       path: Butterfly.Db/IDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetValue
     path: ../Butterfly.Db/IDynamicParam.cs
     startLine: 9

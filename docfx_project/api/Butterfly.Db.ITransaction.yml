@@ -26,7 +26,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ITransaction
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 19
@@ -61,7 +61,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Database
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 24
@@ -96,7 +96,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: InsertAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 59
@@ -143,7 +143,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: UpdateAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 89
@@ -182,7 +182,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DeleteAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 117
@@ -221,7 +221,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SynchronizeAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 129
@@ -274,7 +274,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: TruncateAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 136
@@ -309,7 +309,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Commit
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 141
@@ -337,7 +337,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CommitAsync
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 144
@@ -366,7 +366,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: OnCommit
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 151
@@ -404,7 +404,7 @@ items:
     remote:
       path: Butterfly.Db/ITransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Rollback
     path: ../Butterfly.Db/ITransaction.cs
     startLine: 156

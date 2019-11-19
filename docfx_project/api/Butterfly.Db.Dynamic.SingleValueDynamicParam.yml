@@ -21,7 +21,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SingleValueDynamicParam
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 8
@@ -68,7 +68,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: value
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 9
@@ -99,7 +99,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 11
@@ -132,7 +132,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Clear
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 14
@@ -165,7 +165,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetValue
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 21
@@ -200,7 +200,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SetValue
     path: ../Butterfly.Db/Dynamic/SingleValueDynamicParam.cs
     startLine: 25

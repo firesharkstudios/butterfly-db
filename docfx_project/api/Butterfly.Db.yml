@@ -12,6 +12,8 @@ items:
   - Butterfly.Db.DataEventTransactionListener
   - Butterfly.Db.DeleteStatement
   - Butterfly.Db.DuplicateKeyDatabaseException
+  - Butterfly.Db.ForeignKey
+  - Butterfly.Db.ForeignKeyRule
   - Butterfly.Db.IDatabase
   - Butterfly.Db.IDynamicParam
   - Butterfly.Db.InsertStatement
@@ -60,6 +62,11 @@ references:
   name: UnableToConnectDatabaseException
   nameWithType: UnableToConnectDatabaseException
   fullName: Butterfly.Db.UnableToConnectDatabaseException
+- uid: Butterfly.Db.ForeignKey
+  commentId: T:Butterfly.Db.ForeignKey
+  name: ForeignKey
+  nameWithType: ForeignKey
+  fullName: Butterfly.Db.ForeignKey
 - uid: Butterfly.Db.BaseTransaction
   commentId: T:Butterfly.Db.BaseTransaction
   parent: Butterfly.Db
@@ -71,6 +78,12 @@ references:
   name: DataEventTransactionListener
   nameWithType: DataEventTransactionListener
   fullName: Butterfly.Db.DataEventTransactionListener
+- uid: Butterfly.Db.ForeignKeyRule
+  commentId: T:Butterfly.Db.ForeignKeyRule
+  parent: Butterfly.Db
+  name: ForeignKeyRule
+  nameWithType: ForeignKeyRule
+  fullName: Butterfly.Db.ForeignKeyRule
 - uid: Butterfly.Db.IDatabase
   commentId: T:Butterfly.Db.IDatabase
   parent: Butterfly.Db

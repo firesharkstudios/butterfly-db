@@ -19,7 +19,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: RecordDataEvent
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 68
@@ -61,7 +61,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: record
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 69
@@ -94,7 +94,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 71
@@ -136,7 +136,7 @@ items:
     remote:
       path: Butterfly.Db/Event/DataEvent.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ToString
     path: ../Butterfly.Db/Event/DataEvent.cs
     startLine: 75

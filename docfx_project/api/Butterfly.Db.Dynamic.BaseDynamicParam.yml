@@ -24,7 +24,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: BaseDynamicParam
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 10
@@ -69,7 +69,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: logger
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 11
@@ -104,7 +104,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: name
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 15
@@ -137,7 +137,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 18
@@ -170,7 +170,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Dirty
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 22
@@ -205,7 +205,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SetDirty
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 24
@@ -235,7 +235,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ResetDirty
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 29
@@ -265,7 +265,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Clear
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 34
@@ -297,7 +297,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/BaseDynamicParam.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetValue
     path: ../Butterfly.Db/Dynamic/BaseDynamicParam.cs
     startLine: 36

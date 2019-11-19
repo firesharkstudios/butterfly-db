@@ -18,6 +18,10 @@
     name: DeleteStatement
   - uid: Butterfly.Db.DuplicateKeyDatabaseException
     name: DuplicateKeyDatabaseException
+  - uid: Butterfly.Db.ForeignKey
+    name: ForeignKey
+  - uid: Butterfly.Db.ForeignKeyRule
+    name: ForeignKeyRule
   - uid: Butterfly.Db.IDatabase
     name: IDatabase
   - uid: Butterfly.Db.IDynamicParam

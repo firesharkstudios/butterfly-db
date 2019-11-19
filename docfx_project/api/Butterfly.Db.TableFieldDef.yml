@@ -23,7 +23,7 @@ items:
     remote:
       path: Butterfly.Db/TableFieldDef.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: TableFieldDef
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 11
@@ -60,7 +60,7 @@ items:
     remote:
       path: Butterfly.Db/TableFieldDef.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: name
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 12
@@ -93,7 +93,7 @@ items:
     remote:
       path: Butterfly.Db/TableFieldDef.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: type
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 13
@@ -126,7 +126,7 @@ items:
     remote:
       path: Butterfly.Db/TableFieldDef.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: maxLength
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 14
@@ -159,7 +159,7 @@ items:
     remote:
       path: Butterfly.Db/TableFieldDef.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: allowNull
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 15
@@ -192,7 +192,7 @@ items:
     remote:
       path: Butterfly.Db/TableFieldDef.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: isAutoIncrement
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 16
@@ -225,7 +225,7 @@ items:
     remote:
       path: Butterfly.Db/TableFieldDef.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 18
@@ -266,7 +266,7 @@ items:
     remote:
       path: Butterfly.Db/TableFieldDef.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: FromDataColumn
     path: ../Butterfly.Db/TableFieldDef.cs
     startLine: 26

@@ -12,6 +12,12 @@ using Butterfly.Db.Event;
 using Dict = System.Collections.Generic.Dictionary<string, object>;
 
 namespace Butterfly.Db {
+
+    public enum ForeignKeyRule {
+        DeleteChildOnParentDelete,
+        NullChildOnParentDelete,
+    }
+
     /// <summary>
     /// Allows executing SELECT statements, creating transactions to execute INSERT, UPDATE, and DELETE statements; 
     /// creating dynamic views; and receiving data change events both on tables and dynamic views.
@@ -350,5 +356,6 @@ namespace Butterfly.Db {
         /// <returns></returns>
         Task<DataEvent[]> GetInitialDataEventsAsync(string dataEventName, string[] keyFieldNames, SelectStatement selectStatement, dynamic statementParams = null);
 
+        void RegisterForeignKey(string childTableName, string childFieldNames, string parentTableName, string parentFieldNames, params ForeignKeyRule[] foreignKeyRules);
     }
 }

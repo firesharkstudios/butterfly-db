@@ -27,7 +27,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: PostgresDatabase
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 23
@@ -91,6 +91,8 @@ items:
   - Butterfly.Db.BaseDatabase.CreateDynamicViewSet(Func{`0,`1})
   - Butterfly.Db.BaseDatabase.CreateAndStartDynamicViewAsync(System.String,Action{`0},System.Object,System.String,System.String[])
   - Butterfly.Db.BaseDatabase.CreateAndStartDynamicViewAsync(System.String,Func{`0,`1},System.Object,System.String,System.String[])
+  - Butterfly.Db.BaseDatabase.foreignKeys
+  - Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
   modifiers.csharp:
   - public
   - class
@@ -112,7 +114,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 28
@@ -145,7 +147,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CanJoin
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 32
@@ -183,7 +185,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CanFieldAlias
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 34
@@ -221,7 +223,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: LoadSchemaAsync
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 36
@@ -256,7 +258,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: LoadTableSchemaAsync
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 56
@@ -294,7 +296,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CreateTransaction
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 150
@@ -329,7 +331,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoSelectRowsAsync
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 155
@@ -373,7 +375,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoQueryRowsAsync
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 184
@@ -415,7 +417,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ConvertValue
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 207
@@ -452,7 +454,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: PARSE_TYPE
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 219
@@ -487,7 +489,7 @@ items:
     remote:
       path: Butterfly.Db.Postgres/PostgresDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ConvertType
     path: ../Butterfly.Db.Postgres/PostgresDatabase.cs
     startLine: 222
@@ -2619,6 +2621,122 @@ references:
     nameWithType: String
     fullName: System.String
     isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.BaseDatabase.foreignKeys
+  commentId: F:Butterfly.Db.BaseDatabase.foreignKeys
+  parent: Butterfly.Db.BaseDatabase
+  name: foreignKeys
+  nameWithType: BaseDatabase.foreignKeys
+  fullName: Butterfly.Db.BaseDatabase.foreignKeys
+- uid: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  commentId: M:Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  parent: Butterfly.Db.BaseDatabase
+  isExternal: true
+  name: RegisterForeignKey(String, String, String, String, ForeignKeyRule[])
+  nameWithType: BaseDatabase.RegisterForeignKey(String, String, String, String, ForeignKeyRule[])
+  fullName: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String, System.String, System.String, System.String, Butterfly.Db.ForeignKeyRule[])
+  nameWithType.vb: BaseDatabase.RegisterForeignKey(String, String, String, String, ForeignKeyRule())
+  fullName.vb: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String, System.String, System.String, System.String, Butterfly.Db.ForeignKeyRule())
+  name.vb: RegisterForeignKey(String, String, String, String, ForeignKeyRule())
+  spec.csharp:
+  - uid: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+    name: RegisterForeignKey
+    nameWithType: BaseDatabase.RegisterForeignKey
+    fullName: Butterfly.Db.BaseDatabase.RegisterForeignKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Butterfly.Db.ForeignKeyRule
+    name: ForeignKeyRule
+    nameWithType: ForeignKeyRule
+    fullName: Butterfly.Db.ForeignKeyRule
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+    name: RegisterForeignKey
+    nameWithType: BaseDatabase.RegisterForeignKey
+    fullName: Butterfly.Db.BaseDatabase.RegisterForeignKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Butterfly.Db.ForeignKeyRule
+    name: ForeignKeyRule
+    nameWithType: ForeignKeyRule
+    fullName: Butterfly.Db.ForeignKeyRule
   - name: ()
     nameWithType: ()
     fullName: ()

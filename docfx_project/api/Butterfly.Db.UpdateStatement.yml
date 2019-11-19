@@ -23,7 +23,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/UpdateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: UpdateStatement
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 14
@@ -72,7 +72,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/UpdateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: STATEMENT_REGEX
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 15
@@ -107,7 +107,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/UpdateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: fromClause
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 17
@@ -140,7 +140,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/UpdateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: setClause
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 18
@@ -173,7 +173,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/UpdateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: whereClause
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 19
@@ -206,7 +206,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/UpdateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 26
@@ -245,7 +245,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/UpdateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetWhereIndexSetRefsAndWhereRefs
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 49
@@ -285,7 +285,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/UpdateStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetExecutableSqlAndParams
     path: ../Butterfly.Db/Statements/UpdateStatement.cs
     startLine: 71

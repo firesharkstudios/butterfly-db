@@ -17,10 +17,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: UnableToConnectDatabaseException
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 362
+    startLine: 385
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -53,10 +53,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 363
+    startLine: 386
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db

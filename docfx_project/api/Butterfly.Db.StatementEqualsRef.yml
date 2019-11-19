@@ -21,7 +21,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: StatementEqualsRef
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 177
@@ -58,7 +58,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: tableName
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 178
@@ -91,7 +91,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: fieldName
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 179
@@ -124,7 +124,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: paramName
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 180
@@ -157,7 +157,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 182
@@ -194,7 +194,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetMatchingParams
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 188

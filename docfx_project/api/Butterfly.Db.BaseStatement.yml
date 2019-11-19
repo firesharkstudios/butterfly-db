@@ -26,7 +26,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: BaseStatement
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 16
@@ -71,7 +71,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: IsSqlTableName
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 17
@@ -106,7 +106,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Sql
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 23
@@ -143,7 +143,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: StatementFromRefs
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 29
@@ -180,7 +180,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: FindStatementFromRefByTableAlias
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 41
@@ -215,7 +215,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: fromTableNames
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 45
@@ -248,7 +248,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: HasTableInFrom
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 46
@@ -283,7 +283,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ConfirmAllParamsUsed
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 50
@@ -323,7 +323,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ConvertParamsToDict
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 57
@@ -360,7 +360,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: EQUALS_REF_REGEX
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 82
@@ -395,7 +395,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: RemapStatementParamsToFieldValues
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 93

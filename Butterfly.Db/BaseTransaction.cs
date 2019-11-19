@@ -138,7 +138,15 @@ namespace Butterfly.Db {
 
             (string executableSql, Dict executableParams) = deleteStatement.GetExecutableSqlAndParams(varsDict, whereRefs);
 
-            object keyValue = await this.GetKeyValue(whereIndex, varsDict, executableParams, whereRefs, deleteStatement.StatementFromRefs[0].table.Indexes[0], deleteStatement.StatementFromRefs[0].table.Name);
+            var tableName = deleteStatement.StatementFromRefs[0].table.Name;
+            var primaryIndex = deleteStatement.StatementFromRefs[0].table.Indexes[0];
+            object keyValue = await this.GetKeyValue(whereIndex, varsDict, executableParams, whereRefs, primaryIndex, tableName);
+
+            Dict record = null;
+            var deleteForeignKeys = this.database.GetForeignKeys(tableName, ForeignKeyRule.DeleteChildOnParentDelete, ForeignKeyRule.NullChildOnParentDelete);
+            if (deleteForeignKeys.Length>0) {
+                record = await this.database.SelectRowAsync(tableName, keyValue);
+            }
 
             int count;
             if (keyValue == null) {
@@ -147,8 +155,34 @@ namespace Butterfly.Db {
             else {
                 count = await this.DoDeleteAsync(executableSql, executableParams);
 
-                this.dataEvents.Add(new KeyValueDataEvent(DataEventType.Delete, deleteStatement.StatementFromRefs[0].table.Name, keyValue));
+                if (count > 0) {
+                    this.dataEvents.Add(new KeyValueDataEvent(DataEventType.Delete, tableName, keyValue));
 
+                    foreach (var foreignKey in deleteForeignKeys) {
+                        var childSelectValues = new Dict();
+                        for (int i=0; i<foreignKey.parentFieldNames.Length; i++) {
+                            childSelectValues[foreignKey.childFieldNames[i]] = record[foreignKey.parentFieldNames[i]];
+                        }
+                        var childRecords = await this.database.SelectRowsAsync(foreignKey.childTable.Name, childSelectValues);
+                        foreach (var childRecord in childRecords) {
+                            Dict modifyValues = new Dict();
+                            foreach (var childPrimaryKeyFieldName in foreignKey.childTable.Indexes[0].FieldNames) {
+                                modifyValues[childPrimaryKeyFieldName] = childRecord[childPrimaryKeyFieldName];
+                            }
+                            switch (foreignKey.foreignKeyRule) {
+                                case ForeignKeyRule.DeleteChildOnParentDelete:
+                                    await this.DeleteAsync(foreignKey.childTable.Name, modifyValues);
+                                    break;
+                                case ForeignKeyRule.NullChildOnParentDelete:
+                                    for (int i = 0; i < foreignKey.parentFieldNames.Length; i++) {
+                                        modifyValues[foreignKey.childFieldNames[i]] = null;
+                                    }
+                                    await this.UpdateAsync(foreignKey.childTable.Name, modifyValues);
+                                    break;
+                            }
+                        }
+                    }
+                }
                 this.database.DeleteCount++;
             }
 

@@ -20,7 +20,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: JoinType
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 105
@@ -51,7 +51,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: None
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 106
@@ -83,7 +83,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Inner
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 107
@@ -115,7 +115,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Left
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 108
@@ -147,7 +147,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/BaseStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Right
     path: ../Butterfly.Db/Statements/BaseStatement.cs
     startLine: 109

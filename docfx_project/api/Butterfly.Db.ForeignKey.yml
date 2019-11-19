@@ -1,0 +1,309 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Db.ForeignKey
+  commentId: T:Butterfly.Db.ForeignKey
+  id: ForeignKey
+  parent: Butterfly.Db
+  children:
+  - Butterfly.Db.ForeignKey.#ctor(Butterfly.Db.Table,System.String[],Butterfly.Db.Table,System.String[],Butterfly.Db.ForeignKeyRule)
+  - Butterfly.Db.ForeignKey.childFieldNames
+  - Butterfly.Db.ForeignKey.childTable
+  - Butterfly.Db.ForeignKey.foreignKeyRule
+  - Butterfly.Db.ForeignKey.parentFieldNames
+  - Butterfly.Db.ForeignKey.parentTable
+  langs:
+  - csharp
+  - vb
+  name: ForeignKey
+  nameWithType: ForeignKey
+  fullName: Butterfly.Db.ForeignKey
+  type: Class
+  source:
+    remote:
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: ForeignKey
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 390
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: 'public class ForeignKey : object'
+    content.vb: >-
+      Public Class ForeignKey
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Db.ForeignKey.childTable
+  commentId: F:Butterfly.Db.ForeignKey.childTable
+  id: childTable
+  parent: Butterfly.Db.ForeignKey
+  langs:
+  - csharp
+  - vb
+  name: childTable
+  nameWithType: ForeignKey.childTable
+  fullName: Butterfly.Db.ForeignKey.childTable
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: childTable
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 391
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly Table childTable
+    return:
+      type: Butterfly.Db.Table
+    content.vb: Public ReadOnly childTable As Table
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.ForeignKey.childFieldNames
+  commentId: F:Butterfly.Db.ForeignKey.childFieldNames
+  id: childFieldNames
+  parent: Butterfly.Db.ForeignKey
+  langs:
+  - csharp
+  - vb
+  name: childFieldNames
+  nameWithType: ForeignKey.childFieldNames
+  fullName: Butterfly.Db.ForeignKey.childFieldNames
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: childFieldNames
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 392
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string[] childFieldNames
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly childFieldNames As String()
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.ForeignKey.parentTable
+  commentId: F:Butterfly.Db.ForeignKey.parentTable
+  id: parentTable
+  parent: Butterfly.Db.ForeignKey
+  langs:
+  - csharp
+  - vb
+  name: parentTable
+  nameWithType: ForeignKey.parentTable
+  fullName: Butterfly.Db.ForeignKey.parentTable
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: parentTable
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 394
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly Table parentTable
+    return:
+      type: Butterfly.Db.Table
+    content.vb: Public ReadOnly parentTable As Table
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.ForeignKey.parentFieldNames
+  commentId: F:Butterfly.Db.ForeignKey.parentFieldNames
+  id: parentFieldNames
+  parent: Butterfly.Db.ForeignKey
+  langs:
+  - csharp
+  - vb
+  name: parentFieldNames
+  nameWithType: ForeignKey.parentFieldNames
+  fullName: Butterfly.Db.ForeignKey.parentFieldNames
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: parentFieldNames
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 395
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly string[] parentFieldNames
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly parentFieldNames As String()
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.ForeignKey.foreignKeyRule
+  commentId: F:Butterfly.Db.ForeignKey.foreignKeyRule
+  id: foreignKeyRule
+  parent: Butterfly.Db.ForeignKey
+  langs:
+  - csharp
+  - vb
+  name: foreignKeyRule
+  nameWithType: ForeignKey.foreignKeyRule
+  fullName: Butterfly.Db.ForeignKey.foreignKeyRule
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: foreignKeyRule
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 397
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public readonly ForeignKeyRule foreignKeyRule
+    return:
+      type: Butterfly.Db.ForeignKeyRule
+    content.vb: Public ReadOnly foreignKeyRule As ForeignKeyRule
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Butterfly.Db.ForeignKey.#ctor(Butterfly.Db.Table,System.String[],Butterfly.Db.Table,System.String[],Butterfly.Db.ForeignKeyRule)
+  commentId: M:Butterfly.Db.ForeignKey.#ctor(Butterfly.Db.Table,System.String[],Butterfly.Db.Table,System.String[],Butterfly.Db.ForeignKeyRule)
+  id: '#ctor(Butterfly.Db.Table,System.String[],Butterfly.Db.Table,System.String[],Butterfly.Db.ForeignKeyRule)'
+  parent: Butterfly.Db.ForeignKey
+  langs:
+  - csharp
+  - vb
+  name: ForeignKey(Table, String[], Table, String[], ForeignKeyRule)
+  nameWithType: ForeignKey.ForeignKey(Table, String[], Table, String[], ForeignKeyRule)
+  fullName: Butterfly.Db.ForeignKey.ForeignKey(Butterfly.Db.Table, System.String[], Butterfly.Db.Table, System.String[], Butterfly.Db.ForeignKeyRule)
+  type: Constructor
+  source:
+    remote:
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: .ctor
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 399
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public ForeignKey(Table childTable, string[] childFieldNames, Table parentTable, string[] parentFieldNames, ForeignKeyRule foreignKeyRule)
+    parameters:
+    - id: childTable
+      type: Butterfly.Db.Table
+    - id: childFieldNames
+      type: System.String[]
+    - id: parentTable
+      type: Butterfly.Db.Table
+    - id: parentFieldNames
+      type: System.String[]
+    - id: foreignKeyRule
+      type: Butterfly.Db.ForeignKeyRule
+    content.vb: Public Sub New(childTable As Table, childFieldNames As String(), parentTable As Table, parentFieldNames As String(), foreignKeyRule As ForeignKeyRule)
+  overload: Butterfly.Db.ForeignKey.#ctor*
+  nameWithType.vb: ForeignKey.ForeignKey(Table, String(), Table, String(), ForeignKeyRule)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Db.ForeignKey.ForeignKey(Butterfly.Db.Table, System.String(), Butterfly.Db.Table, System.String(), Butterfly.Db.ForeignKeyRule)
+  name.vb: ForeignKey(Table, String(), Table, String(), ForeignKeyRule)
+references:
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Db.Table
+  commentId: T:Butterfly.Db.Table
+  parent: Butterfly.Db
+  name: Table
+  nameWithType: Table
+  fullName: Butterfly.Db.Table
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Butterfly.Db.ForeignKeyRule
+  commentId: T:Butterfly.Db.ForeignKeyRule
+  parent: Butterfly.Db
+  name: ForeignKeyRule
+  nameWithType: ForeignKeyRule
+  fullName: Butterfly.Db.ForeignKeyRule
+- uid: Butterfly.Db.ForeignKey.#ctor*
+  commentId: Overload:Butterfly.Db.ForeignKey.#ctor
+  name: ForeignKey
+  nameWithType: ForeignKey.ForeignKey
+  fullName: Butterfly.Db.ForeignKey.ForeignKey
+shouldSkipMarkup: true

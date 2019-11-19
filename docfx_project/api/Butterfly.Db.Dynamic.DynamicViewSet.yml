@@ -10,12 +10,15 @@ items:
   - Butterfly.Db.Dynamic.DynamicViewSet.asyncListener
   - Butterfly.Db.Dynamic.DynamicViewSet.CreateDynamicView(System.String,System.Object,System.String,System.String[],System.Int32)
   - Butterfly.Db.Dynamic.DynamicViewSet.CreateDynamicViewDataEvents(Butterfly.Db.Event.DataEventTransaction,Butterfly.Db.Dynamic.DynamicView)
+  - Butterfly.Db.Dynamic.DynamicViewSet.database
+  - Butterfly.Db.Dynamic.DynamicViewSet.Database
   - Butterfly.Db.Dynamic.DynamicViewSet.disposables
   - Butterfly.Db.Dynamic.DynamicViewSet.Dispose
   - Butterfly.Db.Dynamic.DynamicViewSet.dynamicViews
   - Butterfly.Db.Dynamic.DynamicViewSet.GetImpactedRecordsStorageKey(Butterfly.Db.Dynamic.DynamicView,Butterfly.Db.Event.DataEvent,Butterfly.Db.Event.TransactionState)
   - Butterfly.Db.Dynamic.DynamicViewSet.GetInitialDataEventsAsync(Butterfly.Db.Dynamic.DynamicView)
   - Butterfly.Db.Dynamic.DynamicViewSet.HasImpactedRecords(Butterfly.Db.Event.TransactionState,Butterfly.Db.Event.DataEvent,Butterfly.Db.JoinType)
+  - Butterfly.Db.Dynamic.DynamicViewSet.id
   - Butterfly.Db.Dynamic.DynamicViewSet.Id
   - Butterfly.Db.Dynamic.DynamicViewSet.incomingDataEventTransactions
   - Butterfly.Db.Dynamic.DynamicViewSet.isStarted
@@ -40,7 +43,7 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DynamicViewSet
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
     startLine: 24
@@ -62,6 +65,72 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Butterfly.Db.Dynamic.DynamicViewSet.id
+  commentId: F:Butterfly.Db.Dynamic.DynamicViewSet.id
+  id: id
+  parent: Butterfly.Db.Dynamic.DynamicViewSet
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: DynamicViewSet.id
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet.id
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: id
+    path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
+    startLine: 27
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly string id
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly id As String
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicViewSet.database
+  commentId: F:Butterfly.Db.Dynamic.DynamicViewSet.database
+  id: database
+  parent: Butterfly.Db.Dynamic.DynamicViewSet
+  langs:
+  - csharp
+  - vb
+  name: database
+  nameWithType: DynamicViewSet.database
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet.database
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: database
+    path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
+    startLine: 28
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: protected readonly IDatabase database
+    return:
+      type: Butterfly.Db.IDatabase
+    content.vb: Protected ReadOnly database As IDatabase
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
 - uid: Butterfly.Db.Dynamic.DynamicViewSet.listener
   commentId: F:Butterfly.Db.Dynamic.DynamicViewSet.listener
   id: listener
@@ -77,10 +146,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: listener
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 27
+    startLine: 30
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -110,10 +179,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: asyncListener
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 28
+    startLine: 31
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -143,10 +212,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: dynamicViews
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 30
+    startLine: 33
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -176,10 +245,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: incomingDataEventTransactions
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 31
+    startLine: 34
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -209,10 +278,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: runCancellationTokenSource
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -242,10 +311,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: monitor
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 34
+    startLine: 37
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -275,10 +344,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: disposables
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -308,10 +377,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 38
+    startLine: 41
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -346,10 +415,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 44
+    startLine: 47
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -384,28 +453,61 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Id
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 50
+    startLine: 53
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
   syntax:
-    content: public string Id { get; protected set; }
+    content: public string Id { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property Id As String
+    content.vb: Public ReadOnly Property Id As String
   overload: Butterfly.Db.Dynamic.DynamicViewSet.Id*
   modifiers.csharp:
   - public
   - get
-  - protected set
   modifiers.vb:
   - Public
-  - Get
-  - Protected Set
+  - ReadOnly
+- uid: Butterfly.Db.Dynamic.DynamicViewSet.Database
+  commentId: P:Butterfly.Db.Dynamic.DynamicViewSet.Database
+  id: Database
+  parent: Butterfly.Db.Dynamic.DynamicViewSet
+  langs:
+  - csharp
+  - vb
+  name: Database
+  nameWithType: DynamicViewSet.Database
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet.Database
+  type: Property
+  source:
+    remote:
+      path: Butterfly.Db/Dynamic/DynamicViewSet.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: Database
+    path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
+    startLine: 55
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db.Dynamic
+  syntax:
+    content: public IDatabase Database { get; }
+    parameters: []
+    return:
+      type: Butterfly.Db.IDatabase
+    content.vb: Public ReadOnly Property Database As IDatabase
+  overload: Butterfly.Db.Dynamic.DynamicViewSet.Database*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Butterfly.Db.Dynamic.DynamicViewSet.CreateDynamicView(System.String,System.Object,System.String,System.String[],System.Int32)
   commentId: M:Butterfly.Db.Dynamic.DynamicViewSet.CreateDynamicView(System.String,System.Object,System.String,System.String[],System.Int32)
   id: CreateDynamicView(System.String,System.Object,System.String,System.String[],System.Int32)
@@ -421,10 +523,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CreateDynamicView
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 64
+    startLine: 61
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -469,10 +571,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: isStarted
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 70
+    startLine: 67
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -500,10 +602,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: StartAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 77
+    startLine: 74
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -535,10 +637,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ProcessUncommittedDataEventTransactionAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 98
+    startLine: 95
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -570,10 +672,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ProcessCommittedDataEventTransactionAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 102
+    startLine: 99
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -605,10 +707,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: StoreImpactedRecordsInDataEventTransaction
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 109
+    startLine: 106
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -642,10 +744,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetImpactedRecordsStorageKey
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 125
+    startLine: 122
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -681,10 +783,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: HasImpactedRecords
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 129
+    startLine: 126
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -720,10 +822,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: RunAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 148
+    startLine: 145
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -755,10 +857,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CreateDynamicViewDataEvents
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 178
+    startLine: 175
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -792,10 +894,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SendToListenerAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 221
+    startLine: 218
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -827,10 +929,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: RequeryDynamicViewsAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 238
+    startLine: 235
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -866,10 +968,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetInitialDataEventsAsync
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 254
+    startLine: 251
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -901,10 +1003,10 @@ items:
     remote:
       path: Butterfly.Db/Dynamic/DynamicViewSet.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Dispose
     path: ../Butterfly.Db/Dynamic/DynamicViewSet.cs
-    startLine: 261
+    startLine: 258
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db.Dynamic
@@ -940,6 +1042,22 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Butterfly.Db.IDatabase
+  commentId: T:Butterfly.Db.IDatabase
+  parent: Butterfly.Db
+  name: IDatabase
+  nameWithType: IDatabase
+  fullName: Butterfly.Db.IDatabase
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
 - uid: Action{Butterfly.Db.Event.DataEventTransaction}
   commentId: '!:Action{Butterfly.Db.Event.DataEventTransaction}'
   definition: Action`1
@@ -1345,27 +1463,16 @@ references:
   name: DynamicViewSet
   nameWithType: DynamicViewSet.DynamicViewSet
   fullName: Butterfly.Db.Dynamic.DynamicViewSet.DynamicViewSet
-- uid: Butterfly.Db.IDatabase
-  commentId: T:Butterfly.Db.IDatabase
-  parent: Butterfly.Db
-  name: IDatabase
-  nameWithType: IDatabase
-  fullName: Butterfly.Db.IDatabase
-- uid: Butterfly.Db
-  commentId: N:Butterfly.Db
-  name: Butterfly.Db
-  nameWithType: Butterfly.Db
-  fullName: Butterfly.Db
 - uid: Butterfly.Db.Dynamic.DynamicViewSet.Id*
   commentId: Overload:Butterfly.Db.Dynamic.DynamicViewSet.Id
   name: Id
   nameWithType: DynamicViewSet.Id
   fullName: Butterfly.Db.Dynamic.DynamicViewSet.Id
-- uid: System.String
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+- uid: Butterfly.Db.Dynamic.DynamicViewSet.Database*
+  commentId: Overload:Butterfly.Db.Dynamic.DynamicViewSet.Database
+  name: Database
+  nameWithType: DynamicViewSet.Database
+  fullName: Butterfly.Db.Dynamic.DynamicViewSet.Database
 - uid: Butterfly.Db.Dynamic.DynamicViewSet.StartAsync
   commentId: M:Butterfly.Db.Dynamic.DynamicViewSet.StartAsync
   isExternal: true

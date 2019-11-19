@@ -28,7 +28,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SelectStatement
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 18
@@ -77,7 +77,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: STRUCTURED_PARSER
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 21
@@ -112,7 +112,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: selectClause
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 23
@@ -145,7 +145,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: fromClause
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 24
@@ -178,7 +178,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: whereClause
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 25
@@ -211,7 +211,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: orderByClause
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 26
@@ -244,7 +244,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: limit
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 27
@@ -277,7 +277,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 29
@@ -314,7 +314,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 53
@@ -357,7 +357,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Compile
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 63
@@ -390,7 +390,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 67
@@ -427,7 +427,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetExecutableSqlAndParams
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 83
@@ -465,7 +465,7 @@ items:
     remote:
       path: Butterfly.Db/Statements/SelectStatement.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ReplaceAll
     path: ../Butterfly.Db/Statements/SelectStatement.cs
     startLine: 160

@@ -48,7 +48,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: BaseTransaction
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 20
@@ -97,7 +97,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: database
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 21
@@ -130,7 +130,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: dataEvents
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 23
@@ -163,7 +163,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: onCommitRefs
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 24
@@ -196,7 +196,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 26
@@ -229,7 +229,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Database
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 31
@@ -266,7 +266,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Create
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 34
@@ -301,7 +301,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoCreate
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 38
@@ -338,7 +338,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CreateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 40
@@ -373,7 +373,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoCreateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 44
@@ -410,7 +410,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: InsertAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 47
@@ -456,7 +456,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: InsertAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 53
@@ -495,7 +495,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoInsertAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 91
@@ -539,7 +539,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: UpdateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 94
@@ -578,7 +578,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: UpdateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 99
@@ -615,7 +615,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoUpdateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 125
@@ -657,7 +657,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DeleteAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 128
@@ -696,7 +696,7 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DeleteAsync
     path: ../Butterfly.Db/BaseTransaction.cs
     startLine: 133
@@ -733,10 +733,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoDeleteAsync
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 157
+    startLine: 191
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -775,10 +775,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetKeyValue
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 159
+    startLine: 193
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -823,10 +823,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SynchronizeAsync
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 177
+    startLine: 211
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -873,10 +873,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: TruncateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 219
+    startLine: 253
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -910,10 +910,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoTruncateAsync
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 223
+    startLine: 257
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -947,10 +947,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Begin
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 226
+    startLine: 260
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -979,10 +979,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: BeginAsync
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 228
+    startLine: 262
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1013,10 +1013,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Commit
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 231
+    startLine: 265
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1045,10 +1045,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoCommit
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 242
+    startLine: 276
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1077,10 +1077,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CommitAsync
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 244
+    startLine: 278
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1111,10 +1111,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: OnCommit
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 263
+    startLine: 297
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1151,10 +1151,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoCommitAsync
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 267
+    startLine: 301
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1185,10 +1185,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Rollback
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 270
+    startLine: 304
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1217,10 +1217,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoRollback
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 274
+    startLine: 308
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1249,10 +1249,10 @@ items:
     remote:
       path: Butterfly.Db/BaseTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Dispose
     path: ../Butterfly.Db/BaseTransaction.cs
-    startLine: 278
+    startLine: 312
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db

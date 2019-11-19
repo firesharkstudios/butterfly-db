@@ -30,7 +30,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: MemoryTransaction
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 18
@@ -92,7 +92,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: changedTables
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 22
@@ -125,7 +125,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 24
@@ -158,7 +158,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Begin
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 27
@@ -191,7 +191,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: BeginAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 30
@@ -226,7 +226,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoCommit
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 34
@@ -259,7 +259,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoCommitAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 40
@@ -294,7 +294,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoRollback
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 45
@@ -327,7 +327,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: Dispose
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 51
@@ -360,7 +360,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoCreate
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 55
@@ -398,7 +398,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoCreateAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 74
@@ -436,7 +436,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoInsertAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 78
@@ -481,7 +481,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoUpdateAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 101
@@ -524,7 +524,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoDeleteAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 126
@@ -567,7 +567,7 @@ items:
     remote:
       path: Butterfly.Db/Memory/MemoryTransaction.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoTruncateAsync
     path: ../Butterfly.Db/Memory/MemoryTransaction.cs
     startLine: 139

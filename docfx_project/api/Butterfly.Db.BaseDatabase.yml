@@ -23,6 +23,7 @@ items:
   - Butterfly.Db.BaseDatabase.DeleteCount
   - Butterfly.Db.BaseDatabase.DoQueryRowsAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
   - Butterfly.Db.BaseDatabase.DoSelectRowsAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Int32)
+  - Butterfly.Db.BaseDatabase.foreignKeys
   - Butterfly.Db.BaseDatabase.getDefaultValueByFieldName
   - Butterfly.Db.BaseDatabase.GetInitialDataEventsAsync(System.String,System.String[],Butterfly.Db.SelectStatement,System.Object)
   - Butterfly.Db.BaseDatabase.getOverrideValueByFieldName
@@ -38,6 +39,7 @@ items:
   - Butterfly.Db.BaseDatabase.QueryRowAsync(System.String,System.Object)
   - Butterfly.Db.BaseDatabase.QueryRowsAsync(System.String,System.Object)
   - Butterfly.Db.BaseDatabase.QueryValueAsync``1(System.String,System.Object,``0)
+  - Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
   - Butterfly.Db.BaseDatabase.RemapTypeInputPreprocessor``1(Func{``0,System.Object})
   - Butterfly.Db.BaseDatabase.SelectCount
   - Butterfly.Db.BaseDatabase.SelectRowAsync(System.String,System.Object)
@@ -65,10 +67,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: BaseDatabase
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 26
+    startLine: 24
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -113,10 +115,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: tableByName
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 29
+    startLine: 27
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -146,10 +148,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SQL_COMMENT
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 31
+    startLine: 29
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -181,10 +183,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: .ctor
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 33
+    startLine: 31
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -214,10 +216,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: ConnectionString
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 44
+    startLine: 42
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -254,10 +256,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: TableByName
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 49
+    startLine: 47
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -291,10 +293,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CanJoin
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 51
+    startLine: 49
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -330,10 +332,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CanFieldAlias
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 53
+    startLine: 51
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -369,10 +371,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SelectCount
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 55
+    startLine: 53
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -406,10 +408,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: TransactionCount
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 60
+    startLine: 58
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -441,10 +443,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: InsertCount
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 65
+    startLine: 63
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -476,10 +478,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: UpdateCount
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 70
+    startLine: 68
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -511,10 +513,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DeleteCount
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 75
+    startLine: 73
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -546,10 +548,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: LoadSchemaAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 81
+    startLine: 79
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -580,10 +582,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: LoadTableSchemaAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 83
+    startLine: 81
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -617,10 +619,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: uncommittedTransactionListeners
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 86
+    startLine: 84
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -650,10 +652,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: OnNewUncommittedTransaction
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 87
+    startLine: 85
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -690,10 +692,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: OnNewUncommittedTransaction
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 88
+    startLine: 86
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -730,10 +732,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: committedTransactionListeners
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 90
+    startLine: 88
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -763,10 +765,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: OnNewCommittedTransaction
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 91
+    startLine: 89
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -803,10 +805,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: OnNewCommittedTransaction
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 92
+    startLine: 90
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -843,10 +845,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: GetInitialDataEventsAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 118
+    startLine: 116
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -889,10 +891,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SelectValueAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 131
+    startLine: 129
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -935,10 +937,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SelectValuesAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 140
+    startLine: 138
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -979,10 +981,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SelectRowAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 147
+    startLine: 145
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1018,10 +1020,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SelectRowsAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 155
+    startLine: 153
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1057,10 +1059,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SelectRowsAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 160
+    startLine: 158
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1096,10 +1098,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoSelectRowsAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 167
+    startLine: 165
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1140,10 +1142,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: QueryValueAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 169
+    startLine: 167
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1186,10 +1188,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: QueryRowAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 176
+    startLine: 174
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1225,10 +1227,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: QueryRowsAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 183
+    startLine: 181
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1264,10 +1266,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DoQueryRowsAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 204
+    startLine: 202
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1306,10 +1308,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: InsertAndCommitAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 206
+    startLine: 204
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1352,10 +1354,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: UpdateAndCommitAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 215
+    startLine: 213
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1391,10 +1393,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: DeleteAndCommitAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 224
+    startLine: 222
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1430,10 +1432,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: BeginTransaction
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 233
+    startLine: 231
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1464,10 +1466,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: BeginTransactionAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 239
+    startLine: 237
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1498,10 +1500,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CreateTransaction
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 245
+    startLine: 243
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1532,10 +1534,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: getDefaultValueByFieldName
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 247
+    startLine: 245
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1565,10 +1567,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SetDefaultValue
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 249
+    startLine: 247
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1607,10 +1609,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: getOverrideValueByFieldName
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 272
+    startLine: 270
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1640,10 +1642,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: SetOverrideValue
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 274
+    startLine: 272
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1682,10 +1684,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: inputPreprocessors
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 297
+    startLine: 295
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1715,10 +1717,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: AddInputPreprocessor
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 299
+    startLine: 297
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1753,10 +1755,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: RemapTypeInputPreprocessor
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 309
+    startLine: 307
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1795,10 +1797,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CopyFieldValueInputPreprocessor
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 319
+    startLine: 317
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1834,10 +1836,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CreateDynamicViewSet
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 330
+    startLine: 328
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1874,10 +1876,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CreateDynamicViewSet
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 334
+    startLine: 332
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1914,10 +1916,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CreateAndStartDynamicViewAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 338
+    startLine: 336
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1962,10 +1964,10 @@ items:
     remote:
       path: Butterfly.Db/BaseDatabase.cs
       branch: master
-      repo: https://github.com/firesharkstudios/butterfly-db.git
+      repo: https://github.com/firesharkstudios/butterfly-db
     id: CreateAndStartDynamicViewAsync
     path: ../Butterfly.Db/BaseDatabase.cs
-    startLine: 344
+    startLine: 342
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1995,6 +1997,85 @@ items:
   - Public
   fullName.vb: Butterfly.Db.BaseDatabase.CreateAndStartDynamicViewAsync(System.String, Func(Of Butterfly.Db.Event.DataEventTransaction, Task), System.Object, System.String, System.String())
   name.vb: CreateAndStartDynamicViewAsync(String, Func(Of DataEventTransaction, Task), Object, String, String())
+- uid: Butterfly.Db.BaseDatabase.foreignKeys
+  commentId: F:Butterfly.Db.BaseDatabase.foreignKeys
+  id: foreignKeys
+  parent: Butterfly.Db.BaseDatabase
+  langs:
+  - csharp
+  - vb
+  name: foreignKeys
+  nameWithType: BaseDatabase.foreignKeys
+  fullName: Butterfly.Db.BaseDatabase.foreignKeys
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: foreignKeys
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 348
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected readonly List<ForeignKey> foreignKeys
+    return:
+      type: List{Butterfly.Db.ForeignKey}
+    content.vb: Protected ReadOnly foreignKeys As List(Of ForeignKey)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  commentId: M:Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  id: RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  parent: Butterfly.Db.BaseDatabase
+  langs:
+  - csharp
+  - vb
+  name: RegisterForeignKey(String, String, String, String, ForeignKeyRule[])
+  nameWithType: BaseDatabase.RegisterForeignKey(String, String, String, String, ForeignKeyRule[])
+  fullName: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String, System.String, System.String, System.String, Butterfly.Db.ForeignKeyRule[])
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Db/BaseDatabase.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: RegisterForeignKey
+    path: ../Butterfly.Db/BaseDatabase.cs
+    startLine: 350
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: public void RegisterForeignKey(string childTableName, string childFieldNames, string parentTableName, string parentFieldNames, params ForeignKeyRule[] foreignKeyRules)
+    parameters:
+    - id: childTableName
+      type: System.String
+    - id: childFieldNames
+      type: System.String
+    - id: parentTableName
+      type: System.String
+    - id: parentFieldNames
+      type: System.String
+    - id: foreignKeyRules
+      type: Butterfly.Db.ForeignKeyRule[]
+    content.vb: Public Sub RegisterForeignKey(childTableName As String, childFieldNames As String, parentTableName As String, parentFieldNames As String, ParamArray foreignKeyRules As ForeignKeyRule())
+  overload: Butterfly.Db.BaseDatabase.RegisterForeignKey*
+  implements:
+  - Butterfly.Db.IDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  nameWithType.vb: BaseDatabase.RegisterForeignKey(String, String, String, String, ForeignKeyRule())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Db.BaseDatabase.RegisterForeignKey(System.String, System.String, System.String, System.String, Butterfly.Db.ForeignKeyRule())
+  name.vb: RegisterForeignKey(String, String, String, String, ForeignKeyRule())
 references:
 - uid: Butterfly.Db.IDatabase
   commentId: T:Butterfly.Db.IDatabase
@@ -5687,4 +5768,184 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: List{Butterfly.Db.ForeignKey}
+  commentId: '!:List{Butterfly.Db.ForeignKey}'
+  definition: List`1
+  name: List<ForeignKey>
+  nameWithType: List<ForeignKey>
+  fullName: List<Butterfly.Db.ForeignKey>
+  nameWithType.vb: List(Of ForeignKey)
+  fullName.vb: List(Of Butterfly.Db.ForeignKey)
+  name.vb: List(Of ForeignKey)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Butterfly.Db.ForeignKey
+    name: ForeignKey
+    nameWithType: ForeignKey
+    fullName: Butterfly.Db.ForeignKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Butterfly.Db.ForeignKey
+    name: ForeignKey
+    nameWithType: ForeignKey
+    fullName: Butterfly.Db.ForeignKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.BaseDatabase.RegisterForeignKey*
+  commentId: Overload:Butterfly.Db.BaseDatabase.RegisterForeignKey
+  name: RegisterForeignKey
+  nameWithType: BaseDatabase.RegisterForeignKey
+  fullName: Butterfly.Db.BaseDatabase.RegisterForeignKey
+- uid: Butterfly.Db.IDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  commentId: M:Butterfly.Db.IDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+  parent: Butterfly.Db.IDatabase
+  isExternal: true
+  name: RegisterForeignKey(String, String, String, String, ForeignKeyRule[])
+  nameWithType: IDatabase.RegisterForeignKey(String, String, String, String, ForeignKeyRule[])
+  fullName: Butterfly.Db.IDatabase.RegisterForeignKey(System.String, System.String, System.String, System.String, Butterfly.Db.ForeignKeyRule[])
+  nameWithType.vb: IDatabase.RegisterForeignKey(String, String, String, String, ForeignKeyRule())
+  fullName.vb: Butterfly.Db.IDatabase.RegisterForeignKey(System.String, System.String, System.String, System.String, Butterfly.Db.ForeignKeyRule())
+  name.vb: RegisterForeignKey(String, String, String, String, ForeignKeyRule())
+  spec.csharp:
+  - uid: Butterfly.Db.IDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+    name: RegisterForeignKey
+    nameWithType: IDatabase.RegisterForeignKey
+    fullName: Butterfly.Db.IDatabase.RegisterForeignKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Butterfly.Db.ForeignKeyRule
+    name: ForeignKeyRule
+    nameWithType: ForeignKeyRule
+    fullName: Butterfly.Db.ForeignKeyRule
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Db.IDatabase.RegisterForeignKey(System.String,System.String,System.String,System.String,Butterfly.Db.ForeignKeyRule[])
+    name: RegisterForeignKey
+    nameWithType: IDatabase.RegisterForeignKey
+    fullName: Butterfly.Db.IDatabase.RegisterForeignKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Butterfly.Db.ForeignKeyRule
+    name: ForeignKeyRule
+    nameWithType: ForeignKeyRule
+    fullName: Butterfly.Db.ForeignKeyRule
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Db.ForeignKeyRule[]
+  isExternal: true
+  name: ForeignKeyRule[]
+  nameWithType: ForeignKeyRule[]
+  fullName: Butterfly.Db.ForeignKeyRule[]
+  nameWithType.vb: ForeignKeyRule()
+  fullName.vb: Butterfly.Db.ForeignKeyRule()
+  name.vb: ForeignKeyRule()
+  spec.csharp:
+  - uid: Butterfly.Db.ForeignKeyRule
+    name: ForeignKeyRule
+    nameWithType: ForeignKeyRule
+    fullName: Butterfly.Db.ForeignKeyRule
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Butterfly.Db.ForeignKeyRule
+    name: ForeignKeyRule
+    nameWithType: ForeignKeyRule
+    fullName: Butterfly.Db.ForeignKeyRule
+  - name: ()
+    nameWithType: ()
+    fullName: ()
 shouldSkipMarkup: true

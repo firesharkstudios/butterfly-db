@@ -5,8 +5,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -348,6 +346,31 @@ namespace Butterfly.Db {
             return await dynamicViewSet.StartAsync();
         }
 
+        protected readonly List<ForeignKey> foreignKeys = new List<ForeignKey>();
+
+        public void RegisterForeignKey(string childTableName, string childFieldNames, string parentTableName, string parentFieldNames, params ForeignKeyRule[] foreignKeyRules) {
+            if (!this.tableByName.TryGetValue(childTableName, out Table childTable)) throw new Exception($"Unknown child table {childTableName}");
+            var _childFieldNames = childFieldNames.Split(',');
+            foreach (var fieldName in _childFieldNames) {
+                if (childTable.FindFieldDef(fieldName) == null) throw new Exception($"Invalid child field name {fieldName}");
+            }
+
+            if (!this.tableByName.TryGetValue(parentTableName, out Table parentTable)) throw new Exception($"Unknown parent table {parentTableName}");
+            var _parentFieldNames = parentFieldNames.Split(',');
+            foreach (var fieldName in _parentFieldNames) {
+                if (parentTable.FindFieldDef(fieldName) == null) throw new Exception($"Invalid parent field name {fieldName}");
+            }
+
+            if (_childFieldNames.Length != _parentFieldNames.Length) throw new Exception("Must have same number of child and parent field names");
+
+            foreach (var foreignKeyRule in foreignKeyRules) {
+                this.foreignKeys.Add(new ForeignKey(childTable, _childFieldNames, parentTable, _parentFieldNames, foreignKeyRule));
+            }
+        }
+
+        internal ForeignKey[] GetForeignKeys(string parentTableName, params ForeignKeyRule[] foreignKeyRules) {
+            return this.foreignKeys.Where(x => x.parentTable.Name == parentTableName && foreignKeyRules.Contains(x.foreignKeyRule)).ToArray();
+        }
     }
 
     public class DatabaseException : Exception {
@@ -365,4 +388,23 @@ namespace Butterfly.Db {
         }
     }
 
+    public class ForeignKey {
+        public readonly Table childTable;
+        public readonly string[] childFieldNames;
+
+        public readonly Table parentTable;
+        public readonly string[] parentFieldNames;
+
+        public readonly ForeignKeyRule foreignKeyRule;
+
+        public ForeignKey(Table childTable, string[] childFieldNames, Table parentTable, string[] parentFieldNames, ForeignKeyRule foreignKeyRule) {
+            this.childTable = childTable;
+            this.childFieldNames = childFieldNames;
+
+            this.parentTable = parentTable;
+            this.parentFieldNames = parentFieldNames;
+
+            this.foreignKeyRule = foreignKeyRule;
+        }
+    }
 }
