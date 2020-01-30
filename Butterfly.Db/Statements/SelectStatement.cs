@@ -85,8 +85,25 @@ namespace Butterfly.Db {
             string newSelectClause = string.IsNullOrEmpty(this.selectClause) ? "*" : this.selectClause;
 
             Dict sourceParamsNotInFromClause = sourceParams.Where(x => !this.fromClause.Contains($"@{x.Key}")).ToDictionary(x => x.Key, x => x.Value);
-            string newWhereClause = string.IsNullOrEmpty(this.whereClause) && sourceParamsNotInFromClause.Count > 0 ? string.Join(" AND ", sourceParamsNotInFromClause.Keys.Select(x => $"{x}=@{x}")) : this.whereClause;
 
+            var clauses = new string[] {
+                this.fromClause,
+                string.IsNullOrEmpty(this.whereClause) && sourceParamsNotInFromClause.Count > 0 ? string.Join(" AND ", sourceParamsNotInFromClause.Keys.Select(x => $"{x}=@{x}")) : this.whereClause,
+            };
+            var dataParams = BuildDataParamsAndFixClauses(sourceParams, clauses);
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"SELECT {newSelectClause} FROM {clauses[0]}");
+            if (!string.IsNullOrEmpty(clauses[1])) {
+                sb.Append($" WHERE {clauses[1]}");
+            }
+            if (!string.IsNullOrEmpty(this.orderByClause)) {
+                sb.Append($" ORDER BY {this.orderByClause}");
+            }
+            return (sb.ToString(), dataParams);
+        }
+
+        protected Dict BuildDataParamsAndFixClauses(Dict sourceParams, string[] clauses) {
             Dict dataParams = new Dict();
             foreach (var sourceParam in sourceParams) {
                 // Get value
@@ -101,21 +118,25 @@ namespace Butterfly.Db {
                 Regex conditionRegex = new Regex($"(\\w+\\.)?(\\w+)\\s*(!=|=)\\s*\\@{sourceParam.Key}");
                 // Convert where conditions like "id=@id" to "id IN (@id0, @id1, @id2)" if value is collection
                 if (value is null || value.Equals(DBNull.Value)) {
-                    newWhereClause = ReplaceAll(newWhereClause, conditionRegex, match => {
-                        string tableAliasWithDot = match.Groups[1].Value.Trim();
-                        string fieldName = match.Groups[2].Value.Trim();
-                        string condition = match.Groups[3].Value.Trim();
-                        string text = condition == "=" ? "IS NULL" : "IS NOT NULL";
-                        return $"{tableAliasWithDot}{fieldName} {text}";
-                    });
+                    for (int clauseIndex = 0; clauseIndex<clauses.Length; clauseIndex++) {
+                        clauses[clauseIndex] = ReplaceAll(clauses[clauseIndex], conditionRegex, match => {
+                            string tableAliasWithDot = match.Groups[1].Value.Trim();
+                            string fieldName = match.Groups[2].Value.Trim();
+                            string condition = match.Groups[3].Value.Trim();
+                            string text = condition == "=" ? "IS NULL" : "IS NOT NULL";
+                            return $"{tableAliasWithDot}{fieldName} {text}";
+                        });
+                    }
                 }
                 // Convert where conditions like "id=@id" to "id IN (@id0, @id1, @id2)" if value is collection
                 else if (value is ICollection<object> collection) {
                     if (collection.Count == 0) {
-                        newWhereClause = ReplaceAll(newWhereClause, conditionRegex, match => {
-                            string condition = match.Groups[3].Value;
-                            return condition == "=" ? "1=2" : "1=1";
-                        });
+                        for (int clauseIndex = 0; clauseIndex < clauses.Length; clauseIndex++) {
+                            clauses[clauseIndex] = ReplaceAll(clauses[clauseIndex], conditionRegex, match => {
+                                string condition = match.Groups[3].Value;
+                                return condition == "=" ? "1=2" : "1=1";
+                            });
+                        }
                     }
                     else if (collection.Count == 1) {
                         dataParams.Add(sourceParam.Key, collection.First());
@@ -128,34 +149,22 @@ namespace Butterfly.Db {
                         }
 
                         string rangeText = string.Join(",", collection.Select((x, index) => $"@{sourceParam.Key}{index}"));
-                        newWhereClause = ReplaceAll(newWhereClause, conditionRegex, match => {
-                            string tableAliasWithDot = match.Groups[1].Value.Trim();
-                            string fieldName = match.Groups[2].Value.Trim();
-                            string condition = match.Groups[3].Value.Trim();
-                            string inText = condition == "=" ? "IN" : "NOT IN";
-                            return $"{tableAliasWithDot}{fieldName} {inText} ({rangeText})";
-                        });
+                        for (int clauseIndex = 0; clauseIndex < clauses.Length; clauseIndex++) {
+                            clauses[clauseIndex] = ReplaceAll(clauses[clauseIndex], conditionRegex, match => {
+                                string tableAliasWithDot = match.Groups[1].Value.Trim();
+                                string fieldName = match.Groups[2].Value.Trim();
+                                string condition = match.Groups[3].Value.Trim();
+                                string inText = condition == "=" ? "IN" : "NOT IN";
+                                return $"{tableAliasWithDot}{fieldName} {inText} ({rangeText})";
+                            });
+                        }
                     }
                 }
                 else {
                     dataParams.Add(sourceParam.Key, value);
                 }
             }
-
-            StringBuilder sb = new StringBuilder();
-            sb.Append($"SELECT {newSelectClause} FROM {this.fromClause}");
-            if (!string.IsNullOrEmpty(newWhereClause)) {
-                sb.Append($" WHERE {newWhereClause}");
-            }
-            if (!string.IsNullOrEmpty(this.orderByClause)) {
-                sb.Append($" ORDER BY {this.orderByClause}");
-            }
-            /*
-            if (this.limit>0) {
-                sb.Append($" LIMIT {this.limit}");
-            }
-            */
-            return (sb.ToString(), dataParams);
+            return dataParams;
         }
 
         protected static string ReplaceAll(string sql, Regex regex, Func<Match, string> getReplacement) {
