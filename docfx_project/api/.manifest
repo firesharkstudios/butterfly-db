@@ -408,6 +408,7 @@
   "Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.IDatabase,System.String,System.Int32)": "Butterfly.Db.SelectStatement.yml",
   "Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.IDatabase,System.String,System.String,System.String,System.String,System.Int32)": "Butterfly.Db.SelectStatement.yml",
   "Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.SelectStatement,System.String,System.Boolean)": "Butterfly.Db.SelectStatement.yml",
+  "Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])": "Butterfly.Db.SelectStatement.yml",
   "Butterfly.Db.SelectStatement.Compile(Butterfly.Db.IDatabase)": "Butterfly.Db.SelectStatement.yml",
   "Butterfly.Db.SelectStatement.fromClause": "Butterfly.Db.SelectStatement.yml",
   "Butterfly.Db.SelectStatement.GetExecutableSqlAndParams(System.Collections.Generic.Dictionary{System.String,System.Object})": "Butterfly.Db.SelectStatement.yml",

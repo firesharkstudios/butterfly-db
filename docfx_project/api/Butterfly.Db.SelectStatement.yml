@@ -8,6 +8,7 @@ items:
   - Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.IDatabase,System.String,System.Int32)
   - Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.IDatabase,System.String,System.String,System.String,System.String,System.Int32)
   - Butterfly.Db.SelectStatement.#ctor(Butterfly.Db.SelectStatement,System.String,System.Boolean)
+  - Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])
   - Butterfly.Db.SelectStatement.Compile(Butterfly.Db.IDatabase)
   - Butterfly.Db.SelectStatement.fromClause
   - Butterfly.Db.SelectStatement.GetExecutableSqlAndParams(System.Collections.Generic.Dictionary{System.String,System.Object})
@@ -450,6 +451,46 @@ items:
   - Public
   fullName.vb: Butterfly.Db.SelectStatement.GetExecutableSqlAndParams(System.Collections.Generic.Dictionary(Of System.String, System.Object))
   name.vb: GetExecutableSqlAndParams(System.Collections.Generic.Dictionary(Of String, Object))
+- uid: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])
+  commentId: M:Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])
+  id: BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])
+  parent: Butterfly.Db.SelectStatement
+  langs:
+  - csharp
+  - vb
+  name: BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary<String, Object>, String[])
+  nameWithType: SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary<String, Object>, String[])
+  fullName: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary<System.String, System.Object>, System.String[])
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Db/Statements/SelectStatement.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-db
+    id: BuildDataParamsAndFixClauses
+    path: ../Butterfly.Db/Statements/SelectStatement.cs
+    startLine: 105
+  assemblies:
+  - Butterfly.Db
+  namespace: Butterfly.Db
+  syntax:
+    content: protected System.Collections.Generic.Dictionary<string, object> BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary<string, object> sourceParams, string[] clauses)
+    parameters:
+    - id: sourceParams
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    - id: clauses
+      type: System.String[]
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Protected Function BuildDataParamsAndFixClauses(sourceParams As System.Collections.Generic.Dictionary(Of String, Object), clauses As String()) As System.Collections.Generic.Dictionary(Of String, Object)
+  overload: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses*
+  nameWithType.vb: SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary(Of String, Object), String())
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String())
+  name.vb: BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary(Of String, Object), String())
 - uid: Butterfly.Db.SelectStatement.ReplaceAll(System.String,Regex,Func{Match,System.String})
   commentId: M:Butterfly.Db.SelectStatement.ReplaceAll(System.String,Regex,Func{Match,System.String})
   id: ReplaceAll(System.String,Regex,Func{Match,System.String})
@@ -468,7 +509,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-db
     id: ReplaceAll
     path: ../Butterfly.Db/Statements/SelectStatement.cs
-    startLine: 160
+    startLine: 169
   assemblies:
   - Butterfly.Db
   namespace: Butterfly.Db
@@ -1134,6 +1175,37 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses*
+  commentId: Overload:Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses
+  name: BuildDataParamsAndFixClauses
+  nameWithType: SelectStatement.BuildDataParamsAndFixClauses
+  fullName: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
 - uid: Butterfly.Db.SelectStatement.ReplaceAll*
   commentId: Overload:Butterfly.Db.SelectStatement.ReplaceAll
   name: ReplaceAll

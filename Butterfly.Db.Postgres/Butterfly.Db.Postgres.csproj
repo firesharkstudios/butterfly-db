@@ -13,7 +13,7 @@
     <Copyright>Copyright 2017-2019 Fireshark Studios, LLC</Copyright>
     <Description>Implementation of Butterfly.Db for Postgres</Description>
     <PackageReleaseNotes>Various improvements and bug fixes</PackageReleaseNotes>
-    <Version>2.0.2</Version>
+    <Version>2.1.0</Version>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildProjectName).xml</DocumentationFile>
   </PropertyGroup>
 
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Npgsql" Version="4.1.1" />
+    <PackageReference Include="Npgsql" Version="4.1.3.1" />
   </ItemGroup>
 
   <ItemGroup>

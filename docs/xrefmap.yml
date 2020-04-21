@@ -4514,6 +4514,22 @@ references:
   isSpec: "True"
   fullName: Butterfly.Db.SelectStatement.SelectStatement
   nameWithType: SelectStatement.SelectStatement
+- uid: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])
+  name: BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary<String, Object>, String[])
+  href: api/Butterfly.Db.SelectStatement.html#Butterfly_Db_SelectStatement_BuildDataParamsAndFixClauses_System_Collections_Generic_Dictionary_System_String_System_Object__System_String___
+  commentId: M:Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])
+  name.vb: BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary(Of String, Object), String())
+  fullName: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary<System.String, System.Object>, System.String[])
+  fullName.vb: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String())
+  nameWithType: SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary<String, Object>, String[])
+  nameWithType.vb: SelectStatement.BuildDataParamsAndFixClauses(System.Collections.Generic.Dictionary(Of String, Object), String())
+- uid: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses*
+  name: BuildDataParamsAndFixClauses
+  href: api/Butterfly.Db.SelectStatement.html#Butterfly_Db_SelectStatement_BuildDataParamsAndFixClauses_
+  commentId: Overload:Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses
+  isSpec: "True"
+  fullName: Butterfly.Db.SelectStatement.BuildDataParamsAndFixClauses
+  nameWithType: SelectStatement.BuildDataParamsAndFixClauses
 - uid: Butterfly.Db.SelectStatement.Compile(Butterfly.Db.IDatabase)
   name: Compile(IDatabase)
   href: api/Butterfly.Db.SelectStatement.html#Butterfly_Db_SelectStatement_Compile_Butterfly_Db_IDatabase_
